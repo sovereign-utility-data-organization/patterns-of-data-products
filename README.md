@@ -12,10 +12,13 @@ vs. event stream).
 
 ## Status
 
-- [ ] Scope and definitions settled
-- [ ] Candidate interface categories drafted
-- [ ] Classification dimensions identified
-- [ ] Catalog of example data products per category
+- [x] Interface model settled: 3 integration patterns (batch, request/response,
+      streaming) × input/output side → 7 × 7 = **49 data product types**
+- [x] Full combinatoric space figured (`docs/all-possible-data-product-patterns.svg`)
+- [x] One description per combination: what it is, when to use it, verdict
+      (`docs/options.md`)
+- [ ] Map existing known data products onto the 49 cells
+- [ ] Classification dimensions (per side and/or per cell)
 - [ ] Formalization (candidate: LinkML / SHACL)
 - [ ] Review and v0.1
 
@@ -23,9 +26,10 @@ vs. event stream).
 
 | Path | Purpose |
 |---|---|
-| `docs/classification.md` | Main working document: definitions, candidate categories, dimensions, open questions |
-| `docs/` | Further working documents (dimensions, examples, formalization notes) as they are split out |
-| `assets/` | Figures and diagrams |
+| `docs/classification.md` | Main working document: definitions, interface model, dimensions, open questions |
+| `docs/options.md` | Description of each of the 49 data product types (input patterns × output patterns) |
+| `docs/all-possible-data-product-patterns.svg` | The 7 × 7 grid figure of all combinations |
+| `assets/` | Other figures and diagrams |
 
 ## Related work
 
