@@ -20,6 +20,8 @@ related:
 
 A refreshed service: polls upstream, exposes a cleaner API, and also emits periodic full-load files (supplier meter API → reading API + daily snapshot files).
 
+<img src="/assets/cells/409.svg" alt="Cell diagram: IN R to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers are a mix of online pollers + ETL consumers, and the upstream is API-only.

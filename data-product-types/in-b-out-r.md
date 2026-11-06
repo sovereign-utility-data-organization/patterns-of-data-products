@@ -20,6 +20,8 @@ related:
 
 Files in → one clean API out (nightly price/tariff files → price/tariff API). The most common single-pattern data product in regulated/utility domains.
 
+<img src="/assets/cells/1077.svg" alt="Cell diagram: IN B to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Upstream is file-based, consumers are online.

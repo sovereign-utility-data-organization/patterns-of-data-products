@@ -21,6 +21,8 @@ related:
 
 The canonical "bridge an API world into a Kafka world" product.
 
+<img src="/assets/cells/932.svg" alt="Cell diagram: IN R to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 A stream-driven consumer architecture with only file/API sources.

@@ -20,6 +20,8 @@ related:
 
 A clean real-time façade: one stream + one query API over the combined inputs.
 
+<img src="/assets/cells/768.svg" alt="Cell diagram: IN RS to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 All consumers are online and a single consistent contract is wanted (unified telemetry/asset platform).

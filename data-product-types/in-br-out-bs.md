@@ -22,6 +22,8 @@ related:
 
 Served as both a "live" feed and end-of-day files, but the live feed is re-poll-derived (e.g., polling market data into a stream, plus EOD files).
 
+<img src="/assets/cells/515.svg" alt="Cell diagram: IN BR to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Market/utility data consumers expect both a real-time feed and an EOD file, but the upstream is only file/API.

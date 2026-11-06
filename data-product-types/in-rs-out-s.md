@@ -20,6 +20,8 @@ related:
 
 Changes (computed from event + API state) fanned out as one stream.
 
+<img src="/assets/cells/910.svg" alt="Cell diagram: IN RS to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Downstream is stream-first; the stream *is* the product.

@@ -21,6 +21,8 @@ related:
 
 Consumers query current state *and* subscribe to changes; no bulk files served. Historical depth is served by query, not by file.
 
+<img src="/assets/cells/694.svg" alt="Cell diagram: IN BRS to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 All consumers are online (e.g., an IoT/time-series platform with event + state APIs).

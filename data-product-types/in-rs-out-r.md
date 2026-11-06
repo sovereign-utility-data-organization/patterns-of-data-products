@@ -20,6 +20,8 @@ related:
 
 Ingest the stream, build the read model, serve the API — the canonical event-sourcing read side (e.g., an order-status API from order events + master data APIs). A "stream → state" product.
 
+<img src="/assets/cells/1036.svg" alt="Cell diagram: IN RS to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers don't want to consume a stream; they want the answer.

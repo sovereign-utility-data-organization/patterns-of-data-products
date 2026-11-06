@@ -21,6 +21,8 @@ related:
 
 Ingests from files, on-demand upstreams, and live streams; serves live events, on-demand queries, *and* bulk files. The full data platform (data lakehouse, CDP).
 
+<img src="/assets/cells/15.svg" alt="Cell diagram: IN BRS to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 One organisation must serve many consumer types (BI, API clients, settlement, real-time dashboards) from a consolidated view.

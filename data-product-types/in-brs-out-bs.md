@@ -21,6 +21,8 @@ related:
 
 Consolidated source data exposed as a continuous stream and as bulk archives (e.g., an enterprise event spine with S3 archive).
 
+<img src="/assets/cells/477.svg" alt="Cell diagram: IN BRS to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers react to change but also need full loads (historians, downstream stream consumers, reconciliation).

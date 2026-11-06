@@ -20,6 +20,8 @@ related:
 
 Enriches an event stream with bulk-loaded reference data and emits an enriched stream (e.g., meter events + tariff/reference → enriched market events).
 
+<img src="/assets/cells/896.svg" alt="Cell diagram: IN BS to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 The product's value is enrichment; consumers are stream consumers.

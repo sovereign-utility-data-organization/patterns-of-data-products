@@ -21,6 +21,8 @@ related:
 
 Live meter events + tariff reference (batch) in → reading API + settlement files out. The common utility shape; consumers pull, no pure stream out.
 
+<img src="/assets/cells/334.svg" alt="Cell diagram: IN BS to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Utility/energy domain: metered streams plus reference files, served to both online and bulk consumers.

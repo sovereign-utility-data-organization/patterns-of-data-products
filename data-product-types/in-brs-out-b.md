@@ -21,6 +21,8 @@ related:
 
 Everything in, one file out — the consolidation layer with a single publication surface (settlement or reporting bundle).
 
+<img src="/assets/cells/1100.svg" alt="Cell diagram: IN BRS to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 The consumer-side contract is file delivery; very common in utility settlement (meter events + tariff APIs + reference files in, one settlement file out).

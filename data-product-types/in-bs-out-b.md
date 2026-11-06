@@ -20,6 +20,8 @@ related:
 
 Real-time metered events + reference data in → daily settlement file out. The heart of many utility settlement engines.
 
+<img src="/assets/cells/1166.svg" alt="Cell diagram: IN BS to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 The market contract is file-based (day-ahead / imbalance settlement) but the data is inherently streaming.

@@ -21,6 +21,8 @@ related:
 
 Consumes live events + APIs, publishes a file once a day (activity report, usage file, billing input).
 
+<img src="/assets/cells/1189.svg" alt="Cell diagram: IN RS to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 The contract is a file but the data is inherently live.

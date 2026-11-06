@@ -21,6 +21,8 @@ related:
 
 Stream in → stream processor / stateful aggregation → all serving modes (Flink/Kafka + state store + sink world).
 
+<img src="/assets/cells/157.svg" alt="Cell diagram: IN S to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 The product owns the aggregation layer between events and consumers.

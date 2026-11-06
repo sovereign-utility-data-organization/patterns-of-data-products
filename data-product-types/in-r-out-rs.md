@@ -21,6 +21,8 @@ related:
 
 API poll in, live feed + API out. "Live" over a polled world.
 
+<img src="/assets/cells/798.svg" alt="Cell diagram: IN R to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers want push + query, the only source is pollable.

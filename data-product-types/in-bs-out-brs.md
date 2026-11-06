@@ -21,6 +21,8 @@ related:
 
 Hot & cold ingest (e.g., Kafka + S3) served via streams, APIs, and bulk exports — the modern streaming platform (Kafka + Iceberg/Delta).
 
+<img src="/assets/cells/97.svg" alt="Cell diagram: IN BS to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 All three consumer types are needed on top of event data.

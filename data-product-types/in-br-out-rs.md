@@ -22,6 +22,8 @@ related:
 
 Stream + query API built on polled/file inputs.
 
+<img src="/assets/cells/723.svg" alt="Cell diagram: IN BR to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 A dashboard wants "live" data but the only source is scheduled polls (device registries, market pages).

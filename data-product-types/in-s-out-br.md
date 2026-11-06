@@ -21,6 +21,8 @@ related:
 
 Events → queryable store + data-lake files. The standard modern ingestion architecture (Kafka → S3 + API over a query engine / Iceberg).
 
+<img src="/assets/cells/386.svg" alt="Cell diagram: IN S to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers want analysis (API) + archival (files); no need to keep the stream out.

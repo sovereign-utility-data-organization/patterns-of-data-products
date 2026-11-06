@@ -22,6 +22,8 @@ related:
 
 API in, stream out (synthetic) + files out — a bridge from a polled world into a streaming world plus an archival file set.
 
+<img src="/assets/cells/626.svg" alt="Cell diagram: IN R to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Downstream wants push and archives; source is poll-only.

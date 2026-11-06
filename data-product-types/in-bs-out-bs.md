@@ -20,6 +20,8 @@ related:
 
 Pass-through streaming platform: events stay events; bulk in merges in or becomes bulk out (e.g., Kafka mirror + S3 archive service).
 
+<img src="/assets/cells/551.svg" alt="Cell diagram: IN BS to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers subscribe to feeds *and* consume archives; goal is a single consistent pipeline.

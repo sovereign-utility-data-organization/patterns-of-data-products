@@ -19,6 +19,8 @@ related:
 
 A pure stream-to-stream product: filter, route, enrich, project (topic in → topics out). The value is the transformation, not the serving.
 
+<img src="/assets/cells/922.svg" alt="Cell diagram: IN S to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers need a *derived* topic and the product can be stateless by nature.

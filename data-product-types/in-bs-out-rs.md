@@ -21,6 +21,8 @@ related:
 
 Live events and on-demand state queries; no bulk serving.
 
+<img src="/assets/cells/750.svg" alt="Cell diagram: IN BS to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers are online and bulk export is a different product's job.

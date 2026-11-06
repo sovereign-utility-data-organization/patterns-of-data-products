@@ -20,6 +20,8 @@ related:
 
 Events in → events out (transformed/joined) + files out (archival); a market event spine: enriched events + daily bundles.
 
+<img src="/assets/cells/603.svg" alt="Cell diagram: IN S to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumers include stream consumers (downstream processors, CEP) and file consumers (analytics, settlement).

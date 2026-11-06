@@ -21,6 +21,8 @@ related:
 
 "One topic for the world": all sources (files included, replayed as events) funneled into one pub/sub interface.
 
+<img src="/assets/cells/848.svg" alt="Cell diagram: IN BRS to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Downstream is a pure stream topology (Kafka mesh, CEP fabric).

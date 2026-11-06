@@ -21,6 +21,8 @@ related:
 
 Events + service APIs in; consumers get the query API and nightly exports (e.g., billing: events + tariff API → invoice API + D01 files).
 
+<img src="/assets/cells/361.svg" alt="Cell diagram: IN RS to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 Consumer mix is online + batch, and sources are online.

@@ -21,6 +21,8 @@ related:
 
 The BFF / service façade: files + upstream APIs + event feeds behind one request/response contract.
 
+<img src="/assets/cells/974.svg" alt="Cell diagram: IN BRS to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+
 ## When to use
 
 The product's value is *normalisation*: consumers want one schema and one endpoint (unified "customer" or "order" API over CRM/ERP/events).
