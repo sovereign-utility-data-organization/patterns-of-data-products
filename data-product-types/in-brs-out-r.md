@@ -32,4 +32,5 @@ The product's value is *normalisation*: consumers want one schema and one endpoi
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Backend-for-Frontend / API gateway: many inputs normalised into one clean request/response API.
 

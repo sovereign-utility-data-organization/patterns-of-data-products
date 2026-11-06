@@ -30,4 +30,5 @@ Consumers include stream consumers (downstream processors, CEP) and file consume
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event-driven architecture (EDA) and event sourcing: stream in, persisted as log, served as feed + archive.
 

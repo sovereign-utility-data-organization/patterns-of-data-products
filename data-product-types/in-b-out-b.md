@@ -32,4 +32,5 @@ No live semantics at all — publish with explicit as-of.
 * [batch](/knowledge-concepts/pattern-batch)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: ETL / ELT / data warehouse: the classic batch pipeline, files in, files out.
 

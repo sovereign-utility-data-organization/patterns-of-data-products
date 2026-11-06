@@ -32,4 +32,5 @@ Consumer mix is online + batch, and sources are online.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Hub facade / microservices: stream + API in, API + file out.
 

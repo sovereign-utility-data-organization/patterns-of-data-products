@@ -7,3 +7,4 @@
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) - Pseudo-streams: the 12 cells that serve S without ingesting S, and the contract items they need
 * [cross-cutting-observations](/knowledge-concepts/cross-cutting-observations) - Structural properties of the 49-type space: pass-through diagonal, batch core, state vs. cost
 * [verdict](/knowledge-concepts/verdict) - The verdict tag (common / plausible / niche) attached to each data product type, and what each means
+* [architectural-paradigms](/knowledge-concepts/architectural-paradigms) - How serverless, event-driven, event sourcing, CQRS, stream processing, microservices, ETL, CDC, and data mesh relate to (but are distinct from) the interface taxonomy

@@ -32,4 +32,5 @@ Consumers want analysis (API) + archival (files); no need to keep the stream out
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event sourcing / streaming ELT and stream processing: Kafka -> lake + queryable API.
 

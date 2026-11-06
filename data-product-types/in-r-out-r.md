@@ -28,4 +28,5 @@ No transformation-heavy load; value is integration experience (canonical schema 
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: API gateway / microservices facade: a thin normalising proxy over upstream APIs.
 

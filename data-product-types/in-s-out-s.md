@@ -32,4 +32,5 @@ No state persistence beyond the topic — the product is ephemeral by design.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Serverless / Functions-as-a-Service and event-driven (EDA): a stateless stream-to-stream transform.
 

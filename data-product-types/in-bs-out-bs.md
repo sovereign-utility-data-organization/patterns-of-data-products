@@ -30,4 +30,5 @@ Consumers subscribe to feeds *and* consume archives; goal is a single consistent
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event-driven architecture (EDA): stream + batch in, stream + batch out — a pass-through platform.
 

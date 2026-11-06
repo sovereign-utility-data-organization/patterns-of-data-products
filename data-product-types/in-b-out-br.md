@@ -30,4 +30,5 @@ Consumers need both an analytical API and bulk delivery; upstream is batch.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: ETL / ELT / data warehouse: the classic warehouse — batch in, query + file out.
 

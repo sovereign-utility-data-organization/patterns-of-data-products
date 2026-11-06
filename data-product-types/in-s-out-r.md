@@ -30,4 +30,5 @@ Consumers don't want to consume a stream; they want the answer.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event sourcing and CQRS read model (also stream processing): fold the event log into a queryable state store.
 

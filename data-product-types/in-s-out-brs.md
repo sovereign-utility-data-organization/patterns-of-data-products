@@ -32,4 +32,5 @@ The product owns the aggregation layer between events and consumers.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
 * [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Stream processing (CEP, e.g. Flink/ksqlDB): a stream turned into a full serving platform.
 
