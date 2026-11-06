@@ -24,12 +24,20 @@ vs. event stream).
 
 ## Structure
 
+This repository **is** the knowledge catalog — an
+[Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+bundle: a directory of markdown concept docs with YAML frontmatter,
+`index.md` listings (no frontmatter), and an update `log.md`.
+
 | Path | Purpose |
 |---|---|
-| `docs/classification.md` | Main working document: definitions, interface model, dimensions, open questions |
-| `docs/options.md` | Description of each of the 49 data product types (input patterns × output patterns) |
-| `docs/all-possible-data-product-patterns.svg` | The 7 × 7 grid figure of all combinations |
-| `assets/` | Other figures and diagrams |
+| `index.md` | Root directory listing (entry point) |
+| `log.md` | Update log |
+| `knowledge-concepts/` | Core vocabulary: data product, the 3 integration patterns, interface model, synthetic stream, cross-cutting observations |
+| `data-product-types/` | The 49 data product types (IN × OUT) — one concept doc each, plus the matrix index |
+| `playbooks/` | How to use the catalog (classify a real data product) |
+| `assets/` | The 7 × 7 grid figure |
+| `scripts/okf_audit.py` | OKF v0.1 conformance audit (frontmatter + cross-link checks); run `python3 scripts/okf_audit.py` |
 
 ## Related work
 
