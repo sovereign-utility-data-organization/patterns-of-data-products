@@ -15,7 +15,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 7.4 — Batch → live query + pseudo-events
+---
+# 7.4 — Batch → live query + pseudo-events
 
 **Interface:** IN `{B}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 
@@ -36,4 +37,5 @@ Consumers are online and events-only; the source is batch.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

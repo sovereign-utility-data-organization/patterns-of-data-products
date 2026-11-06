@@ -14,13 +14,18 @@ for dp, dns, fns in os.walk("."):
             all_md.append(os.path.normpath(os.path.join(dp, fn)))
 all_md = sorted(set(m for m in all_md if not m.startswith(".git")))
 
-def fm_of(text):
+def fm_of(text, fname):
     if not text.startswith("---\n"):
         return None
     end = text.find("\n---", 4)
     if end == -1:
         return None
-    return text[4:end], text[end+5:]
+    # closing fence is the 4 chars "\n---" starting at `end`; body begins at end+4
+    body = text[end + 4:]
+    # closing fence must be on its own line: the next char after --- must be a newline
+    if body and not body.startswith("\n"):
+        errors.append(f"{fname}: frontmatter closing fence is not on its own line (missing newline after ---)")
+    return text[4:end], text[end + 4:]
 
 try:
     import yaml as _yaml
@@ -34,7 +39,7 @@ for m in all_md:
         if text.startswith("---"):
             errors.append(f"{m}: index/log/README must not have frontmatter")
         continue
-    fm_str, body = fm_of(text)
+    fm_str, body = fm_of(text, m)
     if fm_str is None:
         errors.append(f"{m}: missing valid YAML frontmatter block")
         continue

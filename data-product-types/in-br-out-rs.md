@@ -15,7 +15,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 2.4 — Poll/file-derived live + query
+---
+# 2.4 — Poll/file-derived live + query
 
 **Interface:** IN `{B, R}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 
@@ -36,4 +37,5 @@ Every data point must carry a freshness stamp; polling latency is the truth.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

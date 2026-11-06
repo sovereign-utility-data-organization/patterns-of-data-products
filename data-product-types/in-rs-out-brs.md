@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.1 — MDM / integration hub with full out
+---
+# 4.1 — MDM / integration hub with full out
 
 **Interface:** IN `{R, S}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** plausible
 
@@ -34,4 +35,5 @@ Full-load exports need a complete state store — build it.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

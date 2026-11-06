@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.2 — Smart-meter platform shape
+---
+# 3.2 — Smart-meter platform shape
 
 **Interface:** IN `{B, S}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ Utility/energy domain: metered streams plus reference files, served to both onli
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

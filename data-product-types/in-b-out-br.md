@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 7.2 — The classic data warehouse
+---
+# 7.2 — The classic data warehouse
 
 **Interface:** IN `{B}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ Consumers need both an analytical API and bulk delivery; upstream is batch.
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

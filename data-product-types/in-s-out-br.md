@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 5.2 — Streaming ETL into lake + API
+---
+# 5.2 — Streaming ETL into lake + API
 
 **Interface:** IN `{S}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ Consumers want analysis (API) + archival (files); no need to keep the stream out
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

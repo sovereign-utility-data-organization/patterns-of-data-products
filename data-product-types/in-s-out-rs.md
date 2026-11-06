@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 5.4 — Event + state, no files
+---
+# 5.4 — Event + state, no files
 
 **Interface:** IN `{S}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 
@@ -32,4 +33,5 @@ Same retention concern as the file-less serving cells — verify where history l
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

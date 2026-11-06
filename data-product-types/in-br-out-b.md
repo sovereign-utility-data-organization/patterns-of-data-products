@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 2.7 — The classic ETL
+---
+# 2.7 — The classic ETL
 
 **Interface:** IN `{B, R}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ The contract with consumers is a file on a schedule.
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.7 — Multi-source ETL feed
+---
+# 1.7 — Multi-source ETL feed
 
 **Interface:** IN `{B, R, S}` → OUT `{B}`&emsp;&emsp;**Verdict:** plausible
 
@@ -34,4 +35,5 @@ Latency expectations collapse to the batch cycle.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

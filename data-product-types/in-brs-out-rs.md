@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.4 — Unified real-time view
+---
+# 1.4 — Unified real-time view
 
 **Interface:** IN `{B, R, S}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** common
 
@@ -34,4 +35,5 @@ Long-term archive may still need an off-product cold tier to keep storage sane.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.7 — Stream → settlement files
+---
+# 3.7 — Stream → settlement files
 
 **Interface:** IN `{B, S}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ The market contract is file-based (day-ahead / imbalance settlement) but the dat
 * [batch](/knowledge-concepts/pattern-batch)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

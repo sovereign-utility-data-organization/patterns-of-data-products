@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.4 — Unified live view
+---
+# 4.4 — Unified live view
 
 **Interface:** IN `{R, S}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ All consumers are online and a single consistent contract is wanted (unified tel
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

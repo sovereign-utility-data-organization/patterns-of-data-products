@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.2 — Consolidation hub with API + reports
+---
+# 1.2 — Consolidation hub with API + reports
 
 **Interface:** IN `{B, R, S}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ No real-time requirement; the need is just one clean API plus one file feed.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 6.2 — Poll + serve API + files
+---
+# 6.2 — Poll + serve API + files
 
 **Interface:** IN `{R}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** plausible
 
@@ -28,4 +29,5 @@ Consumers are a mix of online pollers + ETL consumers, and the upstream is API-o
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

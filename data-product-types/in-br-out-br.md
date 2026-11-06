@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 2.2 — Classic data API + file feed
+---
+# 2.2 — Classic data API + file feed
 
 **Interface:** IN `{B, R}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ Consumers are a mix of online pollers and ETL consumers; no live requirement.
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

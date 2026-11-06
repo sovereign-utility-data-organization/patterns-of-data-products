@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.1 — Event platform with full serving
+---
+# 3.1 — Event platform with full serving
 
 **Interface:** IN `{B, S}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ All three consumer types are needed on top of event data.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

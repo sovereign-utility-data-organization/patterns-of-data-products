@@ -15,7 +15,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 2.5 — Poll-to-stream bridge
+---
+# 2.5 — Poll-to-stream bridge
 
 **Interface:** IN `{B, R}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 
@@ -36,4 +37,5 @@ Consumers may expect push semantics the source can't honour — document deltas,
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

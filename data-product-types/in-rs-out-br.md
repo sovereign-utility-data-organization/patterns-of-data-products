@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.2 — Hub facade: stream + API in, API + file out
+---
+# 4.2 — Hub facade: stream + API in, API + file out
 
 **Interface:** IN `{R, S}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ Consumer mix is online + batch, and sources are online.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

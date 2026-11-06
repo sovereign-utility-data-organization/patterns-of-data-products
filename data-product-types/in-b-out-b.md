@@ -12,7 +12,8 @@ tags:
 related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/data-product
----# 7.7 — The pure ETL file product
+---
+# 7.7 — The pure ETL file product
 
 **Interface:** IN `{B}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ No live semantics at all — publish with explicit as-of.
 
 * [batch](/knowledge-concepts/pattern-batch)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

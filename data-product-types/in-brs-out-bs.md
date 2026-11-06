@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.3 — Hub with live feed + bulk export
+---
+# 1.3 — Hub with live feed + bulk export
 
 **Interface:** IN `{B, R, S}` → OUT `{B, S}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ Consumers react to change but also need full loads (historians, downstream strea
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

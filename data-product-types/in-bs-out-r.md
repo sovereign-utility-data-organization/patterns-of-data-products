@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.6 — Stream + reference → queryable historian
+---
+# 3.6 — Stream + reference → queryable historian
 
 **Interface:** IN `{B, S}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ Consumers want analysis over history, not push.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

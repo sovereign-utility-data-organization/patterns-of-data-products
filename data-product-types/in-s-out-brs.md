@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 5.1 — Stream processor + full platform
+---
+# 5.1 — Stream processor + full platform
 
 **Interface:** IN `{S}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ The product owns the aggregation layer between events and consumers.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

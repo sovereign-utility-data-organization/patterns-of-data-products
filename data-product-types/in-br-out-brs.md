@@ -15,7 +15,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 2.1 — Refreshed model serving all three out
+---
+# 2.1 — Refreshed model serving all three out
 
 **Interface:** IN `{B, R}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** plausible
 
@@ -36,4 +37,5 @@ Streams derived from polling are chatty and lossy-ish; define "change" semantics
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

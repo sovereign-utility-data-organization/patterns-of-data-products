@@ -15,7 +15,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 2.3 — RT + EOD from polled sources
+---
+# 2.3 — RT + EOD from polled sources
 
 **Interface:** IN `{B, R}` → OUT `{B, S}`&emsp;&emsp;**Verdict:** plausible
 
@@ -36,4 +37,5 @@ Market/utility data consumers expect both a real-time feed and an EOD file, but 
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

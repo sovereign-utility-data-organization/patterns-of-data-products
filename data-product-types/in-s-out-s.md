@@ -12,7 +12,8 @@ tags:
 related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 5.5 — Event transformer / relay
+---
+# 5.5 — Event transformer / relay
 
 **Interface:** IN `{S}` → OUT `{S}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ No state persistence beyond the topic — the product is ephemeral by design.
 
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

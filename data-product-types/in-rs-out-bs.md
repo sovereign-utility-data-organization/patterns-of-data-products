@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.3 — Telemetry platform
+---
+# 4.3 — Telemetry platform
 
 **Interface:** IN `{R, S}` → OUT `{B, S}`&emsp;&emsp;**Verdict:** plausible
 
@@ -30,4 +31,5 @@ Consumers want both push and periodic full loads.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

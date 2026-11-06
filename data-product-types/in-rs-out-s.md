@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.5 — API-backed fan-out stream
+---
+# 4.5 — API-backed fan-out stream
 
 **Interface:** IN `{R, S}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 
@@ -32,4 +33,5 @@ API-polled changes become synthetic events — define exactly what "change" mean
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

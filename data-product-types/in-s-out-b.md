@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 5.7 — Stream → settlement/rollup file
+---
+# 5.7 — Stream → settlement/rollup file
 
 **Interface:** IN `{S}` → OUT `{B}`&emsp;&emsp;**Verdict:** plausible
 
@@ -28,4 +29,5 @@ The contract is a file but the data is inherently streaming — very common in u
 * [batch](/knowledge-concepts/pattern-batch)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

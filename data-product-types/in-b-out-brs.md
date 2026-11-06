@@ -15,7 +15,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 7.1 — Batch-loaded platform with all out
+---
+# 7.1 — Batch-loaded platform with all out
 
 **Interface:** IN `{B}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** plausible
 
@@ -36,4 +37,5 @@ The "stream out" is synthetic (CDC on a refreshed table) — make the semantics 
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

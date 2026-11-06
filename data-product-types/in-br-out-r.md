@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 2.6 — Upstream facade / proxy API
+---
+# 2.6 — Upstream facade / proxy API
 
 **Interface:** IN `{B, R}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ No transformation-heavy load; the value is integration experience (canonical sch
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

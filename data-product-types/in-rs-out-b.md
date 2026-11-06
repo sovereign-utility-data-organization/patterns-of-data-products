@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.7 — Live activity → T+1 report/file
+---
+# 4.7 — Live activity → T+1 report/file
 
 **Interface:** IN `{R, S}` → OUT `{B}`&emsp;&emsp;**Verdict:** plausible
 
@@ -34,4 +35,5 @@ Consumers get T+1 of a T+0 world — publish with clear as-of semantics.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

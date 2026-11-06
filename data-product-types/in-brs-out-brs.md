@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.1 — Data platform / warehouse facade
+---
+# 1.1 — Data platform / warehouse facade
 
 **Interface:** IN `{B, R, S}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** common
 
@@ -34,4 +35,5 @@ The most expensive option — the product owns all three serving stacks.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

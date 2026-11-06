@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 6.4 — Poll-derived live + query
+---
+# 6.4 — Poll-derived live + query
 
 **Interface:** IN `{R}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 
@@ -34,4 +35,5 @@ Latency bounded by poll cadence; freshness stamps required.
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

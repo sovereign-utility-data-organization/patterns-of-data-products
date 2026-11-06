@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.6 — Unified query API over messy sources
+---
+# 1.6 — Unified query API over messy sources
 
 **Interface:** IN `{B, R, S}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 
@@ -30,4 +31,5 @@ The product's value is *normalisation*: consumers want one schema and one endpoi
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

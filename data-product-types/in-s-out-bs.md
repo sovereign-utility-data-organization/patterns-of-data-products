@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 5.3 — Hot & cold streaming platform
+---
+# 5.3 — Hot & cold streaming platform
 
 **Interface:** IN `{S}` → OUT `{B, S}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ Consumers include stream consumers (downstream processors, CEP) and file consume
 * [batch](/knowledge-concepts/pattern-batch)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

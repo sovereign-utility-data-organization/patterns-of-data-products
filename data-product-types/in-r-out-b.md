@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 6.7 — API feed → scheduled file
+---
+# 6.7 — API feed → scheduled file
 
 **Interface:** IN `{R}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ The contract is file-based delivery; the source is API-based.
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

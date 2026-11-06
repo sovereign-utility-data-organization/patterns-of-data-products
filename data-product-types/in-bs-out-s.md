@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.5 — Stream join / stream enrichment
+---
+# 3.5 — Stream join / stream enrichment
 
 **Interface:** IN `{B, S}` → OUT `{S}`&emsp;&emsp;**Verdict:** plausible
 
@@ -28,4 +29,5 @@ The product's value is enrichment; consumers are stream consumers.
 * [batch](/knowledge-concepts/pattern-batch)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

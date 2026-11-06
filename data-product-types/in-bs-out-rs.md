@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.4 — Event + state query, no files
+---
+# 3.4 — Event + state query, no files
 
 **Interface:** IN `{B, S}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 
@@ -34,4 +35,5 @@ Long-term retention usually still wants a cold/file tier — verify history isn'
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

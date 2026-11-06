@@ -80,5 +80,6 @@ contract, or a pure sink with nothing to serve, has no consumable interface.
 - **Figure of all 49 combinations:** `/assets/all-possible-data-product-patterns.svg`
 - **One description per type** (what it is, when to use it, verdict): `/data-product-types/`
 - **Structural properties of the whole space:** [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
+- **The verdict tag** on each type (common / plausible / niche): [verdict](/knowledge-concepts/verdict)
 - **The pseudo-stream hazard** (stream out from non-stream in): [synthetic stream](/knowledge-concepts/synthetic-stream)
 - **How to classify a real product** into this space: [classify-a-data-product](/playbooks/classify-a-data-product)

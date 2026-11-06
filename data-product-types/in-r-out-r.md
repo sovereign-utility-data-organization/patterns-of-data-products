@@ -12,7 +12,8 @@ tags:
 related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 6.6 — API proxy / facade
+---
+# 6.6 — API proxy / facade
 
 **Interface:** IN `{R}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 
@@ -26,4 +27,5 @@ No transformation-heavy load; value is integration experience (canonical schema 
 
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

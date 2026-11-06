@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 3.3 — Hot & cold in → hot & cold out
+---
+# 3.3 — Hot & cold in → hot & cold out
 
 **Interface:** IN `{B, S}` → OUT `{B, S}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ Consumers subscribe to feeds *and* consume archives; goal is a single consistent
 * [batch](/knowledge-concepts/pattern-batch)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

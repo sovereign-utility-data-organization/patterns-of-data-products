@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 1.5 — All-in, single stream
+---
+# 1.5 — All-in, single stream
 
 **Interface:** IN `{B, R, S}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 
@@ -34,4 +35,5 @@ File-based sources become synthetic streams — backfill is loud.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 6.5 — Poller → stream bridge
+---
+# 6.5 — Poller → stream bridge
 
 **Interface:** IN `{R}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 
@@ -34,4 +35,5 @@ The most common source of "why is my stream lagging" complaints — define poll 
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

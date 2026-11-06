@@ -14,7 +14,8 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/data-product
----# 7.5 — Batch → event feed
+---
+# 7.5 — Batch → event feed
 
 **Interface:** IN `{B}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 
@@ -34,4 +35,5 @@ Consumers must treat each batch as a batch of synthetic events, not a continuous
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

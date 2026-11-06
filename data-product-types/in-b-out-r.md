@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/data-product
----# 7.6 — The classic "load files, serve API"
+---
+# 7.6 — The classic "load files, serve API"
 
 **Interface:** IN `{B}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ Upstream is file-based, consumers are online.
 * [batch](/knowledge-concepts/pattern-batch)
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 

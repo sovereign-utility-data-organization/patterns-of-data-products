@@ -13,7 +13,8 @@ related:
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/data-product
----# 4.6 — Event-sourced query service (CQRS)
+---
+# 4.6 — Event-sourced query service (CQRS)
 
 **Interface:** IN `{R, S}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 
@@ -28,4 +29,5 @@ Consumers don't want to consume a stream; they want the answer.
 * [request/response](/knowledge-concepts/pattern-request-response)
 * [streaming](/knowledge-concepts/pattern-streaming)
 * [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
 
