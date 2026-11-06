@@ -20,7 +20,7 @@ related:
 
 Events in → periodic bulk out (meter-reading stream → daily interval file; clickstream → EOD usage files).
 
-<img src="/assets/cells/1210.svg" alt="Cell diagram: IN S to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN S to OUT B](/assets/cells/1210.svg)
 
 ## When to use
 

@@ -21,7 +21,7 @@ related:
 
 Consolidated source data exposed as a continuous stream and as bulk archives (e.g., an enterprise event spine with S3 archive).
 
-<img src="/assets/cells/477.svg" alt="Cell diagram: IN BRS to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BRS to OUT BS](/assets/cells/477.svg)
 
 ## When to use
 

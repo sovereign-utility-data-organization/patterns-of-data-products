@@ -20,7 +20,7 @@ related:
 
 Events in → events out (transformed/joined) + files out (archival); a market event spine: enriched events + daily bundles.
 
-<img src="/assets/cells/603.svg" alt="Cell diagram: IN S to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN S to OUT BS](/assets/cells/603.svg)
 
 ## When to use
 

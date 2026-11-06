@@ -20,7 +20,7 @@ related:
 
 Files in → API + files out. Standard ETL/ELT target that also serves a query API on top (EOD price files → price API + downstream files).
 
-<img src="/assets/cells/441.svg" alt="Cell diagram: IN B to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN B to OUT BR](/assets/cells/441.svg)
 
 ## When to use
 

@@ -20,7 +20,7 @@ related:
 
 The bread and butter: refresh from feeds and APIs, serve a clean API plus daily bundles (a weather/price API that also serves files).
 
-<img src="/assets/cells/298.svg" alt="Cell diagram: IN BR to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BR to OUT BR](/assets/cells/298.svg)
 
 ## When to use
 

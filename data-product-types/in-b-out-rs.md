@@ -22,7 +22,7 @@ related:
 
 Serve "live" over a nightly refresh: events (synthetic) + query API from batch inputs.
 
-<img src="/assets/cells/821.svg" alt="Cell diagram: IN B to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN B to OUT RS](/assets/cells/821.svg)
 
 ## When to use
 

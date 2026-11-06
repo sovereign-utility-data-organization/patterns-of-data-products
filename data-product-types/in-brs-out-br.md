@@ -21,7 +21,7 @@ related:
 
 Everything ingested (files, APIs, streams); consumers get a clean query API plus scheduled files — no streaming out. The most economical "good facade" for pollers and report writers.
 
-<img src="/assets/cells/260.svg" alt="Cell diagram: IN BRS to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BRS to OUT BR](/assets/cells/260.svg)
 
 ## When to use
 

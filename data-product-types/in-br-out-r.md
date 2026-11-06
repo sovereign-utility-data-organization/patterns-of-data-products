@@ -20,7 +20,7 @@ related:
 
 Polled from upstream, served as one cleaner API. Value = schema/semantics + caching, not transformation volume (e.g., a tariff API over supplier web services + rate tables).
 
-<img src="/assets/cells/999.svg" alt="Cell diagram: IN BR to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BR to OUT R](/assets/cells/999.svg)
 
 ## When to use
 

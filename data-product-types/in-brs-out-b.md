@@ -21,7 +21,7 @@ related:
 
 Everything in, one file out — the consolidation layer with a single publication surface (settlement or reporting bundle).
 
-<img src="/assets/cells/1100.svg" alt="Cell diagram: IN BRS to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BRS to OUT B](/assets/cells/1100.svg)
 
 ## When to use
 

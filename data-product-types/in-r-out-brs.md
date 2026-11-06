@@ -22,7 +22,7 @@ related:
 
 Polls upstream, computes deltas, serves file + API + a *synthetic* change stream.
 
-<img src="/assets/cells/184.svg" alt="Cell diagram: IN R to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN R to OUT BRS](/assets/cells/184.svg)
 
 ## When to use
 

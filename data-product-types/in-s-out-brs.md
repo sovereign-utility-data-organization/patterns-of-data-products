@@ -21,7 +21,7 @@ related:
 
 Stream in → stream processor / stateful aggregation → all serving modes (Flink/Kafka + state store + sink world).
 
-<img src="/assets/cells/157.svg" alt="Cell diagram: IN S to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN S to OUT BRS](/assets/cells/157.svg)
 
 ## When to use
 

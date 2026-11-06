@@ -20,7 +20,7 @@ related:
 
 Poll from upstream, publish a file. The classic fetch-and-drop integration (supplier portal API → settlement file; tariff API → rate-table file).
 
-<img src="/assets/cells/1229.svg" alt="Cell diagram: IN R to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN R to OUT B](/assets/cells/1229.svg)
 
 ## When to use
 

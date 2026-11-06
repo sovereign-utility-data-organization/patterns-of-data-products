@@ -20,7 +20,7 @@ related:
 
 Changes (computed from event + API state) fanned out as one stream.
 
-<img src="/assets/cells/910.svg" alt="Cell diagram: IN RS to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN RS to OUT S](/assets/cells/910.svg)
 
 ## When to use
 

@@ -21,7 +21,7 @@ related:
 
 Consumes live events + APIs, publishes a file once a day (activity report, usage file, billing input).
 
-<img src="/assets/cells/1189.svg" alt="Cell diagram: IN RS to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN RS to OUT B](/assets/cells/1189.svg)
 
 ## When to use
 

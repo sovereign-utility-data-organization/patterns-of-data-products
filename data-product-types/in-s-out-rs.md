@@ -20,7 +20,7 @@ related:
 
 Stream in → event feed + state API; no bulk out (archival handled off-product).
 
-<img src="/assets/cells/784.svg" alt="Cell diagram: IN S to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN S to OUT RS](/assets/cells/784.svg)
 
 ## When to use
 

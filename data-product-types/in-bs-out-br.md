@@ -21,7 +21,7 @@ related:
 
 Live meter events + tariff reference (batch) in → reading API + settlement files out. The common utility shape; consumers pull, no pure stream out.
 
-<img src="/assets/cells/334.svg" alt="Cell diagram: IN BS to OUT BR" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BS to OUT BR](/assets/cells/334.svg)
 
 ## When to use
 

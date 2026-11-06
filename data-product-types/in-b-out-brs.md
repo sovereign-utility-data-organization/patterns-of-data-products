@@ -22,7 +22,7 @@ related:
 
 A nightly-loaded warehouse that also serves a (CDC or refresh-derived) stream + API + files.
 
-<img src="/assets/cells/220.svg" alt="Cell diagram: IN B to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN B to OUT BRS](/assets/cells/220.svg)
 
 ## When to use
 

@@ -21,7 +21,7 @@ related:
 
 The BFF / service façade: files + upstream APIs + event feeds behind one request/response contract.
 
-<img src="/assets/cells/974.svg" alt="Cell diagram: IN BRS to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BRS to OUT R](/assets/cells/974.svg)
 
 ## When to use
 

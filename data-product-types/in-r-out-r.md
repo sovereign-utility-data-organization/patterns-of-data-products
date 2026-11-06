@@ -19,7 +19,7 @@ related:
 
 The cleanest "value = a better surface" product: normalise schemas, add caching/semantics, hide auth quirks, serve one clean API (OData/ESDP façade over supplier REST).
 
-<img src="/assets/cells/1058.svg" alt="Cell diagram: IN R to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN R to OUT R](/assets/cells/1058.svg)
 
 ## When to use
 

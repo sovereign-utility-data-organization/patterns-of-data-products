@@ -21,7 +21,7 @@ related:
 
 Turn a daily bulk load into a stream of events (snapshots → deltas) — a *replay* product.
 
-<img src="/assets/cells/951.svg" alt="Cell diagram: IN B to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN B to OUT S](/assets/cells/951.svg)
 
 ## When to use
 

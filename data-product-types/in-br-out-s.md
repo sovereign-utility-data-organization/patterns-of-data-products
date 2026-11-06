@@ -22,7 +22,7 @@ related:
 
 A bridge product whose whole job is "files/APIs → topics".
 
-<img src="/assets/cells/873.svg" alt="Cell diagram: IN BR to OUT S" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BR to OUT S](/assets/cells/873.svg)
 
 ## When to use
 

@@ -19,7 +19,7 @@ related:
 
 Files in → files out. The original data product: transformation + publication, no serving stack beyond the file contract (any "settlement input bundle" product).
 
-<img src="/assets/cells/1257.svg" alt="Cell diagram: IN B to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN B to OUT B](/assets/cells/1257.svg)
 
 ## When to use
 

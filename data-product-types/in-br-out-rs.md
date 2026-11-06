@@ -22,7 +22,7 @@ related:
 
 Stream + query API built on polled/file inputs.
 
-<img src="/assets/cells/723.svg" alt="Cell diagram: IN BR to OUT RS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BR to OUT RS](/assets/cells/723.svg)
 
 ## When to use
 

@@ -21,7 +21,7 @@ related:
 
 Lives entirely on APIs + events; emits files, streams, and APIs — including bulk exports built from incremental change logs.
 
-<img src="/assets/cells/128.svg" alt="Cell diagram: IN RS to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN RS to OUT BRS](/assets/cells/128.svg)
 
 ## When to use
 

@@ -21,7 +21,7 @@ related:
 
 Nightly load + a stream out (CDC from the refreshed table — a pseudo-stream).
 
-<img src="/assets/cells/658.svg" alt="Cell diagram: IN B to OUT BS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN B to OUT BS](/assets/cells/658.svg)
 
 ## When to use
 

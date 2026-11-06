@@ -20,7 +20,7 @@ related:
 
 Events in → state out via API (order status, device state, meter state APIs). A special case of the "stream → lake + API" type without the file side.
 
-<img src="/assets/cells/1048.svg" alt="Cell diagram: IN S to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN S to OUT R](/assets/cells/1048.svg)
 
 ## When to use
 

@@ -22,7 +22,7 @@ related:
 
 A polled/file-fed state store that publishes a *synthetic* change stream in addition to API + files.
 
-<img src="/assets/cells/57.svg" alt="Cell diagram: IN BR to OUT BRS" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BR to OUT BRS](/assets/cells/57.svg)
 
 ## When to use
 

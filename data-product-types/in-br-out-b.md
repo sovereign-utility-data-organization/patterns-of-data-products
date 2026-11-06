@@ -20,7 +20,7 @@ related:
 
 Files + APIs in → file(s) out. The oldest and most common data product that exists (supplier feeds + master APIs → settlement/report files).
 
-<img src="/assets/cells/1134.svg" alt="Cell diagram: IN BR to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BR to OUT B](/assets/cells/1134.svg)
 
 ## When to use
 

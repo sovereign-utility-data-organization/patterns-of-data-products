@@ -20,7 +20,7 @@ related:
 
 Real-time metered events + reference data in → daily settlement file out. The heart of many utility settlement engines.
 
-<img src="/assets/cells/1166.svg" alt="Cell diagram: IN BS to OUT B" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BS to OUT B](/assets/cells/1166.svg)
 
 ## When to use
 

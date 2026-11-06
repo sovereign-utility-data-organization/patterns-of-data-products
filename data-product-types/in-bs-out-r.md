@@ -21,7 +21,7 @@ related:
 
 The historian pattern: events land in a time-series/state DB, reference data is periodically loaded, consumers query (e.g., SCADA historian + historian API).
 
-<img src="/assets/cells/1022.svg" alt="Cell diagram: IN BS to OUT R" width="380" style="background:#000;padding:8px;border-radius:6px"/>
+![Interface diagram: IN BS to OUT R](/assets/cells/1022.svg)
 
 ## When to use
 
