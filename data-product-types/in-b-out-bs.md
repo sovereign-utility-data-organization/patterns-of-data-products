@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + streaming (pub/sub feed) — batch data, stream + files out.
-title: Cell 7.3: Batch data, stream + files out
+title: 'Cell 7.3: Batch data, stream + files out'
 tags:
-  - data-product-type
-  - in-b
-  - out-bs
-  - niche
+- data-product-type
+- in-b
+- out-bs
+- niche
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 7.3 — Batch data, stream + files out
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 7.3 — Batch data, stream + files out
 
 **Interface:** IN `{B}` → OUT `{B, S}`&emsp;&emsp;**Verdict:** niche
 

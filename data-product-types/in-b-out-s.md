@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via streaming (pub/sub feed) — batch → event feed.
-title: Cell 7.5: Batch → event feed
+title: 'Cell 7.5: Batch → event feed'
 tags:
-  - data-product-type
-  - in-b
-  - out-s
-  - niche
+- data-product-type
+- in-b
+- out-s
+- niche
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 7.5 — Batch → event feed
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 7.5 — Batch → event feed
 
 **Interface:** IN `{B}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 

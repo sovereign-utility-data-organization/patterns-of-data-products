@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) — unified query api over messy sources.
-title: Cell 1.6: Unified query API over messy sources
+title: 'Cell 1.6: Unified query API over messy sources'
 tags:
-  - data-product-type
-  - in-brs
-  - out-r
-  - common
+- data-product-type
+- in-brs
+- out-r
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 1.6 — Unified query API over messy sources
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 1.6 — Unified query API over messy sources
 
 **Interface:** IN `{B, R, S}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 

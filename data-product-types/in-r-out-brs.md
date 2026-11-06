@@ -1,23 +1,21 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — polling facade with synthetic stream.
-title: Cell 6.1: Polling facade with synthetic stream
+title: 'Cell 6.1: Polling facade with synthetic stream'
 tags:
-  - data-product-type
-  - in-r
-  - out-brs
-  - niche
+- data-product-type
+- in-r
+- out-brs
+- niche
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 6.1 — Polling facade with synthetic stream
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 6.1 — Polling facade with synthetic stream
 
 **Interface:** IN `{R}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** niche
 

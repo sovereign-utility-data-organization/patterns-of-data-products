@@ -1,20 +1,19 @@
 ---
 type: Knowledge Concept
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: A synthetic (pseudo-)stream — a data product that serves a streaming output without a streaming input, deriving events from polling or batch sources.
 title: Synthetic stream
 tags:
-  - streaming
-  - anti-pattern
-  - semantics
+- streaming
+- anti-pattern
+- semantics
 related:
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/data-product
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/data-product
 ---
-
 # Synthetic stream
 
 A data product whose **output** side includes streaming (`S`) but whose

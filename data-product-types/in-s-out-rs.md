@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — event + state, no files.
-title: Cell 5.4: Event + state, no files
+title: 'Cell 5.4: Event + state, no files'
 tags:
-  - data-product-type
-  - in-s
-  - out-rs
-  - niche
+- data-product-type
+- in-s
+- out-rs
+- niche
 related:
-
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 5.4 — Event + state, no files
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 5.4 — Event + state, no files
 
 **Interface:** IN `{S}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 

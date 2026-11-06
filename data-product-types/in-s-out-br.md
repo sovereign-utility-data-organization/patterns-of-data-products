@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — streaming etl into lake + api.
-title: Cell 5.2: Streaming ETL into lake + API
+title: 'Cell 5.2: Streaming ETL into lake + API'
 tags:
-  - data-product-type
-  - in-s
-  - out-br
-  - common
+- data-product-type
+- in-s
+- out-br
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 5.2 — Streaming ETL into lake + API
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 5.2 — Streaming ETL into lake + API
 
 **Interface:** IN `{S}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** common
 

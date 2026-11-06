@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) — api feed → scheduled file.
-title: Cell 6.7: API feed → scheduled file
+title: 'Cell 6.7: API feed → scheduled file'
 tags:
-  - data-product-type
-  - in-r
-  - out-b
-  - common
+- data-product-type
+- in-r
+- out-b
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/data-product
----
-# 6.7 — API feed → scheduled file
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/data-product
+---# 6.7 — API feed → scheduled file
 
 **Interface:** IN `{R}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 

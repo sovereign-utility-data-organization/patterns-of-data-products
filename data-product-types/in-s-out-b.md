@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) — stream → settlement/rollup file.
-title: Cell 5.7: Stream → settlement/rollup file
+title: 'Cell 5.7: Stream → settlement/rollup file'
 tags:
-  - data-product-type
-  - in-s
-  - out-b
-  - plausible
+- data-product-type
+- in-s
+- out-b
+- plausible
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 5.7 — Stream → settlement/rollup file
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 5.7 — Stream → settlement/rollup file
 
 **Interface:** IN `{S}` → OUT `{B}`&emsp;&emsp;**Verdict:** plausible
 

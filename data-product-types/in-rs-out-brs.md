@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — mdm / integration hub with full out.
-title: Cell 4.1: MDM / integration hub with full out
+title: 'Cell 4.1: MDM / integration hub with full out'
 tags:
-  - data-product-type
-  - in-rs
-  - out-brs
-  - plausible
+- data-product-type
+- in-rs
+- out-brs
+- plausible
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 4.1 — MDM / integration hub with full out
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 4.1 — MDM / integration hub with full out
 
 **Interface:** IN `{R, S}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** plausible
 

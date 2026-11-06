@@ -22,6 +22,11 @@ def fm_of(text):
         return None
     return text[4:end], text[end+5:]
 
+try:
+    import yaml as _yaml
+except ImportError:
+    _yaml = None
+
 # 1. Frontmatter checks
 for m in all_md:
     text = open(m).read()
@@ -33,16 +38,29 @@ for m in all_md:
     if fm_str is None:
         errors.append(f"{m}: missing valid YAML frontmatter block")
         continue
-    fm = {}
-    for line in fm_str.splitlines():
-        km = re.match(r'^([a-zA-Z_]+):\s*(.*)$', line)
-        if km and not line.startswith(" "):
-            fm[km.group(1)] = km.group(2)
-    for req in ("type", "okf_version", "timestamp", "description"):
-        if not fm.get(req, "").strip():
-            errors.append(f"{m}: missing required frontmatter field '{req}'")
-    if fm.get("okf_version", "").strip().strip('"') != "0.1":
-        errors.append(f"{m}: okf_version must be \"0.1\", got {fm.get('okf_version')!r}")
+    if _yaml is not None:
+        try:
+            fm = _yaml.safe_load(fm_str)
+            if not isinstance(fm, dict):
+                errors.append(f"{m}: frontmatter is not a mapping")
+                fm = {}
+        except Exception as e:
+            errors.append(f"{m}: frontmatter is not valid YAML: {e}")
+            fm = {}
+        for req in ("type", "okf_version", "timestamp", "description"):
+            if not str(fm.get(req, "")).strip():
+                errors.append(f"{m}: missing required frontmatter field '{req}'")
+        if str(fm.get("okf_version", "")).strip() != "0.1":
+            errors.append(f"{m}: okf_version must be \"0.1\", got {fm.get('okf_version')!r}")
+    else:
+        fm = {}
+        for line in fm_str.splitlines():
+            km = re.match(r'^([a-zA-Z_]+):\s*(.*)$', line)
+            if km and not line.startswith(" "):
+                fm[km.group(1)] = km.group(2)
+        for req in ("type", "okf_version", "timestamp", "description"):
+            if not fm.get(req, "").strip():
+                errors.append(f"{m}: missing required frontmatter field '{req}'")
     ts = fm.get("timestamp", "").strip().strip('"')
     if ts:
         ok = False

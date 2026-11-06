@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via request/response (on-demand query) — the classic "load files, serve api".
-title: Cell 7.6: The classic "load files, serve API"
+title: 'Cell 7.6: The classic "load files, serve API"'
 tags:
-  - data-product-type
-  - in-b
-  - out-r
-  - common
+- data-product-type
+- in-b
+- out-r
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/data-product
----
-# 7.6 — The classic "load files, serve API"
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/data-product
+---# 7.6 — The classic "load files, serve API"
 
 **Interface:** IN `{B}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 

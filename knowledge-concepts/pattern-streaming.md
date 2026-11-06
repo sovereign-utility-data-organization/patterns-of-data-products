@@ -1,20 +1,19 @@
 ---
 type: Knowledge Concept
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: The streaming integration pattern (S) — continuous pub/sub push, applied on a product's input side (event consumption) or output side (feed serving).
 title: Streaming integration pattern
 tags:
-  - integration-pattern
-  - streaming
-  - pubsub
+- integration-pattern
+- streaming
+- pubsub
 related:
-  - /knowledge-concepts/data-product
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/synthetic-stream
 ---
-
 # Streaming pattern (`S`)
 
 Continuous, push-based data movement: the product emits (or consumes) a

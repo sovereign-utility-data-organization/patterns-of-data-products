@@ -1,20 +1,18 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) — the pure etl file product.
-title: Cell 7.7: The pure ETL file product
+title: 'Cell 7.7: The pure ETL file product'
 tags:
-  - data-product-type
-  - in-b
-  - out-b
-  - common
+- data-product-type
+- in-b
+- out-b
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/data-product
----
-# 7.7 — The pure ETL file product
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/data-product
+---# 7.7 — The pure ETL file product
 
 **Interface:** IN `{B}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 

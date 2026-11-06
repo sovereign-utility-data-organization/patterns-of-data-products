@@ -1,20 +1,18 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via request/response (on-demand query) — api proxy / facade.
-title: Cell 6.6: API proxy / facade
+title: 'Cell 6.6: API proxy / facade'
 tags:
-  - data-product-type
-  - in-r
-  - out-r
-  - common
+- data-product-type
+- in-r
+- out-r
+- common
 related:
-
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/data-product
----
-# 6.6 — API proxy / facade
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/data-product
+---# 6.6 — API proxy / facade
 
 **Interface:** IN `{R}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 

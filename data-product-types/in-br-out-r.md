@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via request/response (on-demand query) — upstream facade / proxy api.
-title: Cell 2.6: Upstream facade / proxy API
+title: 'Cell 2.6: Upstream facade / proxy API'
 tags:
-  - data-product-type
-  - in-br
-  - out-r
-  - common
+- data-product-type
+- in-br
+- out-r
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/data-product
----
-# 2.6 — Upstream facade / proxy API
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/data-product
+---# 2.6 — Upstream facade / proxy API
 
 **Interface:** IN `{B, R}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 

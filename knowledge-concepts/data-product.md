@@ -1,21 +1,20 @@
 ---
 type: Knowledge Concept
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: A data product is data + contract + interface; classified here by the integration patterns on its input side and output side (7 x 7 = 49 types).
 title: Data product
 tags:
-  - data-product
-  - interface
-  - taxonomy
+- data-product
+- interface
+- taxonomy
 related:
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/cross-cutting-observations
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/cross-cutting-observations
 ---
-
 # Data product
 
 A **data product** is a self-contained offering of data to external consumers.

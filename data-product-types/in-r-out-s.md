@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via streaming (pub/sub feed) — poller → stream bridge.
-title: Cell 6.5: Poller → stream bridge
+title: 'Cell 6.5: Poller → stream bridge'
 tags:
-  - data-product-type
-  - in-r
-  - out-s
-  - niche
+- data-product-type
+- in-r
+- out-s
+- niche
 related:
-
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 6.5 — Poller → stream bridge
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 6.5 — Poller → stream bridge
 
 **Interface:** IN `{R}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 

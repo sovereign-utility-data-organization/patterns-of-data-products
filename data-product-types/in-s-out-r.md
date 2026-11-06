@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) — event-sourced read model.
-title: Cell 5.6: Event-sourced read model
+title: 'Cell 5.6: Event-sourced read model'
 tags:
-  - data-product-type
-  - in-s
-  - out-r
-  - common
+- data-product-type
+- in-s
+- out-r
+- common
 related:
-
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 5.6 — Event-sourced read model
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 5.6 — Event-sourced read model
 
 **Interface:** IN `{S}` → OUT `{R}`&emsp;&emsp;**Verdict:** common
 

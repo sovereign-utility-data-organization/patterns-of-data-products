@@ -1,20 +1,19 @@
 ---
 type: Knowledge Concept
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: The request/response integration pattern (R) — synchronous on-demand query, applied on a product's input side (polling upstream) or output side (API/query serving).
 title: Request/response integration pattern
 tags:
-  - integration-pattern
-  - request-response
-  - api
+- integration-pattern
+- request-response
+- api
 related:
-  - /knowledge-concepts/data-product
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
 ---
-
 # Request/response pattern (`R`)
 
 Synchronous, on-demand data access: the consumer asks, the product answers.

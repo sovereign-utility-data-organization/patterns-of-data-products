@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) — poll + serve api + files.
-title: Cell 6.2: Poll + serve API + files
+title: 'Cell 6.2: Poll + serve API + files'
 tags:
-  - data-product-type
-  - in-r
-  - out-br
-  - plausible
+- data-product-type
+- in-r
+- out-br
+- plausible
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/data-product
----
-# 6.2 — Poll + serve API + files
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/data-product
+---# 6.2 — Poll + serve API + files
 
 **Interface:** IN `{R}` → OUT `{B, R}`&emsp;&emsp;**Verdict:** plausible
 

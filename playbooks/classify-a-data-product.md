@@ -1,19 +1,18 @@
 ---
 type: Playbook
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Classification procedure — take a real (or proposed) data product and place it on the 7x7 grid of data-product types.
 title: Classify a data product
 tags:
-  - playbook
-  - classification
-  - data-product
+- playbook
+- classification
+- data-product
 related:
-  - /knowledge-concepts/data-product
-  - /knowledge-concepts/synthetic-stream
-  - /data-product-types
+- /knowledge-concepts/data-product
+- /knowledge-concepts/synthetic-stream
+- /data-product-types
 ---
-
 # Playbook: classify a data product
 
 Take a real or proposed data product and put it where it belongs in the

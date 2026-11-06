@@ -1,23 +1,21 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — refreshed model serving all three out.
-title: Cell 2.1: Refreshed model serving all three out
+title: 'Cell 2.1: Refreshed model serving all three out'
 tags:
-  - data-product-type
-  - in-br
-  - out-brs
-  - plausible
+- data-product-type
+- in-br
+- out-brs
+- plausible
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 2.1 — Refreshed model serving all three out
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 2.1 — Refreshed model serving all three out
 
 **Interface:** IN `{B, R}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** plausible
 

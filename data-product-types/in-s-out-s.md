@@ -1,20 +1,18 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via streaming (pub/sub feed) — event transformer / relay.
-title: Cell 5.5: Event transformer / relay
+title: 'Cell 5.5: Event transformer / relay'
 tags:
-  - data-product-type
-  - in-s
-  - out-s
-  - common
+- data-product-type
+- in-s
+- out-s
+- common
 related:
-
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 5.5 — Event transformer / relay
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 5.5 — Event transformer / relay
 
 **Interface:** IN `{S}` → OUT `{S}`&emsp;&emsp;**Verdict:** common
 

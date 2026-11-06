@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) — live activity → t+1 report/file.
-title: Cell 4.7: Live activity → T+1 report/file
+title: 'Cell 4.7: Live activity → T+1 report/file'
 tags:
-  - data-product-type
-  - in-rs
-  - out-b
-  - plausible
+- data-product-type
+- in-rs
+- out-b
+- plausible
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 4.7 — Live activity → T+1 report/file
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 4.7 — Live activity → T+1 report/file
 
 **Interface:** IN `{R, S}` → OUT `{B}`&emsp;&emsp;**Verdict:** plausible
 

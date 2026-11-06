@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) — the classic etl.
-title: Cell 2.7: The classic ETL
+title: 'Cell 2.7: The classic ETL'
 tags:
-  - data-product-type
-  - in-br
-  - out-b
-  - common
+- data-product-type
+- in-br
+- out-b
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/data-product
----
-# 2.7 — The classic ETL
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/data-product
+---# 2.7 — The classic ETL
 
 **Interface:** IN `{B, R}` → OUT `{B}`&emsp;&emsp;**Verdict:** common
 

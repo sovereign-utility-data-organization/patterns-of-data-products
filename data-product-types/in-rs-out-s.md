@@ -1,21 +1,19 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — api-backed fan-out stream.
-title: Cell 4.5: API-backed fan-out stream
+title: 'Cell 4.5: API-backed fan-out stream'
 tags:
-  - data-product-type
-  - in-rs
-  - out-s
-  - niche
+- data-product-type
+- in-rs
+- out-s
+- niche
 related:
-
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 4.5 — API-backed fan-out stream
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 4.5 — API-backed fan-out stream
 
 **Interface:** IN `{R, S}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 

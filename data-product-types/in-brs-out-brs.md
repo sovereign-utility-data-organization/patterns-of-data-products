@@ -1,22 +1,20 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — data platform / warehouse facade.
-title: Cell 1.1: Data platform / warehouse facade
+title: 'Cell 1.1: Data platform / warehouse facade'
 tags:
-  - data-product-type
-  - in-brs
-  - out-brs
-  - common
+- data-product-type
+- in-brs
+- out-brs
+- common
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/data-product
----
-# 1.1 — Data platform / warehouse facade
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/data-product
+---# 1.1 — Data platform / warehouse facade
 
 **Interface:** IN `{B, R, S}` → OUT `{B, R, S}`&emsp;&emsp;**Verdict:** common
 

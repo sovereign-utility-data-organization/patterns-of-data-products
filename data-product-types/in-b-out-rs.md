@@ -1,23 +1,21 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via request/response (on-demand query) + streaming (pub/sub feed) — batch → live query + pseudo-events.
-title: Cell 7.4: Batch → live query + pseudo-events
+title: 'Cell 7.4: Batch → live query + pseudo-events'
 tags:
-  - data-product-type
-  - in-b
-  - out-rs
-  - niche
+- data-product-type
+- in-b
+- out-rs
+- niche
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 7.4 — Batch → live query + pseudo-events
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 7.4 — Batch → live query + pseudo-events
 
 **Interface:** IN `{B}` → OUT `{R, S}`&emsp;&emsp;**Verdict:** niche
 

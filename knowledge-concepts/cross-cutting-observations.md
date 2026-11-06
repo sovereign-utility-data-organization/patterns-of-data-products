@@ -1,17 +1,16 @@
 ---
 type: Knowledge Concept
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
-description: Four structural observations about the 49-type space: synthetic-stream family, diagonal pass-throughs, batch-anchored utility core, state vs. stateless products.
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
+description: 'Four structural observations about the 49-type space: synthetic-stream family, diagonal pass-throughs, batch-anchored utility core, state vs. stateless products.'
 title: Cross-cutting observations
 tags:
-  - taxonomy
-  - structure
+- taxonomy
+- structure
 related:
-  - /knowledge-concepts/data-product
-  - /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+- /knowledge-concepts/synthetic-stream
 ---
-
 # Cross-cutting observations
 
 Four patterns that recur across the 7 × 7 space of

@@ -1,23 +1,21 @@
 ---
 type: Data Product Type
-okf_version: "0.1"
-timestamp: 2026-11-06T12:50:00Z
+okf_version: '0.1'
+timestamp: '2026-11-06T12:50:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via streaming (pub/sub feed) — poll-to-stream bridge.
-title: Cell 2.5: Poll-to-stream bridge
+title: 'Cell 2.5: Poll-to-stream bridge'
 tags:
-  - data-product-type
-  - in-br
-  - out-s
-  - niche
+- data-product-type
+- in-br
+- out-s
+- niche
 related:
-
-  - /knowledge-concepts/pattern-batch
-  - /knowledge-concepts/pattern-request-response
-  - /knowledge-concepts/pattern-streaming
-  - /knowledge-concepts/synthetic-stream
-  - /knowledge-concepts/data-product
----
-# 2.5 — Poll-to-stream bridge
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/synthetic-stream
+- /knowledge-concepts/data-product
+---# 2.5 — Poll-to-stream bridge
 
 **Interface:** IN `{B, R}` → OUT `{S}`&emsp;&emsp;**Verdict:** niche
 
