@@ -2,6 +2,18 @@
 
 ## 2026-11-07
 
+Migrated the bundle from the self-hosted Gitea instance to GitHub. It now lives
+at
+<https://github.com/sovereign-utility-data-organization/patterns-of-data-products>
+(public; GitHub repo name `patterns-of-data-products`, local working directory
+still `data-product-classification`). The whole `main` branch and its commit
+history were pushed unchanged — no rewrites, no cherry-picks, no tags introduced.
+`origin` now points at the GitHub repo and the Gitea remote was retired; the
+single-branch-`main` convention is unchanged. `AGENTS.md` "repo conventions"
+updated to name the GitHub home instead of Gitea. Audit clean.
+
+## 2026-11-07
+
 Added an **interface diagram** to each of the 176 new human-pattern cells.
 Each page now embeds a
 `![Interface diagram: IN {IN} to OUT {OUT}](assets/cells/in-…).svg` line

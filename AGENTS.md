@@ -73,4 +73,5 @@ absorbed into the bundle and removed (see `log.md`).
 - Anything named in the catalog (standards, specs, sources) must be real and
   verifiable. If a reference can't be resolved to an actual source, remove it
   — never create placeholder entries.
-- Gitea remote `origin`; single branch `main`.
+- GitHub remote `origin` (org `sovereign-utility-data-organization`, repo
+  `patterns-of-data-products`); single branch `main`.
