@@ -10,15 +10,27 @@ data products on the same underlying data can be fundamentally different
 products depending on how they are exposed (e.g. file download vs. query API
 vs. event stream).
 
+## This repo is an OKF catalog
+
+This repository **is** the catalog — an
+[Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+bundle and the **authoritative source of truth**: markdown concept docs with
+YAML frontmatter, `index.md` section listings, and an update `log.md`.
+Conformance (frontmatter, ISO-8601 timestamps, and every internal link
+resolving to a real doc or section) is enforced by `scripts/okf_audit.py`.
+The bundle is complete and self-contained here, in the repository.
+
 ## Published site
 
-This catalog is also published as a browsable site at
-<https://sovereign-utility-data-organization.github.io/patterns-of-data-products/>.
-Every push to `main` builds and redeploys it via GitHub Actions
-(`.github/workflows/pages.yml`): `scripts/build_site.py` rewrites the canonical
-OKF links to paths a static host resolves, renders each page to HTML, and adds a
-search box. The build is self-contained Python (no Docker/framework); the bundle
-in this repository remains the authoritative, OKF-conformant source.
+The site at <https://sovereign-utility-data-organization.github.io/patterns-of-data-products/>
+is not a second copy — it is **generated from this OKF bundle**. It is a
+derived, read-only artifact that is never hand-edited: every push to `main`
+runs `scripts/build_site.py` via GitHub Actions (`.github/workflows/pages.yml`),
+which **reads the bundle unchanged**, rewrites each bundle-absolute OKF link to
+a path a static host resolves, renders every page to HTML, and adds a global
+search bar. The build is self-contained Python (no Docker or framework) and
+leaves the bundle byte-for-byte intact. So the canonical OKF source stays in
+this repository, and the published site is always a faithful rendering of it.
 
 ## Structure
 
