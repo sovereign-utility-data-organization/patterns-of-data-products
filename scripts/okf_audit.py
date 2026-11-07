@@ -99,9 +99,11 @@ for m in all_md:
             if not os.path.exists(cand):
                 errors.append(f"{m}: broken internal link {link}")
 
-# 3. index entry format: bullets, headings, blank lines only
+# 3. index entry format: bullets, headings, blank lines only (section listings)
+#    The ROOT index.md is the site home page (prose, figures, the full matrix),
+#    not a section listing, so it is exempt from this bullet-only check.
 for m in all_md:
-    if os.path.basename(m) == "index.md":
+    if os.path.basename(m) == "index.md" and m != "index.md":
         for i, line in enumerate(open(m), 1):
             if line.strip() and not line.lstrip().startswith(("#", "*", "-")):
                 warns.append(f"{m}:{i}: non-bullet/non-heading line: {line.strip()[:60]}")

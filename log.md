@@ -2,6 +2,23 @@
 
 ## 2026-11-07
 
+Gave the catalog a proper home page. The root `index.md` was a bare
+three-bullet listing; it is now the entry page of the published site:
+a description of what a data product is and of the interface model (the four
+patterns B/R/S/H, the 15 side states, and why 15 × 15 = 225 types), the
+all-interface figure (`assets/all-possible-interaction-patern-data-product.svg`),
+the full 225-type matrix table (every cell links to its type page), and the
+section listing. The state table and the matrix on the home page are a
+verbatim copy of those in `knowledge-concepts/data-product.md` — keep the
+two in sync when the matrix changes. Because the root `index.md` is a home
+page rather than a section listing, `scripts/okf_audit.py` now exempts it
+from the bullet-only "index entry" rule (section indexes stay checked;
+no-frontmatter and link checks still apply to it). `AGENTS.md` and
+`README.md` document the new role of the home page. Audit and build are
+clean.
+
+## 2026-11-07
+
 Fixed the Pages build that the new license section broke: the README's
 `## License` section links to the repo's `LICENSE` file, but the static
 build only ever copied `assets/` and rendered pages, so the self-validation

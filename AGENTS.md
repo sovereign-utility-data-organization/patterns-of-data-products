@@ -37,7 +37,11 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
 
 ## Layout (what lives where)
 
-- `index.md` — root listing; `log.md` — update log, **newest entry first**
+- `index.md` — the site **home page**: description of the interface model,
+  the all-interface figure, the 15 side states, the full 225-cell matrix
+  (a verbatim copy of the quick map in `knowledge-concepts/data-product.md`
+  — keep the two in sync), and the root listing; `log.md` — update log,
+  **newest entry first**
 - `knowledge-concepts/` — core vocabulary (data product, B/R/S/H patterns,
   synthetic stream, cross-cutting observations, verdict)
 - `data-product-types/` — 225 docs, one per interface cell (15 IN × 15 OUT),
@@ -48,7 +52,9 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
   grid SVG, and per-cell SVGs under `assets/cells/`: the 49 original cells as
   `NNN.svg`, the 176 H-cells as `in-{IN}-out-{OUT}.svg`
 - `AGENTS.md` and `README.md` are meta files exempted from the OKF rules in
-  `scripts/okf_audit.py` — keep that exemption in sync if the audit changes.
+  `scripts/okf_audit.py`; the **root** `index.md` (the site home page) is
+  likewise exempted from the bullet-only "index entry" check but still from
+  the no-frontmatter rule. Keep those exemptions in sync if the audit changes.
 
 Stale references: `README.md` still points at `docs/*` paths; that content was
 absorbed into the bundle and removed (see `log.md`).
@@ -62,9 +68,11 @@ absorbed into the bundle and removed (see `log.md`).
   `/knowledge-concepts/data-product`, or `/data-product-types/` (a directory
   link resolves to that section's `index.md`). Don't use relative links between
   sections.
-- `index.md` files contain only headings and bullet entries (a linked label to
-  an extensionless root path, plus a short description); every concept doc in
-  the section is listed there.
+- **Section** `index.md` files contain only headings and bullet entries (a
+  linked label to an extensionless root path, plus a short description); every
+  concept doc in the section is listed there. The **root** `index.md` is the
+  site home page and is exempt from that bullet-only rule: it may contain
+  prose, figures, and the matrix table (see `scripts/okf_audit.py`).
 - Cell numbering: row = IN, column = OUT; both sides enumerated 1–15 as
   BRS, BR, BS, RS, S, R, B (the 7 machine-only states), then BRSH, BHR, BHS,
   RSH, SH, RH, BH, H (the 8 human states). E.g. `in-rs-out-r` is

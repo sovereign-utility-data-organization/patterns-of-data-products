@@ -41,7 +41,7 @@ bundle: a directory of markdown concept docs with YAML frontmatter,
 
 | Path | Purpose |
 |---|---|
-| `index.md` | Root directory listing (entry point) |
+| `index.md` | Home page (entry point): the interface model, the all-interface figure, the 15 side states, the 225-type matrix, and the section listing |
 | `log.md` | Update log |
 | `knowledge-concepts/` | Core vocabulary: data product, the 4 integration patterns, interface model, human pattern, synthetic stream, cross-cutting observations |
 | `data-product-types/` | The 225 data product types (IN × OUT) — one concept doc each, plus the matrix index |
