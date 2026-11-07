@@ -7,16 +7,18 @@ on GitHub. The problem: OKF internal links are bundle-root-absolute and
 extension-less by design, which an OKF renderer resolves but GitHub (repo view
 *and* a project Pages site) does not, so every cross-page link 404s. The fix
 keeps the bundle strictly conformant and does the translation in a derived
-build. `scripts/build_site.py` (pure standard library) reads the bundle and
-emits a Jekyll project in `site-src/`: it rewrites each internal link to a path
-a static host resolves (relative, `.html`/section `index.html`/asset), adds a
-small layout with a global search bar and a dependency-free JSON search index,
-and self-validates that every rewritten link and search entry resolves.
-`.github/workflows/pages.yml` runs the script and Jekyll in GitHub Actions
-(`jekyll/jekyll:builder`) and deploys to GitHub Pages. `site-src/` and `site/`
-are gitignored build artifacts; the canonical `*.md` and `assets/` are never
-rewritten. `scripts/okf_audit.py` now skips the generated outputs so the
-conformance gate stays clean regardless. `AGENTS.md` and `README.md` document
+build. `scripts/build_site.py` (Python; only dependency is `python-markdown`)
+reads the bundle and writes a **finished** static site to `site/`: it rewrites
+each internal link to a path a static host resolves (relative, `.html`/section
+`index.html`/asset), renders every page to HTML, wraps each in a shared layout
+with a global search bar, and emits a dependency-free JSON search index; it
+self-validates that every link and search URL resolves (exit non-zero otherwise).
+`.github/workflows/pages.yml` builds it in GitHub Actions on a plain
+`ubuntu-latest` runner (checkout, `setup-python`, `pip install markdown`, run the
+script) and deploys to GitHub Pages. No Docker, no framework, no native
+extensions. `site/` is a gitignored build artifact; the canonical `*.md` and
+`assets/` are never rewritten. `scripts/okf_audit.py` skips the generated site so
+the conformance gate stays clean regardless. `AGENTS.md` and `README.md` document
 the pipeline.
 
 ## 2026-11-07

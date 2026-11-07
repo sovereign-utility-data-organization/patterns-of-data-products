@@ -1,14 +1,15 @@
 # Builds the canonical OKF bundle into a static site and deploys it to GitHub Pages.
 #
-#   actions/checkout        -> plain ubuntu runner (no job container)
-#   docker run (Jekyll img) -> scripts/build_site.py (Python) rewrites OKF links to
-#                              relative, resolved paths + adds a search bar/index,
-#                              then Jekyll renders to site/
-#   deploy-pages            -> GitHub Pages
+#   checkout            plain ubuntu runner
+#   setup-python + pip  installs python-markdown (the only dependency)
+#   build_site.py       rewrites OKF links to relative/resolved paths, renders every
+#                       page to HTML, adds nav + a search bar + a search index
+#   deploy-pages        -> GitHub Pages
+#
+# No Docker, no Jekyll, no native extensions: plain Python on a plain runner.
 #
 # REQUIREMENT: repo Settings -> Pages -> "Build and deployment" -> Source must be
-# set to **GitHub Actions** (not "Deploy from a branch"), otherwise the
-# deploy-pages step will be rejected.
+# **GitHub Actions** (not "Deploy from a branch"), otherwise deploy-pages is rejected.
 name: Build and deploy pages
 
 on:
@@ -32,15 +33,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build the site (Jekyll image doing Jekyll build)
-        run: |
-          set -euo pipefail
-          docker run --rm --user 0 \
-            -v "$GITHUB_WORKSPACE:/work" -w /work \
-            jekyll/jekyll:builder \
-            bash -c "command -v python3 >/dev/null 2>&1 || (apt-get update && apt-get install -y --no-install-recommends python3); \
-                     python3 scripts/build_site.py && \
-                     JEKYLL_ENV=production jekyll build --source site-src --destination site"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python3 -m pip install --no-cache-dir markdown
+
+      - name: Build the site
+        run: python3 scripts/build_site.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

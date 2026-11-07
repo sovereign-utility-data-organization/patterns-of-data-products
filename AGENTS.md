@@ -18,22 +18,21 @@ site but treats the bundle as read-only source of truth and never rewrites it.
 ## Publishing (GitHub Pages)
 
 The canonical bundle stays the source of truth and strictly conformant; a
-derived build publishes it to GitHub Pages without ever modifying it. Two new
-parts, both optional to local work (nothing here is a code "build" in the
-conventional sense):
+derived build publishes it to GitHub Pages without ever modifying it. No Docker,
+no framework, no native extensions — just Python (stdlib + `python-markdown`):
 
-- `scripts/build_site.py` — pure standard-library. Reads the bundle and emits a
-  Jekyll project in `site-src/`: rewrites each OKF internal link to a path a
-  static host resolves (relative, `.html`/`index.html`/asset), adds a small
-  layout with a global search bar and a dependency-free JSON search index, and
-  self-validates that every rewritten link resolves. Exit non-zero on any
-  broken link or bad search entry.
-- `.github/workflows/pages.yml` — GitHub Actions. Runs the script in the
-  `jekyll/jekyll:builder` image, builds with Jekyll into `site/`, and deploys to
-  GitHub Pages. Requires the repo's Pages **Source** to be set to
-  **GitHub Actions**. Triggers on push to `main`.
+- `scripts/build_site.py` — reads the bundle and writes a **finished** static
+  site to `site/`: rewrites each OKF internal link to a path a static host
+  resolves (relative, `.html`/section `index.html`/asset), renders every page to
+  HTML, wraps each in a shared layout with a global search bar, and emits a
+  dependency-free JSON search index. Self-validates that every link + search URL
+  resolves; exits non-zero if any do not.
+- `.github/workflows/pages.yml` — GitHub Actions on a plain `ubuntu-latest`
+  runner: checkout, `setup-python`, `pip install markdown`, run the script
+  (→ `site/`), upload the artifact, deploy to GitHub Pages. Triggers on push to
+  `main`. Requires the repo's Pages **Source** to be set to **GitHub Actions**.
 
-`site-src/` and `site/` are build artifacts — gitignored, never committed.
+`site/` is a build artifact — gitignored, never committed.
 
 ## Layout (what lives where)
 

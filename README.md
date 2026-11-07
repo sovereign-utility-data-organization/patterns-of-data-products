@@ -16,9 +16,9 @@ This catalog is also published as a browsable site at
 <https://sovereign-utility-data-organization.github.io/patterns-of-data-products/>.
 Every push to `main` builds and redeploys it via GitHub Actions
 (`.github/workflows/pages.yml`): `scripts/build_site.py` rewrites the canonical
-OKF links to paths a static host resolves, renders each page with Jekyll, and
-adds a search box. The bundle in this repository remains the authoritative,
-OKF-conformant source.
+OKF links to paths a static host resolves, renders each page to HTML, and adds a
+search box. The build is self-contained Python (no Docker/framework); the bundle
+in this repository remains the authoritative, OKF-conformant source.
 
 ## Structure
 
