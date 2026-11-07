@@ -2,6 +2,16 @@
 
 ## 2026-11-07
 
+Removed the opaque full-canvas black background `<rect fill="#000000"/>`
+that the 49 original cell diagrams under `assets/cells/` (the `NNN.svg`
+files) carried in front of their content, so every diagram in the catalog
+now renders on a transparent background and adapts to light or dark page
+themes. The 176 H-cell SVGs and the two interface figures already had no
+background. Only the SVG assets were touched — no content, naming, or
+linking changed.
+
+## 2026-11-07
+
 Corrected two recurring claims in the human-pattern cells. **(1) Synthetic
 stream is defined by event provenance, not by pattern letter.** The rule
 *S in OUT, not in IN ⇒ synthetic* is now a red flag, not the definition: a
