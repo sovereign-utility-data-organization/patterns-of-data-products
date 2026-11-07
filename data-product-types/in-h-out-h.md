@@ -1,9 +1,9 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: Data product ingesting via human and serving via human.
-title: 'Cell 15.15: Human-curated catalog, human read'
+title: 'Cell 15.15: shared record, human in, human out'
 tags:
 - data-product-type
 - in-h
@@ -15,11 +15,11 @@ related:
 - /knowledge-concepts/verdict
 ---
 
-# 15.15 — Human-curated catalog, human read
+# 15.15 — Shared record (human in, human out)
 
 **Interface:** IN {H} → OUT {H}&emsp;&emsp;**Verdict:** plausible
 
-People enter the data (forms, editors, review) and people read the same data back (a report, a screen, a printout). A diagonal cell in the pattern space: the value is a single, shared, human-scale record — not a feed, not an API, not a bulk file. The oldest data product there is: the ledger, the paper filing cabinet, the shared spreadsheet.
+People enter the data (forms, editors, review) and people read the same data back (a report, a screen, a printout). This is the **pre-automation pattern**: the whole interface is person-to-person, no machine mediation on either side — analog in that sense, not in the sense of paper. The oldest data product there is: the ledger and the filing cabinet before automation, the Word document, the shared spreadsheet, and the wiki page today. Every other cell on this row — and most of the matrix — is a growth step out of it.
 
 ![Interface diagram: IN H to OUT H](/assets/cells/in-h-out-h.svg)
 
@@ -31,7 +31,7 @@ The audience is a small group of people who both maintain and read the data — 
 
 - Ingest: **human entry / curation** — data produced by people (forms, editors, review UIs), validated and audit-trailed on every change.
 - Core: a light transform between ingest and serve
-- Serve: a **human-facing surface** (dashboard, report, printout, or review screen) — the layer people actually read.
+- Serve: a **human-facing surface** — the shared document or spreadsheet itself, a report, a screen, a printout — the layer people actually read.
 - State: a durable **state store** and an **audit trail** of human changes.
 
 ## State & cost
@@ -45,11 +45,11 @@ Dominated by the durable state store (grows with entity/state breadth) and the a
 
 ## Typical next step
 
-add a **query API** → cell [15.13](/data-product-types/in-h-out-rh), add a **bulk file** → cell [15.14](/data-product-types/in-h-out-bh), and add a **feed** → cell [15.12](/data-product-types/in-h-out-sh) (a *synthetic* stream, since S is absent from IN); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
+The growth steps are the moment it stops being pre-automation: add a **query API** → cell [15.13](/data-product-types/in-h-out-rh), add a **bulk file** → cell [15.14](/data-product-types/in-h-out-bh), add a **feed** → cell [15.12](/data-product-types/in-h-out-sh) (a real event feed if the actions come through the product's own surface, synthetic only if the product diffs an observed state); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
 
 ## Verdict
 
-**plausible** — a human-curated, human-read record is a completely sensible product; it is kept out of the "common" tier only because real data products rarely serve *only* people once the data grows — a query or a file usually joins.
+**plausible** — the pre-automation record (a person-to-person shared record) is a completely sensible product; it stays out of the "common" tier only because in most organisations it is the *starting* artifact rather than the product — the shared spreadsheet everything else grows out of — and once a consumer appears, a query or a file usually joins.
 
 ## Related
 

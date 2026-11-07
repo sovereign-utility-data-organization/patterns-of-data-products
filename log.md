@@ -2,6 +2,33 @@
 
 ## 2026-11-07
 
+Corrected two recurring claims in the human-pattern cells. **(1) Synthetic
+stream is defined by event provenance, not by pattern letter.** The rule
+*S in OUT, not in IN ⇒ synthetic* is now a red flag, not the definition: a
+stream is synthetic only when the product *manufactures* the events it emits,
+off a state-only source (event time = observation time). A human action
+delivered through the product's own surface — a submission, an approval, an
+entry — is itself a discrete, real event, and relaying such actions as a feed
+is a **trigger-based** stream, not a synthetic one, even though the IN side
+carries no `S`. [synthetic stream](/knowledge-concepts/synthetic-stream) is
+redefined around that distinction, cross-cutting observation #1 softened to
+match, and the classify playbook's pseudo-stream note now asks "how are the
+events made?" before asserting synthesis. All **32 H-in → S-out cells**
+(rows `BHR`, `RH`, `BH`, `H`) now present both shapes — the five contract
+items apply only to the observed-state shape — and 27 "typical next step" feed
+annotations on those rows no longer assert "synthetic, since S is absent
+from IN"; the 9 annotations citing the machine-side family (rows `BR`/`R`/`B`)
+are unchanged, since a state-only source by definition manufactures its feed.
+**(2) Cell 15.15 is named for what it is.** H in → H out is the
+**pre-automation pattern**: a shared record between people, no machine
+mediation on either side — analog in that sense, not in the sense of paper
+(the Word document, the spreadsheet, the wiki page are this cell too). The
+cell's title, intro, and verdict rationale are rewritten to own that framing
+(verdict stays *plausible*), and the cross-cutting observation #5 and the
+type-matrix index entry are updated to match.
+
+## 2026-11-07
+
 Added a **Publishing** pipeline so the catalog is browsable with working links
 on GitHub. The problem: OKF internal links are bundle-root-absolute and
 extension-less by design, which an OKF renderer resolves but GitHub (repo view

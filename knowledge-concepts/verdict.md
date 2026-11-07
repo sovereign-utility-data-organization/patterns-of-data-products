@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T12:50:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: The verdict tag attached to each of the 49 data product types — common, plausible, or niche — and what each means.
 title: Verdict
 tags:
@@ -41,9 +41,10 @@ technically possible (every one of the 49 is technically possible).
 - **Correctness of the contract.** A "common" cell with a wrong as-of
   semantic is still broken.
 - **The synthetic-stream hazard.** A cell whose stream output is not backed by
-  a stream input is always a pseudo-stream — see
-  [synthetic stream](/knowledge-concepts/synthetic-stream). The verdict is
-  independent of that distinction.
+  a stream input is a *synthetic-stream suspect*: pseudo when the source
+  exposes state only (events are manufactured), but a real
+  **trigger-based** feed when a human action delivered through the product's
+  own surface is the event — see [synthetic stream](/knowledge-concepts/synthetic-stream). The verdict is independent of that distinction.
 
 ## Where the verdicts are stored
 

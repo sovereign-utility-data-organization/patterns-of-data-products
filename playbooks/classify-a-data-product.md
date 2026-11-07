@@ -1,7 +1,7 @@
 ---
 type: Playbook
 okf_version: '0.1'
-timestamp: '2026-11-06T12:50:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: Classification procedure — take a real (or proposed) data product and place it on the 7x7 grid of data-product types.
 title: Classify a data product
 tags:
@@ -48,11 +48,13 @@ Ask *what interfaces the product exposes to consumers*:
 
 Write the OUT-set the same way.
 
-> Watch for the **pseudo-stream**: if you put `S` in OUT and it isn't in IN,
-> the product is *synthesising* events from polls/files — see
-> [synthetic stream](/knowledge-concepts/synthetic-stream), and be ready to
-> answer the five contract questions (change semantics, latency,
-> idempotency, backfill, ordering).
+> Watch for the **synthetic-stream red flag**: if `S` lands in OUT and not in
+> IN, ask how the events get made. With a state-only machine source the
+> product is *manufacturing* events off polls/files — see [synthetic stream](/knowledge-concepts/synthetic-stream),
+> and be ready to answer the five contract questions (change semantics,
+> latency, idempotency, backfill, ordering). With a human source acting
+> through the product's own surface, each action is a real event
+> (a **trigger-based** feed) and the contract is the lighter one.
 
 ## 4. Read the cell
 

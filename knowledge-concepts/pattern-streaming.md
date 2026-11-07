@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: The streaming integration pattern (S) — continuous pub/sub push, applied on a product's input side (event consumption) or output side (feed serving).
 title: Streaming integration pattern
 tags:
@@ -41,10 +41,13 @@ cell types `5.1`, `3.3`, …).
 
 ## The catch
 
-If a product serves `S` **without** taking `S` as input, its stream is
-*synthetic* — derived from polls or bulk loads. Such cells need explicit
-change-detection and replay semantics, or they are a *pseudo-stream* —
-see [synthetic stream](/knowledge-concepts/synthetic-stream).
+If a product serves `S` **without** taking `S` as input, that is a
+red flag: the stream is *synthetic* — derived from polls or bulk loads off a
+state-only source — unless the events are **delivered actions** (a human
+acting through the product's own surface), in which case the feed is
+**trigger-based**, i.e. a real event stream. Synthetic cells need explicit
+change-detection and replay semantics — see
+[synthetic stream](/knowledge-concepts/synthetic-stream).
 
 ## Where it appears
 

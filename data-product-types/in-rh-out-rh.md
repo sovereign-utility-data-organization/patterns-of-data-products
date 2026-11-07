@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: Data product ingesting via request/response (on-demand query) + human and serving via request/response (on-demand query) + human.
 title: 'Cell 13.13: API + human → API + human'
 tags:
@@ -46,7 +46,7 @@ Dominated by the durable state store (grows with entity/state breadth) and the a
 
 ## Typical next step
 
-add a **bulk file** → cell [13.9](/data-product-types/in-rh-out-bhr) and add a **feed** → cell [13.11](/data-product-types/in-rh-out-rsh) (a *synthetic* stream, since S is absent from IN); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
+add a **bulk file** → cell [13.9](/data-product-types/in-rh-out-bhr) and add a **feed** → cell [13.11](/data-product-types/in-rh-out-rsh) (synthetic only if the human change is observed state rather than delivered actions — see [synthetic stream](/knowledge-concepts/synthetic-stream)); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
 
 ## Verdict
 

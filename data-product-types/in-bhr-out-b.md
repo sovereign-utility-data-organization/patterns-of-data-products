@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + human and serving via batch (bulk/file).
 title: 'Cell 9.7: file/API + human → batch-only'
 tags:
@@ -47,7 +47,7 @@ Dominated by the durable state store (grows with entity/state breadth), the reta
 
 ## Typical next step
 
-add a **human-facing surface** → cell [9.14](/data-product-types/in-bhr-out-bh), add a **query API** → cell [9.2](/data-product-types/in-bhr-out-br), and add a **feed** → cell [9.3](/data-product-types/in-bhr-out-bs) (a *synthetic* stream, since S is absent from IN); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
+add a **human-facing surface** → cell [9.14](/data-product-types/in-bhr-out-bh), add a **query API** → cell [9.2](/data-product-types/in-bhr-out-br), and add a **feed** → cell [9.3](/data-product-types/in-bhr-out-bs) (synthetic only if the human change is observed state rather than delivered actions — see [synthetic stream](/knowledge-concepts/synthetic-stream)); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
 
 ## Verdict
 

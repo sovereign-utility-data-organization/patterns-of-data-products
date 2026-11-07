@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: A data product is data + contract + interface; classified here by the integration patterns on its input side and output side (4 patterns, 15 states per side, 15 x 15 = 225 types).
 title: Data product
 tags:
@@ -108,5 +108,5 @@ contract, or a pure sink with nothing to serve, has no consumable interface.
 - **The verdict tag** on each type (common / plausible / niche): [verdict](/knowledge-concepts/verdict)
 - **The human pattern (H):** [human](/knowledge-concepts/pattern-human) — the 4th, orthogonal integration layer
 - **How this relates to architecture paradigms** (serverless, event-driven, CQRS, …): [architectural paradigms](/knowledge-concepts/architectural-paradigms)
-- **The pseudo-stream hazard** (stream out from non-stream in): [synthetic stream](/knowledge-concepts/synthetic-stream)
+- **The synthetic-stream hazard** (stream out, no stream in — a red flag; synthetic when events are manufactured off a state-only source, not when a human action is the event): [synthetic stream](/knowledge-concepts/synthetic-stream)
 - **How to classify a real product** into this space: [classify-a-data-product](/playbooks/classify-a-data-product)

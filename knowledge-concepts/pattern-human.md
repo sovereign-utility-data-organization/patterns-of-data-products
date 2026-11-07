@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: The human integration pattern (H) — data produced by people on the input side, and a human-facing surface (report/dashboard/review) on the output side. The fourth pattern, orthogonal to batch, request/response, and streaming.
 title: Human integration pattern
 tags:
@@ -74,7 +74,9 @@ query API over a state store — but the product's reason for existing is that
 
 ## Where it appears
 
-- **Pure human:** cell [15.15](/data-product-types/in-h-out-h) — human in, human out.
+- **Pure human:** cell [15.15](/data-product-types/in-h-out-h) — human in,
+  human out: the pre-automation shared record, the cell every growth path on
+  that row starts from.
 - **Human in** (8 IN-states containing `H`, i.e. cells with rows 8–15): the
   human-curated input side.
 - **Human out** (8 OUT-states containing `H`, i.e. the `.8`–`.15` columns):

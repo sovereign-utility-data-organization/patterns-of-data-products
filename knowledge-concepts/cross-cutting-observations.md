@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-07T09:00:00Z'
 description: 'Five structural observations about the 225-type space: synthetic-stream family, diagonal pass-throughs, batch-anchored utility core, state vs. stateless products, and the human layer.'
 title: Cross-cutting observations
 tags:
@@ -19,14 +19,27 @@ Five patterns that recur across the 15 × 15 space of
 
 ## 1. The synthetic-stream family
 
-Any cell with `S` in **OUT** but not in **IN** —
-[2.1, 2.3, 2.4, 2.5](/data-product-types/), [6.1, 6.3, 6.4, 6.5](/data-product-types/),
-[7.1, 7.3, 7.4, 7.5](/data-product-types/), in the machine-only space — is a
-*pseudo-stream*. The product is computing change-detection on top of a
-non-streaming source. In the human-expanded space the family grows to **56
-cells** (the same rule now also admits `H` on either side). Always document:
-what "change" means, the poll/refresh lag, idempotency, and backfill. See
-[synthetic stream](/knowledge-concepts/synthetic-stream).
+Any cell with `S` in **OUT** but not in **IN** is a
+*synthetic-stream suspect* — **56 cells** in the human-expanded space — and
+the verdict depends on what the IN side is:
+
+- **Machine IN** (rows `BR`, `R`, `B`) — e.g.
+  [2.1, 2.3, 2.4, 2.5](/data-product-types/),
+  [6.1, 6.3, 6.4, 6.5](/data-product-types/),
+  [7.1, 7.3, 7.4, 7.5](/data-product-types/): the source exposes state only,
+  so the feed is **synthetic** — change-detection computed on top of a
+  non-streaming source.
+- **`H` in IN** (rows `BHR`, `RH`, `BH`, `H`; 32 cells) — the flag is
+  *shape-dependent*: synthetic only when the human change reaches the product
+  as **observed state** (edited elsewhere, found by refresh). When the change
+  is an **action** delivered through the product's own surface (submission,
+  approval, entry), each action is a real event and the feed is
+  **trigger-based**, not synthetic. The contract must state which shape it is.
+- **`H` in OUT only** — the source is still the machine state store; the feed
+  is synthetic and the `H` is just the human reader on top of it.
+
+Where synthetic, always document what "change" means, the poll/refresh lag,
+idempotency, and backfill. See [synthetic stream](/knowledge-concepts/synthetic-stream).
 
 ## 2. Diagonal = pass-through
 
@@ -75,8 +88,10 @@ corner:
   *plausible* than common: real, but project-shaped, and it always carries the
   audit-trail and correction cost.
 - The diagonal `H`→`H` cell, [15.15](/data-product-types/in-h-out-h), is the
-  human analogue of the machine pass-throughs: a shared human-scale record —
-  the ledger and the filing cabinet, the oldest data product there is.
+  **pre-automation pattern** — a shared record between people, no machine
+  mediation on either side (not paper): the ledger and the filing cabinet
+  before automation, the Word document, the spreadsheet, and the wiki page
+  today. Every other cell on that row is a growth step out of it.
 
 The verdicts tilt accordingly: human-facing **output** leans *common*,
 human-facing **input** leans *plausible*, and the many-pattern

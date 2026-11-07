@@ -271,4 +271,4 @@
 * [human-only → stream + human](/data-product-types/in-h-out-sh) - Cell 15.12 (H in, S + H out)
 * [human-only → API + human](/data-product-types/in-h-out-rh) - Cell 15.13 (H in, R + H out)
 * [human-only → file + human](/data-product-types/in-h-out-bh) - Cell 15.14 (H in, B + H out)
-* [Human-curated catalog, human read](/data-product-types/in-h-out-h) - Cell 15.15 (H in, H out)
+* [Shared record, human in, human out](/data-product-types/in-h-out-h) - Cell 15.15 (H in, H out)
