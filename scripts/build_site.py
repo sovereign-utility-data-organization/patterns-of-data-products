@@ -17,8 +17,10 @@ bundle and writes a **finished** static site to ``site/``:
     ``index.html``, or an asset) -- so any static host serves it;
   * each markdown page is rendered to HTML with ``python-markdown`` (tables,
     fenced code, heading anchors, sane lists);
-  * a shared layout (navigation + a global, dependency-free search bar) is
-    wrapped around every page, and a JSON search index of every page is emitted.
+  * a shared layout is wrapped around every page: a collapsible sidebar page
+    tree (derived from each section's ``index.md`` so it can never drift from
+    the catalog, with the current page highlighted and its branch auto-opened)
+    plus a global, dependency-free search bar; a JSON search index is emitted.
 
 Only two things are needed at build time: ``python3`` and ``python-markdown``
 (pip). There is no Docker, no Jekyll, no native extension. The canonical ``*.md``
@@ -154,7 +156,101 @@ def iter_pages():
 
 
 # --------------------------------------------------------------------------- #
-# HTML template (shared layout: nav + global search bar)
+# Page tree (sidebar navigation)
+# --------------------------------------------------------------------------- #
+# Sections' index.md files are prose bullets: ``* [label](/target) - desc``.
+# The page tree is derived from them, so it stays in sync with the catalog.
+H2_RE = re.compile(r"^##\s+(.*?)\s*$")
+BULLET_RE = re.compile(r"^\s*[*-]\s+\[([^\]]+)\]\((/[^)\s]+)\)")
+
+
+def index_groups(dir_name: str) -> list:
+    """Parse ``{dir}/index.md`` into ``[(heading: str|None, [(label, target)])]``."""
+    path = os.path.join(ROOT, dir_name, "index.md")
+    if not os.path.exists(path):
+        return []
+    groups = []
+    heading, items = None, []
+    for line in open(path, encoding="utf-8").read().splitlines():
+        m = H2_RE.match(line)
+        if m:
+            if items:
+                groups.append((heading, items))
+            heading, items = m.group(1), []
+            continue
+        b = BULLET_RE.match(line)
+        if b:
+            items.append((b.group(1), b.group(2).lstrip("/")))
+    if items:
+        groups.append((heading, items))
+    return groups
+
+
+def section_h1(dir_name: str) -> str:
+    """The page tree's top-level label for a section (its index.md H1)."""
+    try:
+        for line in open(os.path.join(ROOT, dir_name, "index.md"), encoding="utf-8"):
+            m = re.match(r"^#\s+(.*?)\s*$", line)
+            if m:
+                return m.group(1)
+    except OSError:
+        pass
+    return dir_name.replace("-", " ").title()
+
+
+def render_sidebar(rel: str) -> str:
+    """Collapse the whole catalog into a tree of nested <details> blocks.
+
+    Sections come from the PAGE_DIRS index.md files; their group headings
+    (e.g. the In-state rows of the 225-cell matrix) become nested collapsibles.
+    The section/group containing the current page starts open, the others close.
+    """
+    page_dir = os.path.dirname(rel) or os.curdir
+    current = os.path.splitext(rel)[0] + ".html"
+    current_n = os.path.normpath(current)
+
+    def site_file(target: str) -> str:
+        return target + "index.html" if target.endswith("/") else target + ".html"
+
+    def anchor(label: str, target: str) -> str:
+        cur = ' class="side-current" aria-current="page"' \
+            if os.path.normpath(site_file(target)) == current_n else ""
+        return (f'<a{cur} href="{esc(os.path.relpath(site_file(target), start=page_dir))}">'
+                f"{esc(label)}</a>")
+
+    parts = ['<nav class="side-nav" aria-label="Catalog pages"><ul class="side-list">']
+    parts.append(f'<li>{anchor("Home", "index")}</li>')
+
+    for d in PAGE_DIRS:
+        groups = index_groups(d)
+        if not groups:
+            continue
+        inside = current_n.startswith(d + os.sep)
+        # Small sections start open; the 225-cell matrix only when we're in it.
+        open_attr = " open" if inside or d != "data-product-types" else ""
+        parts.append(f'<li><details class="side-section"{open_attr}>')
+        parts.append(f'<summary>{esc(section_h1(d))}</summary><ul class="side-list">')
+        parts.append(anchor("Index", f"{d}/"))
+        for heading, items in groups:
+            if heading is None or len(items) <= 1:
+                parts.extend(f'<li>{anchor(label, target)}</li>' for label, target in items)
+                continue
+            g_open = " open" if any(os.path.normpath(site_file(t)) == current_n
+                                    for _, t in items) else ""
+            parts.append(f'<li><details class="side-sub"{g_open}>')
+            parts.append(f'<summary>{esc(heading)}</summary><ul class="side-list">')
+            parts.extend(f'<li>{anchor(label, target)}</li>' for label, target in items)
+            parts.append("</ul></details></li>")
+        parts.append("</ul></details></li>")
+
+    parts.append(f'<li>{anchor("Log", "log")}</li>')
+    parts.append(f'<li>{anchor("README", "README")}</li>')
+    parts.append("</ul></nav>")
+    return "\n".join(parts)
+
+
+# --------------------------------------------------------------------------- #
+# HTML template (shared layout: sidebar page tree + global search bar)
 # --------------------------------------------------------------------------- #
 TEMPLATE = """<!doctype html>
 <html lang="en">
@@ -165,26 +261,29 @@ TEMPLATE = """<!doctype html>
 <meta name="description" content="{description}">
 <link rel="stylesheet" href="{base}site.css">
 <script>window.SITE_BASE = "{base}";</script>
+<script src="{base}navigation.js" defer></script>
 <script src="{base}search.js" defer></script>
 </head>
 <body>
 <header class="site-header">
+  <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="sidebar">
+    <span aria-hidden="true">&#8801;</span><span class="nav-toggle-label">Pages</span>
+  </button>
   <a class="brand" href="{base}index.html">{site_title}</a>
   <div class="search" id="search">
     <input id="search-input" type="search" placeholder="Search the catalog&hellip;"
            autocomplete="off" spellcheck="false" aria-label="Search the catalog">
     <ul id="search-results" class="search-results" hidden></ul>
   </div>
-  <nav class="site-nav">
-    <a href="{base}knowledge-concepts/index.html">Concepts</a>
-    <a href="{base}data-product-types/index.html">Types</a>
-    <a href="{base}playbooks/index.html">Playbooks</a>
-    <a href="{base}log.html">Log</a>
-  </nav>
 </header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+{sidebar}
+</aside>
 <main class="page">
 {content}
 </main>
+</div>
 <footer class="site-footer">
   <span class="muted">OKF v0.1 knowledge catalog</span>
   <a href="{base}README.html">README</a>
@@ -213,6 +312,7 @@ def render_page(rel: str, text: str) -> str:
     return TEMPLATE.format(
         base=base, title=title, description=description,
         site_title=esc(SITE_TITLE), source_url=SOURCE_URL, content=html_body,
+        sidebar=render_sidebar(rel),
     )
 
 
@@ -250,6 +350,7 @@ def build():
 
     # 3. Shared assets.
     open(os.path.join(OUT, "site.css"), "w", encoding="utf-8").write(write_css())
+    open(os.path.join(OUT, "navigation.js"), "w", encoding="utf-8").write(write_navigation_js())
     open(os.path.join(OUT, "search.js"), "w", encoding="utf-8").write(write_search_js())
     with open(os.path.join(OUT, "search_index.json"), "w", encoding="utf-8") as fh:
         json.dump(index, fh, ensure_ascii=False, indent=0)
@@ -267,8 +368,7 @@ body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetic
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .site-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:10px 20px;background:#fff;border-bottom:1px solid var(--border)}
 .brand{font-weight:600;color:var(--fg);font-size:15px;white-space:nowrap}
-.site-nav{margin-left:auto;display:flex;gap:14px;font-size:14px}
-.site-nav a{color:var(--muted)}.site-nav a:hover{color:var(--accent)}
+.nav-toggle{display:none;margin-left:-4px;padding:5px 10px;font-size:14px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--fg);cursor:pointer;white-space:nowrap}
 .search{position:relative;display:flex}
 .search input{width:min(340px,60vw);padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:14px;background:#fff}
 .search-results{position:absolute;top:100%;left:0;right:0;margin:4px 0 0;padding:4px;list-style:none;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 24px rgba(140,149,159,.25);max-height:60vh;overflow:auto;z-index:20}
@@ -277,7 +377,19 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .search-results li a strong{font-weight:600}
 .search-results li a span{color:var(--muted);font-size:13px}
 .search-results li.none{color:var(--muted);padding:8px 10px}
-.page{max-width:920px;margin:0 auto;padding:26px 20px 60px}
+.layout{display:flex;align-items:flex-start;max-width:1320px;margin:0 auto}
+.sidebar{flex:0 0 290px;width:290px;position:sticky;top:56px;max-height:calc(100vh - 70px);overflow-y:auto;padding:16px 14px 60px 18px;font-size:14px;border-right:1px solid var(--border)}
+.sidebar ul{list-style:none;margin:0;padding:0}
+.sidebar ul ul{margin:2px 0 8px 10px;padding-left:8px;border-left:1px solid var(--border)}
+.sidebar a{display:block;padding:4px 8px;border-radius:6px;color:var(--muted);text-decoration:none}
+.sidebar a:hover{background:#f1f3f5;color:var(--fg);text-decoration:none}
+.sidebar a.side-current{background:#ddf4ff;color:var(--accent);font-weight:600}
+.sidebar summary{list-style:none;cursor:pointer;font-weight:600;display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;margin:2px 0}
+.sidebar summary:hover{background:#f1f3f5}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary::before{content:"\\25B8";font-size:9px;color:var(--muted);transform-origin:50% 50%}
+.sidebar details[open]>summary::before{transform:rotate(90deg)}
+.page{flex:1 1 auto;min-width:0;max-width:1040px;padding:26px 32px 60px}
 .page h1{font-size:28px;line-height:1.25;margin:.2em 0 .6em}
 .page h2{font-size:22px;margin:1.4em 0 .5em;padding-bottom:.2em;border-bottom:1px solid var(--border)}
 .page h3{font-size:18px;margin:1.2em 0 .4em}
@@ -292,7 +404,43 @@ img{max-width:100%;height:auto}
 .site-footer{max-width:920px;margin:0 auto;padding:20px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .site-footer a{color:var(--muted)}
 .muted{color:var(--muted)}
-@media (max-width:640px){.site-nav{order:3;width:100%}.search{flex:1}.search input{width:100%}}
+@media (max-width:960px){
+.nav-toggle{display:inline-block}
+.layout{display:block}
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:min(330px,86vw);max-height:none;z-index:60;background:#fff;transform:translateX(-102%);transition:transform .16s ease;padding:18px 12px 60px;box-shadow:8px 0 24px rgba(140,149,159,.25)}
+body.sidebar-open .sidebar{transform:translateX(0)}
+body.sidebar-open::after{content:"";position:fixed;inset:0;z-index:55;background:rgba(27,31,36,.35)}
+.page{padding:22px 16px 60px}
+}
+@media (max-width:640px){.search{flex:1}.search input{width:100%}}
+"""
+
+
+def write_navigation_js() -> str:
+    return """(function () {
+  var body = document.body;
+  var toggle = document.getElementById("nav-toggle");
+
+  function setOpen(open) {
+    body.classList.toggle("sidebar-open", !!open);
+    if (toggle) toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      setOpen(!body.classList.contains("sidebar-open"));
+    });
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setOpen(false);
+  });
+  // On small screens, choosing a page closes the sliding panel (the navigation
+  // reloads the page, which restores the default closed state).
+  document.querySelectorAll(".sidebar a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      if (window.matchMedia("(max-width:960px)").matches) setOpen(false);
+    });
+  });
+})();
 """
 
 

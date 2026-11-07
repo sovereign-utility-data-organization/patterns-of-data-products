@@ -2,6 +2,17 @@
 
 ## 2026-11-07
 
+Added a collapsible sidebar page tree to the static site build
+(`scripts/build_site.py`, derived build only — the bundle itself is
+unchanged). The tree is generated from each section's `index.md`
+(Home, Knowledge Concepts, Data Product Types grouped by In-state row,
+Playbooks, plus Log and README), so it can never drift from the catalog.
+The current page is highlighted and its section and row start expanded;
+the other sections start collapsed, and on narrow screens the whole tree
+slides in behind a "Pages" toggle in the header. Rebuilt with
+`python3 scripts/build_site.py` (self-validation passes); the OKF audit
+is clean.
+
 Removed the opaque full-canvas black background `<rect fill="#000000"/>`
 that the 49 original cell diagrams under `assets/cells/` (the `NNN.svg`
 files) carried in front of their content, so every diagram in the catalog
