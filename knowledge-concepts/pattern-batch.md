@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T12:50:00Z'
+timestamp: '2026-11-06T21:15:00Z'
 description: The batch integration pattern (B) — bulk or file data movement on a schedule, applied on a product's input side (ingest) or output side (serving).
 title: Batch integration pattern
 tags:
@@ -11,6 +11,7 @@ related:
 - /knowledge-concepts/data-product
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/pattern-human
 ---
 # Batch pattern (`B`)
 

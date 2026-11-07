@@ -1,0 +1,66 @@
+---
+type: Data Product Type
+okf_version: '0.1'
+timestamp: '2026-11-06T21:15:00Z'
+description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) + human.
+title: 'Cell 4.10: live + lookup → file/stream + human'
+tags:
+- data-product-type
+- in-rs
+- out-bhs
+- common
+related:
+- /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-request-response
+- /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/pattern-human
+- /knowledge-concepts/data-product
+- /knowledge-concepts/verdict
+---
+
+# 4.10 — live + lookup → file/stream + human
+
+**Interface:** IN {R, S} → OUT {B, S, H}&emsp;&emsp;**Verdict:** common
+
+A product that takes on-demand APIs and live streams and serves bulk files, a live feed, and a human-facing surface (dashboard/report). Machine-side inputs ({R, S}) drive it — the multi-surface serves people, not just machines.
+
+![Interface diagram: IN RS to OUT BHS](/assets/cells/in-rs-out-bhs.svg)
+
+## When to use
+
+The data the audience wants is real, but the reader is a person, not a service: they need a report or dashboard over a single leg of upstream APIs and a live feed, not raw events or a bulk drop.
+
+## What's inside
+
+- Ingest: a **poller/connector** over the upstream API (version anchor, pagination, retry) and a **stream consumer** (offsets, replay) for the live leg.
+- Core: a **fold/aggregation core** that folds the live leg into queryable state or windowed files
+- Serve: a **publication job** that materialises bulk artifacts (files/bundles) with a manifest and as-of, a **producer** re-exposing the (transformed) live feed, and a **human-facing surface** (dashboard, report, printout, or review screen) — the layer people actually read.
+- State: a durable **state store**, the **feed log** (retention), and the **retained bulk artifacts**.
+
+## State & cost
+
+Dominated by the durable state store (grows with entity/state breadth), the input and output feed logs, and the retained bulk artifacts.
+
+## Watch out
+
+- A human-facing surface inherits the state behind it: the report/dashboard carries every as-of and correctness rule of the store, and a person spots a stale number faster than an API client will.
+- **Mixed time bases** in the inputs (live vs. poll/cycle/human): fix the authoritative as-of per surface, or each output looks correct alone and wrong cross-checked.
+- Late and out-of-order events are a **first-class** question: a watermark and a re-issue/correction rule, or history gains holes and duplicate facts.
+- This is machine-produced, human-read: make sure a person actually reviews/approves the served view rather than the pipeline writing it straight through.
+
+## Typical next step
+
+add **human curation on the input side** → cell [11.10](/data-product-types/in-rsh-out-bhs) when the data should not be purely machine-fed and add a **query API** → cell [4.8](/data-product-types/in-rs-out-brsh); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
+
+## Verdict
+
+**common** — human-facing output (reports/dashboards) is among the most common ways people actually consume data, and its demand is real where this audience exists.
+
+## Related
+
+* [batch](/knowledge-concepts/pattern-batch)
+* [request/response](/knowledge-concepts/pattern-request-response)
+* [streaming](/knowledge-concepts/pattern-streaming)
+* [human](/knowledge-concepts/pattern-human)
+* [data-product](/knowledge-concepts/data-product) — the overall model
+* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means

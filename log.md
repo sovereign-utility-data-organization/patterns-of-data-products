@@ -1,5 +1,60 @@
 # Update log
 
+## 2026-11-07
+
+Added an **interface diagram** to each of the 176 new human-pattern cells.
+Each page now embeds a
+`![Interface diagram: IN {IN} to OUT {OUT}](assets/cells/in-…).svg` line
+(real links use a leading `/`, e.g. the cell 9.1 figure is
+`/assets/cells/in-bhr-out-brs.svg`) between the intro and `## When to use` —
+the same format and position as the 49 originals. The 176 SVGs are generated
+from the 4-pattern interaction figure by keeping the Data Product box plus the
+**IN-state icons on the left** and the **OUT-state icons on the right** (a
+per-pattern band selection), so each figure shows exactly the patterns present
+on each side of that cell (and only those). They are written to `assets/cells/`
+under the derivable `in-….svg` name, distinct from — and never touching — the
+49 original `NNN.svg`. (The interaction-figure filename this bundle references
+is `all-possible-interaction-patern-data-product.svg`.) The audit now verifies
+these asset links resolve; it still passes clean with 0 errors/warnings.
+
+## 2026-11-06
+
+Added **human (H)** as the fourth integration pattern, orthogonal to
+batch/request-response/streaming, on **both** sides. Each side state is now any
+non-empty subset of `{B, R, S, H}` → 15 states → a **15 × 15 = 225** type space
+(was 7 × 7 = 49). Created all **176 new human-pattern cells** (every IN × OUT
+pair with H on at least one side), each a full reference page: When to use,
+What's inside, State & cost, Watch out, Typical next step (cross-referenced by
+cell number), and a verdict. The original 49 cells keep their historical
+numbering (1–7); the 8 human states are 8–15 (BRSH, BHR, BHS, RSH, SH, RH, BH,
+H). Added a [human pattern](/knowledge-concepts/pattern-human) concept doc and
+re-based the model: [data-product](/knowledge-concepts/data-product) now lists
+4 patterns and the 15 × 15 quick map, [cross-cutting
+observations](/knowledge-concepts/cross-cutting-observations) gains a fifth
+observation (the human layer), and the [synthetic-stream
+family](/knowledge-concepts/synthetic-stream) is re-counted at **56 cells**
+(S in OUT, not IN). The `data-product-types/` index now lists all 225 cells.
+The human-pattern interface figure lives at
+`/assets/all-possible-interaction-patern-data-product.svg`; the 49-cell
+(3-pattern) grid SVG and the 49 original cell pages are unchanged. The
+OKF audit still passes clean.
+
+## 2026-11-06
+
+Elaborated all 49 data-product-type pages from "sparse" to full reference
+pages. Each cell now carries, in addition to its original description,
+when-to-use, and verdict: a **What's inside** note (the durable state and
+serving stacks the cell implies), a **State & cost** note (what the cell stores
+and where its cost lives), and a **Typical next step** (the integration pattern
+most likely added next and the cell that results). The 12 synthetic-stream cells
+(S in OUT, not IN) additionally carry a **Synthetic stream** section fixing the
+five contract items. All new content is grounded in the catalog's own rules and
+references the [cross-cutting observations](/knowledge-concepts/cross-cutting-observations),
+[synthetic stream](/knowledge-concepts/synthetic-stream), and [verdict](/knowledge-concepts/verdict)
+concepts; every existing description, verdict,
+diagram, and Related entry is preserved verbatim. Frontmatter timestamps were
+bumped; the OKF conformance audit still passes clean.
+
 ## 2026-11-06
 
 Restructured the working documents into an OKF v0.1 conformant knowledge

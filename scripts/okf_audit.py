@@ -35,7 +35,7 @@ except ImportError:
 # 1. Frontmatter checks
 for m in all_md:
     text = open(m).read()
-    if m in ("index.md", "log.md", "README.md") or os.path.basename(m) == "index.md":
+    if m in ("index.md", "log.md", "README.md", "AGENTS.md") or os.path.basename(m) == "index.md":
         if text.startswith("---"):
             errors.append(f"{m}: index/log/README must not have frontmatter")
         continue

@@ -12,12 +12,13 @@ vs. event stream).
 
 ## Status
 
-- [x] Interface model settled: 3 integration patterns (batch, request/response,
-      streaming) × input/output side → 7 × 7 = **49 data product types**
-- [x] Full combinatoric space figured (`docs/all-possible-data-product-patterns.svg`)
+- [x] Interface model settled: 4 integration patterns (batch, request/response,
+      streaming, human) × input/output side → 15 states per side →
+      15 × 15 = **225 data product types**
+- [x] Full combinatoric space figured (`assets/all-possible-data-product-patterns.svg`)
 - [x] One description per combination: what it is, when to use it, verdict
       (`docs/options.md`)
-- [ ] Map existing known data products onto the 49 cells
+- [ ] Map existing known data products onto the 225 cells
 - [ ] Classification dimensions (per side and/or per cell)
 - [ ] Formalization (candidate: LinkML / SHACL)
 - [ ] Review and v0.1
@@ -33,10 +34,10 @@ bundle: a directory of markdown concept docs with YAML frontmatter,
 |---|---|
 | `index.md` | Root directory listing (entry point) |
 | `log.md` | Update log |
-| `knowledge-concepts/` | Core vocabulary: data product, the 3 integration patterns, interface model, synthetic stream, cross-cutting observations |
-| `data-product-types/` | The 49 data product types (IN × OUT) — one concept doc each, plus the matrix index |
+| `knowledge-concepts/` | Core vocabulary: data product, the 4 integration patterns, interface model, human pattern, synthetic stream, cross-cutting observations |
+| `data-product-types/` | The 225 data product types (IN × OUT) — one concept doc each, plus the matrix index |
 | `playbooks/` | How to use the catalog (classify a real data product) |
-| `assets/` | The 7 × 7 grid figure |
+| `assets/` | The human-pattern interface figure and the 49-cell (3-pattern) grid figure, plus per-cell diagrams |
 | `scripts/okf_audit.py` | OKF v0.1 conformance audit (frontmatter + cross-link checks); run `python3 scripts/okf_audit.py` |
 
 ## Related work

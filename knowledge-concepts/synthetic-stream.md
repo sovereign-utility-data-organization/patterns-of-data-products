@@ -1,8 +1,8 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T12:50:00Z'
-description: A synthetic (pseudo-)stream — a data product that serves a streaming output without a streaming input, deriving events from polling or batch sources.
+timestamp: '2026-11-06T21:15:00Z'
+description: A synthetic (pseudo-)stream — a data product that serves a streaming output without a streaming input, deriving events from polling, batch, or human-entered sources. In the 4-pattern space this is 56 cells (any S in OUT, not in IN).
 title: Synthetic stream
 tags:
 - streaming
@@ -12,6 +12,7 @@ related:
 - /knowledge-concepts/pattern-streaming
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-batch
+- /knowledge-concepts/pattern-human
 - /knowledge-concepts/data-product
 ---
 # Synthetic stream
@@ -21,7 +22,15 @@ A data product whose **output** side includes streaming (`S`) but whose
 change-detection on top of a non-streaming source (poll-cadence diffs, or
 CDC over a batch-refreshed table) and emits the result as events.
 
-## Affected cells (S in OUT only)
+## Affected cells (S in OUT, not in IN)
+
+In the original three-pattern space this was exactly **12 cells** (the
+machine-only table below). Adding the human pattern, the rule is unchanged —
+*S in the OUT set but not the IN set* — and the family grows to **56 cells**,
+an additional 44 carrying an `H` on at least one side (e.g.
+[15.5](/data-product-types/in-h-out-s), [15.4](/data-product-types/in-h-out-rs),
+[14.5](/data-product-types/in-bh-out-s), [13.5](/data-product-types/in-rh-out-s)).
+The 12 non-H cells:
 
 | Cell | IN → OUT |
 |---|---|

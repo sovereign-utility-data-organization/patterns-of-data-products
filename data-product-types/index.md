@@ -1,73 +1,274 @@
 # Data Product Types
 
-* [data-product](/knowledge-concepts/data-product) - Interface model, side-state table, and the 7 × 7 quick map
+* [data-product](/knowledge-concepts/data-product) - Interface model, the 15 side-states, and the 15 × 15 quick map
+* [pattern-human](/knowledge-concepts/pattern-human) - The human pattern (H): the 4th, orthogonal integration layer
 
-## In = B+R+S
+## In = B + R + S
 
-* [Data platform / warehouse facade](/data-product-types/in-brs-out-brs) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — data platform / warehouse facade
-* [Consolidation hub with API + reports](/data-product-types/in-brs-out-br) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — consolidation hub with api + reports
-* [Hub with live feed + bulk export](/data-product-types/in-brs-out-bs) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — hub with live feed + bulk export
-* [Unified real-time view](/data-product-types/in-brs-out-rs) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — unified real-time view
-* [All-in, single stream](/data-product-types/in-brs-out-s) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — all-in, single stream
-* [Unified query API over messy sources](/data-product-types/in-brs-out-r) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) — unified query api over messy sources
-* [Multi-source ETL feed](/data-product-types/in-brs-out-b) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) — multi-source etl feed
+* [Data platform / warehouse facade](/data-product-types/in-brs-out-brs) - Cell 1.1 (B + R + S in, B + R + S out)
+* [Consolidation hub with API + reports](/data-product-types/in-brs-out-br) - Cell 1.2 (B + R + S in, B + R out)
+* [Hub with live feed + bulk export](/data-product-types/in-brs-out-bs) - Cell 1.3 (B + R + S in, B + S out)
+* [Unified real-time view](/data-product-types/in-brs-out-rs) - Cell 1.4 (B + R + S in, R + S out)
+* [All-in, single stream](/data-product-types/in-brs-out-s) - Cell 1.5 (B + R + S in, S out)
+* [Unified query API over messy sources](/data-product-types/in-brs-out-r) - Cell 1.6 (B + R + S in, R out)
+* [Multi-source ETL feed](/data-product-types/in-brs-out-b) - Cell 1.7 (B + R + S in, B out)
+* [omni-channel → omni-channel + human](/data-product-types/in-brs-out-brsh) - Cell 1.8 (B + R + S in, B + R + S + H out)
+* [omni-channel → file/API + human](/data-product-types/in-brs-out-bhr) - Cell 1.9 (B + R + S in, B + R + H out)
+* [omni-channel → file/stream + human](/data-product-types/in-brs-out-bhs) - Cell 1.10 (B + R + S in, B + S + H out)
+* [omni-channel → API/stream + human](/data-product-types/in-brs-out-rsh) - Cell 1.11 (B + R + S in, R + S + H out)
+* [omni-channel → stream + human](/data-product-types/in-brs-out-sh) - Cell 1.12 (B + R + S in, S + H out)
+* [omni-channel → API + human](/data-product-types/in-brs-out-rh) - Cell 1.13 (B + R + S in, R + H out)
+* [omni-channel → file + human](/data-product-types/in-brs-out-bh) - Cell 1.14 (B + R + S in, B + H out)
+* [omni-channel → human-only](/data-product-types/in-brs-out-h) - Cell 1.15 (B + R + S in, H out)
 
-## In = B+R
+## In = B + R
 
-* [Refreshed model serving all three out](/data-product-types/in-br-out-brs) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — refreshed model serving all three out
-* [Classic data API + file feed](/data-product-types/in-br-out-br) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) — classic data api + file feed
-* [RT + EOD from polled sources](/data-product-types/in-br-out-bs) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + streaming (pub/sub feed) — rt + eod from polled sources
-* [Poll/file-derived live + query](/data-product-types/in-br-out-rs) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via request/response (on-demand query) + streaming (pub/sub feed) — poll/file-derived live + query
-* [Poll-to-stream bridge](/data-product-types/in-br-out-s) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via streaming (pub/sub feed) — poll-to-stream bridge
-* [Upstream facade / proxy API](/data-product-types/in-br-out-r) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via request/response (on-demand query) — upstream facade / proxy api
-* [The classic ETL](/data-product-types/in-br-out-b) - Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) — the classic etl
+* [Refreshed model serving all three out](/data-product-types/in-br-out-brs) - Cell 2.1 (B + R in, B + R + S out)
+* [Classic data API + file feed](/data-product-types/in-br-out-br) - Cell 2.2 (B + R in, B + R out)
+* [RT + EOD from polled sources](/data-product-types/in-br-out-bs) - Cell 2.3 (B + R in, B + S out)
+* [Poll/file-derived live + query](/data-product-types/in-br-out-rs) - Cell 2.4 (B + R in, R + S out)
+* [Poll-to-stream bridge](/data-product-types/in-br-out-s) - Cell 2.5 (B + R in, S out)
+* [Upstream facade / proxy API](/data-product-types/in-br-out-r) - Cell 2.6 (B + R in, R out)
+* [The classic ETL](/data-product-types/in-br-out-b) - Cell 2.7 (B + R in, B out)
+* [query + file → omni-channel + human](/data-product-types/in-br-out-brsh) - Cell 2.8 (B + R in, B + R + S + H out)
+* [query + file → file/API + human](/data-product-types/in-br-out-bhr) - Cell 2.9 (B + R in, B + R + H out)
+* [query + file → file/stream + human](/data-product-types/in-br-out-bhs) - Cell 2.10 (B + R in, B + S + H out)
+* [query + file → API/stream + human](/data-product-types/in-br-out-rsh) - Cell 2.11 (B + R in, R + S + H out)
+* [query + file → stream + human](/data-product-types/in-br-out-sh) - Cell 2.12 (B + R in, S + H out)
+* [query + file → API + human](/data-product-types/in-br-out-rh) - Cell 2.13 (B + R in, R + H out)
+* [query + file → file + human](/data-product-types/in-br-out-bh) - Cell 2.14 (B + R in, B + H out)
+* [query + file → human-only](/data-product-types/in-br-out-h) - Cell 2.15 (B + R in, H out)
 
-## In = B+S
+## In = B + S
 
-* [Event platform with full serving](/data-product-types/in-bs-out-brs) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — event platform with full serving
-* [Smart-meter platform shape](/data-product-types/in-bs-out-br) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — smart-meter platform shape
-* [Hot & cold in → hot & cold out](/data-product-types/in-bs-out-bs) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — hot & cold in → hot & cold out
-* [Event + state query, no files](/data-product-types/in-bs-out-rs) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — event + state query, no files
-* [Stream join / stream enrichment](/data-product-types/in-bs-out-s) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — stream join / stream enrichment
-* [Stream + reference → queryable historian](/data-product-types/in-bs-out-r) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via request/response (on-demand query) — stream + reference → queryable historian
-* [Stream → settlement files](/data-product-types/in-bs-out-b) - Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) — stream → settlement files
+* [Event platform with full serving](/data-product-types/in-bs-out-brs) - Cell 3.1 (B + S in, B + R + S out)
+* [Smart-meter platform shape](/data-product-types/in-bs-out-br) - Cell 3.2 (B + S in, B + R out)
+* [Hot & cold in → hot & cold out](/data-product-types/in-bs-out-bs) - Cell 3.3 (B + S in, B + S out)
+* [Event + state query, no files](/data-product-types/in-bs-out-rs) - Cell 3.4 (B + S in, R + S out)
+* [Stream join / stream enrichment](/data-product-types/in-bs-out-s) - Cell 3.5 (B + S in, S out)
+* [Stream + reference → queryable historian](/data-product-types/in-bs-out-r) - Cell 3.6 (B + S in, R out)
+* [Stream → settlement files](/data-product-types/in-bs-out-b) - Cell 3.7 (B + S in, B out)
+* [hot & cold → omni-channel + human](/data-product-types/in-bs-out-brsh) - Cell 3.8 (B + S in, B + R + S + H out)
+* [hot & cold → file/API + human](/data-product-types/in-bs-out-bhr) - Cell 3.9 (B + S in, B + R + H out)
+* [hot & cold → file/stream + human](/data-product-types/in-bs-out-bhs) - Cell 3.10 (B + S in, B + S + H out)
+* [hot & cold → API/stream + human](/data-product-types/in-bs-out-rsh) - Cell 3.11 (B + S in, R + S + H out)
+* [hot & cold → stream + human](/data-product-types/in-bs-out-sh) - Cell 3.12 (B + S in, S + H out)
+* [hot & cold → API + human](/data-product-types/in-bs-out-rh) - Cell 3.13 (B + S in, R + H out)
+* [hot & cold → file + human](/data-product-types/in-bs-out-bh) - Cell 3.14 (B + S in, B + H out)
+* [hot & cold → human-only](/data-product-types/in-bs-out-h) - Cell 3.15 (B + S in, H out)
 
-## In = R+S
+## In = R + S
 
-* [MDM / integration hub with full out](/data-product-types/in-rs-out-brs) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — mdm / integration hub with full out
-* [Hub facade: stream + API in, API + file out](/data-product-types/in-rs-out-br) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — hub facade: stream + api in, api + file out
-* [Telemetry platform](/data-product-types/in-rs-out-bs) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — telemetry platform
-* [Unified live view](/data-product-types/in-rs-out-rs) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — unified live view
-* [API-backed fan-out stream](/data-product-types/in-rs-out-s) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — api-backed fan-out stream
-* [Event-sourced query service (CQRS)](/data-product-types/in-rs-out-r) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) — event-sourced query service (cqrs)
-* [Live activity → T+1 report/file](/data-product-types/in-rs-out-b) - Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) — live activity → t+1 report/file
+* [MDM / integration hub with full out](/data-product-types/in-rs-out-brs) - Cell 4.1 (R + S in, B + R + S out)
+* [Hub facade: stream + API in, API + file out](/data-product-types/in-rs-out-br) - Cell 4.2 (R + S in, B + R out)
+* [Telemetry platform](/data-product-types/in-rs-out-bs) - Cell 4.3 (R + S in, B + S out)
+* [Unified live view](/data-product-types/in-rs-out-rs) - Cell 4.4 (R + S in, R + S out)
+* [API-backed fan-out stream](/data-product-types/in-rs-out-s) - Cell 4.5 (R + S in, S out)
+* [Event-sourced query service (CQRS)](/data-product-types/in-rs-out-r) - Cell 4.6 (R + S in, R out)
+* [Live activity → T+1 report/file](/data-product-types/in-rs-out-b) - Cell 4.7 (R + S in, B out)
+* [live + lookup → omni-channel + human](/data-product-types/in-rs-out-brsh) - Cell 4.8 (R + S in, B + R + S + H out)
+* [live + lookup → file/API + human](/data-product-types/in-rs-out-bhr) - Cell 4.9 (R + S in, B + R + H out)
+* [live + lookup → file/stream + human](/data-product-types/in-rs-out-bhs) - Cell 4.10 (R + S in, B + S + H out)
+* [live + lookup → API/stream + human](/data-product-types/in-rs-out-rsh) - Cell 4.11 (R + S in, R + S + H out)
+* [live + lookup → stream + human](/data-product-types/in-rs-out-sh) - Cell 4.12 (R + S in, S + H out)
+* [live + lookup → API + human](/data-product-types/in-rs-out-rh) - Cell 4.13 (R + S in, R + H out)
+* [live + lookup → file + human](/data-product-types/in-rs-out-bh) - Cell 4.14 (R + S in, B + H out)
+* [live + lookup → human-only](/data-product-types/in-rs-out-h) - Cell 4.15 (R + S in, H out)
 
 ## In = S
 
-* [Stream processor + full platform](/data-product-types/in-s-out-brs) - Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — stream processor + full platform
-* [Streaming ETL into lake + API](/data-product-types/in-s-out-br) - Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — streaming etl into lake + api
-* [Hot & cold streaming platform](/data-product-types/in-s-out-bs) - Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — hot & cold streaming platform
-* [Event + state, no files](/data-product-types/in-s-out-rs) - Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — event + state, no files
-* [Event transformer / relay](/data-product-types/in-s-out-s) - Data product ingesting via streaming (pub/sub feed) and serving via streaming (pub/sub feed) — event transformer / relay
-* [Event-sourced read model](/data-product-types/in-s-out-r) - Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) — event-sourced read model
-* [Stream → settlement/rollup file](/data-product-types/in-s-out-b) - Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) — stream → settlement/rollup file
+* [Stream processor + full platform](/data-product-types/in-s-out-brs) - Cell 5.1 (S in, B + R + S out)
+* [Streaming ETL into lake + API](/data-product-types/in-s-out-br) - Cell 5.2 (S in, B + R out)
+* [Hot & cold streaming platform](/data-product-types/in-s-out-bs) - Cell 5.3 (S in, B + S out)
+* [Event + state, no files](/data-product-types/in-s-out-rs) - Cell 5.4 (S in, R + S out)
+* [Event transformer / relay](/data-product-types/in-s-out-s) - Cell 5.5 (S in, S out)
+* [Event-sourced read model](/data-product-types/in-s-out-r) - Cell 5.6 (S in, R out)
+* [Stream → settlement/rollup file](/data-product-types/in-s-out-b) - Cell 5.7 (S in, B out)
+* [stream-only → omni-channel + human](/data-product-types/in-s-out-brsh) - Cell 5.8 (S in, B + R + S + H out)
+* [stream-only → file/API + human](/data-product-types/in-s-out-bhr) - Cell 5.9 (S in, B + R + H out)
+* [stream-only → file/stream + human](/data-product-types/in-s-out-bhs) - Cell 5.10 (S in, B + S + H out)
+* [stream-only → API/stream + human](/data-product-types/in-s-out-rsh) - Cell 5.11 (S in, R + S + H out)
+* [stream-only → stream + human](/data-product-types/in-s-out-sh) - Cell 5.12 (S in, S + H out)
+* [stream-only → API + human](/data-product-types/in-s-out-rh) - Cell 5.13 (S in, R + H out)
+* [stream-only → file + human](/data-product-types/in-s-out-bh) - Cell 5.14 (S in, B + H out)
+* [Live feed as a control-room dashboard](/data-product-types/in-s-out-h) - Cell 5.15 (S in, H out)
 
 ## In = R
 
-* [Polling facade with synthetic stream](/data-product-types/in-r-out-brs) - Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — polling facade with synthetic stream
-* [Poll + serve API + files](/data-product-types/in-r-out-br) - Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) — poll + serve api + files
-* [Poller with stream + files](/data-product-types/in-r-out-bs) - Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + streaming (pub/sub feed) — poller with stream + files
-* [Poll-derived live + query](/data-product-types/in-r-out-rs) - Data product ingesting via request/response (on-demand query) and serving via request/response (on-demand query) + streaming (pub/sub feed) — poll-derived live + query
-* [Poller → stream bridge](/data-product-types/in-r-out-s) - Data product ingesting via request/response (on-demand query) and serving via streaming (pub/sub feed) — poller → stream bridge
-* [API proxy / facade](/data-product-types/in-r-out-r) - Data product ingesting via request/response (on-demand query) and serving via request/response (on-demand query) — api proxy / facade
-* [API feed → scheduled file](/data-product-types/in-r-out-b) - Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) — api feed → scheduled file
+* [Polling facade with synthetic stream](/data-product-types/in-r-out-brs) - Cell 6.1 (R in, B + R + S out)
+* [Poll + serve API + files](/data-product-types/in-r-out-br) - Cell 6.2 (R in, B + R out)
+* [Poller with stream + files](/data-product-types/in-r-out-bs) - Cell 6.3 (R in, B + S out)
+* [Poll-derived live + query](/data-product-types/in-r-out-rs) - Cell 6.4 (R in, R + S out)
+* [Poller → stream bridge](/data-product-types/in-r-out-s) - Cell 6.5 (R in, S out)
+* [API proxy / facade](/data-product-types/in-r-out-r) - Cell 6.6 (R in, R out)
+* [API feed → scheduled file](/data-product-types/in-r-out-b) - Cell 6.7 (R in, B out)
+* [request-response-only → omni-channel + human](/data-product-types/in-r-out-brsh) - Cell 6.8 (R in, B + R + S + H out)
+* [request-response-only → file/API + human](/data-product-types/in-r-out-bhr) - Cell 6.9 (R in, B + R + H out)
+* [request-response-only → file/stream + human](/data-product-types/in-r-out-bhs) - Cell 6.10 (R in, B + S + H out)
+* [request-response-only → API/stream + human](/data-product-types/in-r-out-rsh) - Cell 6.11 (R in, R + S + H out)
+* [request-response-only → stream + human](/data-product-types/in-r-out-sh) - Cell 6.12 (R in, S + H out)
+* [request-response-only → API + human](/data-product-types/in-r-out-rh) - Cell 6.13 (R in, R + H out)
+* [request-response-only → file + human](/data-product-types/in-r-out-bh) - Cell 6.14 (R in, B + H out)
+* [request-response-only → human-only](/data-product-types/in-r-out-h) - Cell 6.15 (R in, H out)
 
 ## In = B
 
-* [Batch-loaded platform with all out](/data-product-types/in-b-out-brs) - Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — batch-loaded platform with all out
-* [The classic data warehouse](/data-product-types/in-b-out-br) - Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + request/response (on-demand query) — the classic data warehouse
-* [Batch data, stream + files out](/data-product-types/in-b-out-bs) - Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + streaming (pub/sub feed) — batch data, stream + files out
-* [Batch → live query + pseudo-events](/data-product-types/in-b-out-rs) - Data product ingesting via batch (bulk/file) and serving via request/response (on-demand query) + streaming (pub/sub feed) — batch → live query + pseudo-events
-* [Batch → event feed](/data-product-types/in-b-out-s) - Data product ingesting via batch (bulk/file) and serving via streaming (pub/sub feed) — batch → event feed
-* [The classic "load files, serve API"](/data-product-types/in-b-out-r) - Data product ingesting via batch (bulk/file) and serving via request/response (on-demand query) — the classic "load files, serve api"
-* [The pure ETL file product](/data-product-types/in-b-out-b) - Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) — the pure etl file product
+* [Batch-loaded platform with all out](/data-product-types/in-b-out-brs) - Cell 7.1 (B in, B + R + S out)
+* [The classic data warehouse](/data-product-types/in-b-out-br) - Cell 7.2 (B in, B + R out)
+* [Batch data, stream + files out](/data-product-types/in-b-out-bs) - Cell 7.3 (B in, B + S out)
+* [Batch → live query + pseudo-events](/data-product-types/in-b-out-rs) - Cell 7.4 (B in, R + S out)
+* [Batch → event feed](/data-product-types/in-b-out-s) - Cell 7.5 (B in, S out)
+* [The classic "load files, serve API"](/data-product-types/in-b-out-r) - Cell 7.6 (B in, R out)
+* [The pure ETL file product](/data-product-types/in-b-out-b) - Cell 7.7 (B in, B out)
+* [batch-only → omni-channel + human](/data-product-types/in-b-out-brsh) - Cell 7.8 (B in, B + R + S + H out)
+* [batch-only → file/API + human](/data-product-types/in-b-out-bhr) - Cell 7.9 (B in, B + R + H out)
+* [batch-only → file/stream + human](/data-product-types/in-b-out-bhs) - Cell 7.10 (B in, B + S + H out)
+* [batch-only → API/stream + human](/data-product-types/in-b-out-rsh) - Cell 7.11 (B in, R + S + H out)
+* [batch-only → stream + human](/data-product-types/in-b-out-sh) - Cell 7.12 (B in, S + H out)
+* [batch-only → API + human](/data-product-types/in-b-out-rh) - Cell 7.13 (B in, R + H out)
+* [batch-only → file + human](/data-product-types/in-b-out-bh) - Cell 7.14 (B in, B + H out)
+* [Batch data as a report / dashboard](/data-product-types/in-b-out-h) - Cell 7.15 (B in, H out)
+
+## In = B + R + S + H
+
+* [omni-channel + human → omni-channel](/data-product-types/in-brsh-out-brs) - Cell 8.1 (B + R + S + H in, B + R + S out)
+* [omni-channel + human → query + file](/data-product-types/in-brsh-out-br) - Cell 8.2 (B + R + S + H in, B + R out)
+* [omni-channel + human → hot & cold](/data-product-types/in-brsh-out-bs) - Cell 8.3 (B + R + S + H in, B + S out)
+* [omni-channel + human → live + lookup](/data-product-types/in-brsh-out-rs) - Cell 8.4 (B + R + S + H in, R + S out)
+* [omni-channel + human → stream-only](/data-product-types/in-brsh-out-s) - Cell 8.5 (B + R + S + H in, S out)
+* [omni-channel + human → request-response-only](/data-product-types/in-brsh-out-r) - Cell 8.6 (B + R + S + H in, R out)
+* [omni-channel + human → batch-only](/data-product-types/in-brsh-out-b) - Cell 8.7 (B + R + S + H in, B out)
+* [omni-channel + human → omni-channel + human](/data-product-types/in-brsh-out-brsh) - Cell 8.8 (B + R + S + H in, B + R + S + H out)
+* [omni-channel + human → file/API + human](/data-product-types/in-brsh-out-bhr) - Cell 8.9 (B + R + S + H in, B + R + H out)
+* [omni-channel + human → file/stream + human](/data-product-types/in-brsh-out-bhs) - Cell 8.10 (B + R + S + H in, B + S + H out)
+* [omni-channel + human → API/stream + human](/data-product-types/in-brsh-out-rsh) - Cell 8.11 (B + R + S + H in, R + S + H out)
+* [omni-channel + human → stream + human](/data-product-types/in-brsh-out-sh) - Cell 8.12 (B + R + S + H in, S + H out)
+* [omni-channel + human → API + human](/data-product-types/in-brsh-out-rh) - Cell 8.13 (B + R + S + H in, R + H out)
+* [omni-channel + human → file + human](/data-product-types/in-brsh-out-bh) - Cell 8.14 (B + R + S + H in, B + H out)
+* [Omni-source platform, human read](/data-product-types/in-brsh-out-h) - Cell 8.15 (B + R + S + H in, H out)
+
+## In = B + R + H
+
+* [file/API + human → omni-channel](/data-product-types/in-bhr-out-brs) - Cell 9.1 (B + R + H in, B + R + S out)
+* [file/API + human → query + file](/data-product-types/in-bhr-out-br) - Cell 9.2 (B + R + H in, B + R out)
+* [file/API + human → hot & cold](/data-product-types/in-bhr-out-bs) - Cell 9.3 (B + R + H in, B + S out)
+* [file/API + human → live + lookup](/data-product-types/in-bhr-out-rs) - Cell 9.4 (B + R + H in, R + S out)
+* [file/API + human → stream-only](/data-product-types/in-bhr-out-s) - Cell 9.5 (B + R + H in, S out)
+* [file/API + human → request-response-only](/data-product-types/in-bhr-out-r) - Cell 9.6 (B + R + H in, R out)
+* [file/API + human → batch-only](/data-product-types/in-bhr-out-b) - Cell 9.7 (B + R + H in, B out)
+* [file/API + human → omni-channel + human](/data-product-types/in-bhr-out-brsh) - Cell 9.8 (B + R + H in, B + R + S + H out)
+* [file/API + human → file/API + human](/data-product-types/in-bhr-out-bhr) - Cell 9.9 (B + R + H in, B + R + H out)
+* [file/API + human → file/stream + human](/data-product-types/in-bhr-out-bhs) - Cell 9.10 (B + R + H in, B + S + H out)
+* [file/API + human → API/stream + human](/data-product-types/in-bhr-out-rsh) - Cell 9.11 (B + R + H in, R + S + H out)
+* [file/API + human → stream + human](/data-product-types/in-bhr-out-sh) - Cell 9.12 (B + R + H in, S + H out)
+* [file/API + human → API + human](/data-product-types/in-bhr-out-rh) - Cell 9.13 (B + R + H in, R + H out)
+* [file/API + human → file + human](/data-product-types/in-bhr-out-bh) - Cell 9.14 (B + R + H in, B + H out)
+* [file/API + human → human-only](/data-product-types/in-bhr-out-h) - Cell 9.15 (B + R + H in, H out)
+
+## In = B + S + H
+
+* [file/stream + human → omni-channel](/data-product-types/in-bhs-out-brs) - Cell 10.1 (B + S + H in, B + R + S out)
+* [file/stream + human → query + file](/data-product-types/in-bhs-out-br) - Cell 10.2 (B + S + H in, B + R out)
+* [file/stream + human → hot & cold](/data-product-types/in-bhs-out-bs) - Cell 10.3 (B + S + H in, B + S out)
+* [file/stream + human → live + lookup](/data-product-types/in-bhs-out-rs) - Cell 10.4 (B + S + H in, R + S out)
+* [file/stream + human → stream-only](/data-product-types/in-bhs-out-s) - Cell 10.5 (B + S + H in, S out)
+* [file/stream + human → request-response-only](/data-product-types/in-bhs-out-r) - Cell 10.6 (B + S + H in, R out)
+* [file/stream + human → batch-only](/data-product-types/in-bhs-out-b) - Cell 10.7 (B + S + H in, B out)
+* [file/stream + human → omni-channel + human](/data-product-types/in-bhs-out-brsh) - Cell 10.8 (B + S + H in, B + R + S + H out)
+* [file/stream + human → file/API + human](/data-product-types/in-bhs-out-bhr) - Cell 10.9 (B + S + H in, B + R + H out)
+* [file/stream + human → file/stream + human](/data-product-types/in-bhs-out-bhs) - Cell 10.10 (B + S + H in, B + S + H out)
+* [file/stream + human → API/stream + human](/data-product-types/in-bhs-out-rsh) - Cell 10.11 (B + S + H in, R + S + H out)
+* [file/stream + human → stream + human](/data-product-types/in-bhs-out-sh) - Cell 10.12 (B + S + H in, S + H out)
+* [file/stream + human → API + human](/data-product-types/in-bhs-out-rh) - Cell 10.13 (B + S + H in, R + H out)
+* [file/stream + human → file + human](/data-product-types/in-bhs-out-bh) - Cell 10.14 (B + S + H in, B + H out)
+* [file/stream + human → human-only](/data-product-types/in-bhs-out-h) - Cell 10.15 (B + S + H in, H out)
+
+## In = R + S + H
+
+* [API/stream + human → omni-channel](/data-product-types/in-rsh-out-brs) - Cell 11.1 (R + S + H in, B + R + S out)
+* [API/stream + human → query + file](/data-product-types/in-rsh-out-br) - Cell 11.2 (R + S + H in, B + R out)
+* [API/stream + human → hot & cold](/data-product-types/in-rsh-out-bs) - Cell 11.3 (R + S + H in, B + S out)
+* [API/stream + human → live + lookup](/data-product-types/in-rsh-out-rs) - Cell 11.4 (R + S + H in, R + S out)
+* [API/stream + human → stream-only](/data-product-types/in-rsh-out-s) - Cell 11.5 (R + S + H in, S out)
+* [API/stream + human → request-response-only](/data-product-types/in-rsh-out-r) - Cell 11.6 (R + S + H in, R out)
+* [API/stream + human → batch-only](/data-product-types/in-rsh-out-b) - Cell 11.7 (R + S + H in, B out)
+* [API/stream + human → omni-channel + human](/data-product-types/in-rsh-out-brsh) - Cell 11.8 (R + S + H in, B + R + S + H out)
+* [API/stream + human → file/API + human](/data-product-types/in-rsh-out-bhr) - Cell 11.9 (R + S + H in, B + R + H out)
+* [API/stream + human → file/stream + human](/data-product-types/in-rsh-out-bhs) - Cell 11.10 (R + S + H in, B + S + H out)
+* [API/stream + human → API/stream + human](/data-product-types/in-rsh-out-rsh) - Cell 11.11 (R + S + H in, R + S + H out)
+* [API/stream + human → stream + human](/data-product-types/in-rsh-out-sh) - Cell 11.12 (R + S + H in, S + H out)
+* [API/stream + human → API + human](/data-product-types/in-rsh-out-rh) - Cell 11.13 (R + S + H in, R + H out)
+* [API/stream + human → file + human](/data-product-types/in-rsh-out-bh) - Cell 11.14 (R + S + H in, B + H out)
+* [API/stream + human → human-only](/data-product-types/in-rsh-out-h) - Cell 11.15 (R + S + H in, H out)
+
+## In = S + H
+
+* [stream + human → omni-channel](/data-product-types/in-sh-out-brs) - Cell 12.1 (S + H in, B + R + S out)
+* [stream + human → query + file](/data-product-types/in-sh-out-br) - Cell 12.2 (S + H in, B + R out)
+* [stream + human → hot & cold](/data-product-types/in-sh-out-bs) - Cell 12.3 (S + H in, B + S out)
+* [stream + human → live + lookup](/data-product-types/in-sh-out-rs) - Cell 12.4 (S + H in, R + S out)
+* [stream + human → stream-only](/data-product-types/in-sh-out-s) - Cell 12.5 (S + H in, S out)
+* [stream + human → request-response-only](/data-product-types/in-sh-out-r) - Cell 12.6 (S + H in, R out)
+* [stream + human → batch-only](/data-product-types/in-sh-out-b) - Cell 12.7 (S + H in, B out)
+* [stream + human → omni-channel + human](/data-product-types/in-sh-out-brsh) - Cell 12.8 (S + H in, B + R + S + H out)
+* [stream + human → file/API + human](/data-product-types/in-sh-out-bhr) - Cell 12.9 (S + H in, B + R + H out)
+* [stream + human → file/stream + human](/data-product-types/in-sh-out-bhs) - Cell 12.10 (S + H in, B + S + H out)
+* [stream + human → API/stream + human](/data-product-types/in-sh-out-rsh) - Cell 12.11 (S + H in, R + S + H out)
+* [stream + human → stream + human](/data-product-types/in-sh-out-sh) - Cell 12.12 (S + H in, S + H out)
+* [stream + human → API + human](/data-product-types/in-sh-out-rh) - Cell 12.13 (S + H in, R + H out)
+* [stream + human → file + human](/data-product-types/in-sh-out-bh) - Cell 12.14 (S + H in, B + H out)
+* [stream + human → human-only](/data-product-types/in-sh-out-h) - Cell 12.15 (S + H in, H out)
+
+## In = R + H
+
+* [API + human → omni-channel](/data-product-types/in-rh-out-brs) - Cell 13.1 (R + H in, B + R + S out)
+* [API + human → query + file](/data-product-types/in-rh-out-br) - Cell 13.2 (R + H in, B + R out)
+* [API + human → hot & cold](/data-product-types/in-rh-out-bs) - Cell 13.3 (R + H in, B + S out)
+* [API + human → live + lookup](/data-product-types/in-rh-out-rs) - Cell 13.4 (R + H in, R + S out)
+* [API + human → stream-only](/data-product-types/in-rh-out-s) - Cell 13.5 (R + H in, S out)
+* [API + human → request-response-only](/data-product-types/in-rh-out-r) - Cell 13.6 (R + H in, R out)
+* [API + human → batch-only](/data-product-types/in-rh-out-b) - Cell 13.7 (R + H in, B out)
+* [API + human → omni-channel + human](/data-product-types/in-rh-out-brsh) - Cell 13.8 (R + H in, B + R + S + H out)
+* [API + human → file/API + human](/data-product-types/in-rh-out-bhr) - Cell 13.9 (R + H in, B + R + H out)
+* [API + human → file/stream + human](/data-product-types/in-rh-out-bhs) - Cell 13.10 (R + H in, B + S + H out)
+* [API + human → API/stream + human](/data-product-types/in-rh-out-rsh) - Cell 13.11 (R + H in, R + S + H out)
+* [API + human → stream + human](/data-product-types/in-rh-out-sh) - Cell 13.12 (R + H in, S + H out)
+* [API + human → API + human](/data-product-types/in-rh-out-rh) - Cell 13.13 (R + H in, R + H out)
+* [API + human → file + human](/data-product-types/in-rh-out-bh) - Cell 13.14 (R + H in, B + H out)
+* [API + human → human-only](/data-product-types/in-rh-out-h) - Cell 13.15 (R + H in, H out)
+
+## In = B + H
+
+* [file + human → omni-channel](/data-product-types/in-bh-out-brs) - Cell 14.1 (B + H in, B + R + S out)
+* [file + human → query + file](/data-product-types/in-bh-out-br) - Cell 14.2 (B + H in, B + R out)
+* [file + human → hot & cold](/data-product-types/in-bh-out-bs) - Cell 14.3 (B + H in, B + S out)
+* [file + human → live + lookup](/data-product-types/in-bh-out-rs) - Cell 14.4 (B + H in, R + S out)
+* [file + human → stream-only](/data-product-types/in-bh-out-s) - Cell 14.5 (B + H in, S out)
+* [file + human → request-response-only](/data-product-types/in-bh-out-r) - Cell 14.6 (B + H in, R out)
+* [file + human → batch-only](/data-product-types/in-bh-out-b) - Cell 14.7 (B + H in, B out)
+* [file + human → omni-channel + human](/data-product-types/in-bh-out-brsh) - Cell 14.8 (B + H in, B + R + S + H out)
+* [file + human → file/API + human](/data-product-types/in-bh-out-bhr) - Cell 14.9 (B + H in, B + R + H out)
+* [file + human → file/stream + human](/data-product-types/in-bh-out-bhs) - Cell 14.10 (B + H in, B + S + H out)
+* [file + human → API/stream + human](/data-product-types/in-bh-out-rsh) - Cell 14.11 (B + H in, R + S + H out)
+* [file + human → stream + human](/data-product-types/in-bh-out-sh) - Cell 14.12 (B + H in, S + H out)
+* [file + human → API + human](/data-product-types/in-bh-out-rh) - Cell 14.13 (B + H in, R + H out)
+* [file + human → file + human](/data-product-types/in-bh-out-bh) - Cell 14.14 (B + H in, B + H out)
+* [file + human → human-only](/data-product-types/in-bh-out-h) - Cell 14.15 (B + H in, H out)
+
+## In = H
+
+* [human-only → omni-channel](/data-product-types/in-h-out-brs) - Cell 15.1 (H in, B + R + S out)
+* [human-only → query + file](/data-product-types/in-h-out-br) - Cell 15.2 (H in, B + R out)
+* [human-only → hot & cold](/data-product-types/in-h-out-bs) - Cell 15.3 (H in, B + S out)
+* [human-only → live + lookup](/data-product-types/in-h-out-rs) - Cell 15.4 (H in, R + S out)
+* [human-only → stream-only](/data-product-types/in-h-out-s) - Cell 15.5 (H in, S out)
+* [human-only → request-response-only](/data-product-types/in-h-out-r) - Cell 15.6 (H in, R out)
+* [human-only → batch-only](/data-product-types/in-h-out-b) - Cell 15.7 (H in, B out)
+* [human-only → omni-channel + human](/data-product-types/in-h-out-brsh) - Cell 15.8 (H in, B + R + S + H out)
+* [human-only → file/API + human](/data-product-types/in-h-out-bhr) - Cell 15.9 (H in, B + R + H out)
+* [human-only → file/stream + human](/data-product-types/in-h-out-bhs) - Cell 15.10 (H in, B + S + H out)
+* [human-only → API/stream + human](/data-product-types/in-h-out-rsh) - Cell 15.11 (H in, R + S + H out)
+* [human-only → stream + human](/data-product-types/in-h-out-sh) - Cell 15.12 (H in, S + H out)
+* [human-only → API + human](/data-product-types/in-h-out-rh) - Cell 15.13 (H in, R + H out)
+* [human-only → file + human](/data-product-types/in-h-out-bh) - Cell 15.14 (H in, B + H out)
+* [Human-curated catalog, human read](/data-product-types/in-h-out-h) - Cell 15.15 (H in, H out)

@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T12:50:00Z'
+timestamp: '2026-11-06T21:15:00Z'
 description: The request/response integration pattern (R) — synchronous on-demand query, applied on a product's input side (polling upstream) or output side (API/query serving).
 title: Request/response integration pattern
 tags:
@@ -12,6 +12,7 @@ related:
 - /knowledge-concepts/data-product
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/pattern-human
 - /knowledge-concepts/synthetic-stream
 ---
 # Request/response pattern (`R`)
