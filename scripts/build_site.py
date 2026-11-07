@@ -329,6 +329,11 @@ def build():
     asset_src = os.path.join(ROOT, ASSET_DIR)
     if os.path.isdir(asset_src):
         shutil.copytree(asset_src, os.path.join(OUT, ASSET_DIR))
+    # Root-level static files (the README's License section links to LICENSE).
+    for static in ("LICENSE",):
+        src = os.path.join(ROOT, static)
+        if os.path.isfile(src):
+            shutil.copyfile(src, os.path.join(OUT, static))
 
     # 2. Render every page.
     index = []

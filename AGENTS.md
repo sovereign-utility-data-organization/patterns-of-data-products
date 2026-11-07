@@ -24,9 +24,10 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
 - `scripts/build_site.py` — reads the bundle and writes a **finished** static
   site to `site/`: rewrites each OKF internal link to a path a static host
   resolves (relative, `.html`/section `index.html`/asset), renders every page to
-  HTML, wraps each in a shared layout with a global search bar, and emits a
-  dependency-free JSON search index. Self-validates that every link + search URL
-  resolves; exits non-zero if any do not.
+  HTML, copies root static files (`LICENSE`) to the site root, wraps each page in
+  a shared layout with a global search bar, and emits a dependency-free JSON
+  search index. Self-validates that every link + search URL resolves; exits
+  non-zero if any do not.
 - `.github/workflows/pages.yml` — GitHub Actions on a plain `ubuntu-latest`
   runner: checkout, `setup-python`, `pip install markdown`, run the script
   (→ `site/`), upload the artifact, deploy to GitHub Pages. Triggers on push to

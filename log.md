@@ -2,6 +2,17 @@
 
 ## 2026-11-07
 
+Fixed the Pages build that the new license section broke: the README's
+`## License` section links to the repo's `LICENSE` file, but the static
+build only ever copied `assets/` and rendered pages, so the self-validation
+("every href in the site must resolve to a real file") failed on
+`README.html -> LICENSE`. `scripts/build_site.py` now also copies root
+static files (`LICENSE`) to the site root, so the published site carries
+the license text and the link resolves; `AGENTS.md`'s builder description
+was updated to match. Build and audit are clean.
+
+## 2026-11-07
+
 Licensed the catalog content under Creative Commons
 Attribution-ShareAlike 4.0 International (CC BY-SA 4.0): added a
 `LICENSE` file with the full legal code (recognized by GitHub, so the
