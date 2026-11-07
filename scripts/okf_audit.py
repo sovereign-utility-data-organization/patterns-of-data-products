@@ -8,7 +8,9 @@ errors, warns = [], []
 
 all_md = []
 for dp, dns, fns in os.walk("."):
-    dns[:] = [d for d in dns if d not in (".git", "__pycache__")]
+    # Skip VCS, caches, and the *generated* build outputs (site-src/, site/) --
+    # those are derived artifacts, not part of the canonical OKF bundle.
+    dns[:] = [d for d in dns if d not in (".git", "__pycache__", "site-src", "site")]
     for fn in fns:
         if fn.endswith(".md"):
             all_md.append(os.path.normpath(os.path.join(dp, fn)))

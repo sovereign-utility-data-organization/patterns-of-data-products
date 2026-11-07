@@ -10,18 +10,15 @@ data products on the same underlying data can be fundamentally different
 products depending on how they are exposed (e.g. file download vs. query API
 vs. event stream).
 
-## Status
+## Published site
 
-- [x] Interface model settled: 4 integration patterns (batch, request/response,
-      streaming, human) × input/output side → 15 states per side →
-      15 × 15 = **225 data product types**
-- [x] Full combinatoric space figured (`assets/all-possible-data-product-patterns.svg`)
-- [x] One description per combination: what it is, when to use it, verdict
-      (`docs/options.md`)
-- [ ] Map existing known data products onto the 225 cells
-- [ ] Classification dimensions (per side and/or per cell)
-- [ ] Formalization (candidate: LinkML / SHACL)
-- [ ] Review and v0.1
+This catalog is also published as a browsable site at
+<https://sovereign-utility-data-organization.github.io/patterns-of-data-products/>.
+Every push to `main` builds and redeploys it via GitHub Actions
+(`.github/workflows/pages.yml`): `scripts/build_site.py` rewrites the canonical
+OKF links to paths a static host resolves, renders each page with Jekyll, and
+adds a search box. The bundle in this repository remains the authoritative,
+OKF-conformant source.
 
 ## Structure
 

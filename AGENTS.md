@@ -3,8 +3,9 @@
 This repo is not code. It is a knowledge catalog conforming to
 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md):
 a directory of markdown concept docs with YAML frontmatter, section indexes,
-and an update log. There is no build, test, or CI system — the only executable
-verification is the audit script.
+and an update log. There is no test suite; the local gate is the audit script.
+A **derived** build (see "Publishing") renders this bundle into a GitHub Pages
+site but treats the bundle as read-only source of truth and never rewrites it.
 
 ## Verification
 
@@ -12,7 +13,27 @@ verification is the audit script.
   ERRORs (WARNs are index-style advisories).
 - The audit checks frontmatter fields and format, ISO-8601 `timestamp`, and
   that every internal `/…` link resolves to an existing concept doc or section
-  index.
+  index. It ignores the generated build outputs (`site-src/`, `site/`).
+
+## Publishing (GitHub Pages)
+
+The canonical bundle stays the source of truth and strictly conformant; a
+derived build publishes it to GitHub Pages without ever modifying it. Two new
+parts, both optional to local work (nothing here is a code "build" in the
+conventional sense):
+
+- `scripts/build_site.py` — pure standard-library. Reads the bundle and emits a
+  Jekyll project in `site-src/`: rewrites each OKF internal link to a path a
+  static host resolves (relative, `.html`/`index.html`/asset), adds a small
+  layout with a global search bar and a dependency-free JSON search index, and
+  self-validates that every rewritten link resolves. Exit non-zero on any
+  broken link or bad search entry.
+- `.github/workflows/pages.yml` — GitHub Actions. Runs the script in the
+  `jekyll/jekyll:builder` image, builds with Jekyll into `site/`, and deploys to
+  GitHub Pages. Requires the repo's Pages **Source** to be set to
+  **GitHub Actions**. Triggers on push to `main`.
+
+`site-src/` and `site/` are build artifacts — gitignored, never committed.
 
 ## Layout (what lives where)
 

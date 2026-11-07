@@ -1,0 +1,64 @@
+# Builds the canonical OKF bundle into a static site and deploys it to GitHub Pages.
+#
+#   scripts/build_site.py   -> Jekyll-readable source in site-src/ (links rewritten to
+#                              relative, resolved paths; a search bar + index added)
+#   jekyll build            -> static HTML in site/
+#   deploy-pages            -> GitHub Pages
+#
+# REQUIREMENT: in the repo Settings -> Pages -> "Build and deployment" -> Source,
+# select **GitHub Actions** (not "Deploy from a branch"). This workflow then owns
+# the build and the deployment.
+name: Build and deploy pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: jekyll/jekyll:builder
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure python3 is available
+        run: python3 --version || (apt-get update && apt-get install -y --no-install-recommends python3)
+
+      - name: Generate site source from the OKF bundle
+        run: python3 scripts/build_site.py
+
+      - name: Jekyll version
+        run: jekyll --version
+
+      - name: Build with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: jekyll build --source site-src --destination site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
