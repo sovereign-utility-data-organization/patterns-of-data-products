@@ -1,13 +1,14 @@
 # Builds the canonical OKF bundle into a static site and deploys it to GitHub Pages.
 #
-#   scripts/build_site.py   -> Jekyll-readable source in site-src/ (links rewritten to
-#                              relative, resolved paths; a search bar + index added)
-#   jekyll build            -> static HTML in site/
+#   actions/checkout        -> plain ubuntu runner (no job container)
+#   docker run (Jekyll img) -> scripts/build_site.py (Python) rewrites OKF links to
+#                              relative, resolved paths + adds a search bar/index,
+#                              then Jekyll renders to site/
 #   deploy-pages            -> GitHub Pages
 #
-# REQUIREMENT: in the repo Settings -> Pages -> "Build and deployment" -> Source,
-# select **GitHub Actions** (not "Deploy from a branch"). This workflow then owns
-# the build and the deployment.
+# REQUIREMENT: repo Settings -> Pages -> "Build and deployment" -> Source must be
+# set to **GitHub Actions** (not "Deploy from a branch"), otherwise the
+# deploy-pages step will be rejected.
 name: Build and deploy pages
 
 on:
@@ -27,25 +28,19 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: jekyll/jekyll:builder
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Ensure python3 is available
-        run: python3 --version || (apt-get update && apt-get install -y --no-install-recommends python3)
-
-      - name: Generate site source from the OKF bundle
-        run: python3 scripts/build_site.py
-
-      - name: Jekyll version
-        run: jekyll --version
-
-      - name: Build with Jekyll
-        env:
-          JEKYLL_ENV: production
-        run: jekyll build --source site-src --destination site
+      - name: Build the site (Jekyll image doing Jekyll build)
+        run: |
+          set -euo pipefail
+          docker run --rm --user 0 \
+            -v "$GITHUB_WORKSPACE:/work" -w /work \
+            jekyll/jekyll:builder \
+            bash -c "command -v python3 >/dev/null 2>&1 || (apt-get update && apt-get install -y --no-install-recommends python3); \
+                     python3 scripts/build_site.py && \
+                     JEKYLL_ENV=production jekyll build --source site-src --destination site"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
