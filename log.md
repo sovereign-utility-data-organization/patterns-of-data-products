@@ -2,6 +2,16 @@
 
 ## 2026-11-07
 
+Restored the missing "Data Product" label on the 49 original cell
+diagrams under `assets/cells/` (the `NNN.svg` files), whose center box
+was blank while all 176 H-cell SVGs kept the label. Each label is
+placed at the same position inside the center box and uses the same
+text style and sizing (relative to the box) as the H-cell labels, so
+the two families of diagrams now look uniform. Nothing else in the
+SVGs was changed — names and file references are untouched, the
+`NNN.svg` mapping was not renumbered, and the site build was run
+against the updated assets; the audit is clean.
+
 Added a collapsible sidebar page tree to the static site build
 (`scripts/build_site.py`, derived build only — the bundle itself is
 unchanged). The tree is generated from each section's `index.md`
