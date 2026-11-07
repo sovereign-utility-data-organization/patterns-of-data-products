@@ -59,3 +59,11 @@ bundle: a directory of markdown concept docs with YAML frontmatter,
 
 This is a working repo: push branches, open issues for open questions, keep the
 `docs/classification.md` checklists up to date.
+
+## License
+
+The content of this catalog is licensed under
+[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) —
+see [`LICENSE`](LICENSE). You are free to share and adapt the material; you
+must give appropriate credit, indicate any changes, and distribute your
+contributions under the same license.

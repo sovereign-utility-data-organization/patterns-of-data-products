@@ -2,6 +2,15 @@
 
 ## 2026-11-07
 
+Licensed the catalog content under Creative Commons
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0): added a
+`LICENSE` file with the full legal code (recognized by GitHub, so the
+repo now displays a CC BY-SA 4.0 license chip) and a "License" section
+in `README.md` pointing to it. Derivative works must carry the same
+license; the audit is clean.
+
+## 2026-11-07
+
 Restored the missing "Data Product" label on the 49 original cell
 diagrams under `assets/cells/` (the `NNN.svg` files), whose center box
 was blank while all 176 H-cell SVGs kept the label. Each label is
