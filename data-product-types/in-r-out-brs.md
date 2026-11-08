@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — polling facade with synthetic stream.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Polls upstream, computes deltas, serves file + API + a *synthetic* change stream. A polling facade with all three output surfaces: query API, files, and a synthetic change feed. The heaviest polled-world cell — the feed is the manufactured part."
 example: "The source world is file/API-only and downstream is event-driven."
 altLabel:

@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) — the classic etl.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Files + APIs in → file(s) out. The oldest and most common data product that exists (supplier feeds + master APIs → settlement/report files). Files and an API in, a file out: the classic ETL consolidation. The product merges two reference-world inputs (a batch feed plus a polled or static API) into one canonical artifact."
 example: "The contract with consumers is a file on a schedule."
 altLabel:

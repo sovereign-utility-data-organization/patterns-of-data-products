@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via human and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed).
+timestamp: '2026-11-08T19:52:00Z'
 definition: "A product that takes human-produced data and serves bulk files, a query API, and a live feed. Human-entered data is the source; the product turns what people put in into bulk files, a query API, and a live feed for downstream use."
 example: "Data originates with people (entry, review, curation) rather than a machine source, and the audience needs it as bulk files, a query API, and a live feed — the product is what stands between a person's editing and the consumer."
 altLabel:

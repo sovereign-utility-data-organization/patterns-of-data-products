@@ -2,6 +2,15 @@
 
 ## 2026-11-08
 
+**Consolidated the frontmatter `description` and SKOS `definition`.** The
+OKF spec only *recommends* `description` — `type` is the only always-required
+key — so the redundancy is gone: all 236 concept docs now carry
+`definition` alone, which also serves the role of the OKF-recommended short
+summary (search snippets and previews). The build script now reads
+`definition` for the page `<meta name="description">` tag, the audit
+requires `definition` (no longer `description`) on every concept doc, and
+`AGENTS.md` documents the consolidation.
+
 Added **SKOS metadata** to the frontmatter of all 236 concept documents
 (every doc under [concepts/](/concepts/),
 [data-product-types/](/data-product-types/), and

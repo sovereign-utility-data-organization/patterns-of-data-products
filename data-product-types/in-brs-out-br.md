@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — consolidation hub with api + reports.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Everything ingested (files, APIs, streams); consumers get a clean query API plus scheduled files — no streaming out. The most economical \"good facade\" for pollers and report writers. Everything in; API and files out, no feed: the omni-source hub serving the two quiet surfaces. The product unifies a live feed, a batch leg, and an API reference into one canonical store, exposed as a query and a file."
 example: "No real-time requirement; the need is just one clean API plus one file feed."
 altLabel:

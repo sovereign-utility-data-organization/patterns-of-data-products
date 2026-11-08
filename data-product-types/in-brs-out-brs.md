@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — data platform / warehouse facade.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Ingests from files, on-demand upstreams, and live streams; serves live events, on-demand queries, *and* bulk files. The full data platform (data lakehouse, CDP). The full platform, in every sense: live, batch, and API in; stream, API, and files out. The omni-source, omni-surface data platform — a data lakehouse or CDP at maximum width."
 example: "One organisation must serve many consumer types (BI, API clients, settlement, real-time dashboards) from a consolidated view."
 altLabel:

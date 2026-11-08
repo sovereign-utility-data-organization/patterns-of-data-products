@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via request/response (on-demand query) + streaming (pub/sub feed) — poll/file-derived live + query.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Stream + query API built on polled/file inputs. Files and an API in; query and a change feed out, no files out: the \"live plus lookup\" facade over a reference world. The feed is a synthetic change stream over the refresh; the API is the queryable canonical state."
 example: "A dashboard wants \"live\" data but the only source is scheduled polls (device registries, market pages)."
 altLabel:

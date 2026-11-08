@@ -1,8 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T19:19:00Z'
-description: The streaming integration pattern (S) — continuous pub/sub push, applied on a product's input side (event consumption) or output side (feed serving).
+timestamp: '2026-11-08T19:52:00Z'
 definition: "The streaming integration pattern (S): continuous, push-based movement of an ordered sequence of events or records at the producer's pace - pub/sub - applied on either side of a data product: consuming events on the input side, serving a feed on the output side."
 example: "Consuming meter telemetry on IN; serving an enriched event feed to settlement engines on OUT"
 altLabel:

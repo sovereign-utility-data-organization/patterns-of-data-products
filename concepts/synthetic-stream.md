@@ -1,8 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T19:19:00Z'
-description: A synthetic (pseudo-)stream — a data product that manufactures the events it emits by diffing a state-only source on a refresh cadence. The red flag is S in OUT but not in IN (56 cells); for machine IN sides that is reliable, for H-in sides it applies only to the observed-state shape, not to trigger-based human-action feeds.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "A stream a product manufactures rather than relays: the source exposes state, not events - a batch table, a bulk file, a register or document updated out of band - and the product computes change detection (poll-cadence diffs, or CDC over an observed refresh) and emits the result as events; event time equals observation time, not occurrence time."
 example: "A product polling a state-only API on a cadence and emitting a change-detection feed (cells 2.5, 6.5), or CDC over a batch-refreshed table (cell 7.5)"
 altLabel:

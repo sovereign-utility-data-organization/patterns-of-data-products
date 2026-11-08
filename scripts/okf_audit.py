@@ -54,7 +54,9 @@ for m in all_md:
         except Exception as e:
             errors.append(f"{m}: frontmatter is not valid YAML: {e}")
             fm = {}
-        for req in ("type", "okf_version", "timestamp", "description", "definition"):
+        # description is NOT an OKF requirement (only `type` is) and this
+        # bundle's one-line summary is the SKOS `definition` key.
+        for req in ("type", "okf_version", "timestamp", "definition"):
             if not str(fm.get(req, "")).strip():
                 errors.append(f"{m}: missing required frontmatter field '{req}'")
         if str(fm.get("okf_version", "")).strip() != "0.1":
@@ -74,7 +76,9 @@ for m in all_md:
             km = re.match(r'^([a-zA-Z_]+):\s*(.*)$', line)
             if km and not line.startswith(" "):
                 fm[km.group(1)] = km.group(2)
-        for req in ("type", "okf_version", "timestamp", "description", "definition"):
+        # `definition` (SKOS) is this bundle's one-line summary; `description`
+        # is not an OKF requirement and is intentionally absent.
+        for req in ("type", "okf_version", "timestamp", "definition"):
             if not fm.get(req, "").strip():
                 errors.append(f"{m}: missing required frontmatter field '{req}'")
         if not re.search(r"^example:\s*\S", fm_str, re.M):

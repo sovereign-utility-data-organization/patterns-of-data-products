@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — smart-meter platform shape.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Live meter events + tariff reference (batch) in → reading API + settlement files out. The common utility shape; consumers pull, no pure stream out. A smart-meter platform: live meter stream plus batch tariff in; a readings API plus settlement files out. The product serves online consumers (the API) and bulk consumers (the files) from one metered world."
 example: "Utility/energy domain: metered streams plus reference files, served to both online and bulk consumers."
 altLabel:

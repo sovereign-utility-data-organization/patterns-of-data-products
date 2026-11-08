@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — mdm / integration hub with full out.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Lives entirely on APIs + events; emits files, streams, and APIs — including bulk exports built from incremental change logs. The full MDM / integration hub: events and APIs in; files, stream, and API out. The feed-out is the interesting surface — it is a change feed derived from the hub's state, not a pass-through of the input stream."
 example: "The product is the \"system-of-record glue\" (master data hub, order hub)."
 altLabel:

@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) — multi-source etl feed.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Everything in, one file out — the consolidation layer with a single publication surface (settlement or reporting bundle). Everything in, one file out: the consolidation platform with a single surface. The product unifies a live feed, a batch leg, and an API reference into one canonical artifact — the omni-source ETL."
 example: "The consumer-side contract is file delivery; very common in utility settlement (meter events + tariff APIs + reference files in, one settlement file out)."
 altLabel:

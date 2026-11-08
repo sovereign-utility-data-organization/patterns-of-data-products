@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) — event-sourced read model.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Events in → state out via API (order status, device state, meter state APIs). A special case of the \"stream → lake + API\" type without the file side. The canonical event-sourcing / CQRS read side: events in, a queryable read model out. The product is the read model and the API over it — the write side is upstream, not the product."
 example: "Consumers don't want to consume a stream; they want the answer."
 altLabel:

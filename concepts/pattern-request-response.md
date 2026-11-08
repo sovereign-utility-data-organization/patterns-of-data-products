@@ -1,8 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T19:19:00Z'
-description: The request/response integration pattern (R) — synchronous on-demand query, applied on a product's input side (polling upstream) or output side (API/query serving).
+timestamp: '2026-11-08T19:52:00Z'
 definition: "The request/response integration pattern (R): synchronous, on-demand data access - the consumer asks, the product answers - applied on either side of a data product: polling upstream on the input side, query serving on the output side."
 example: "Polling a device registry on IN; an order-status API over order events and master-data APIs on OUT"
 altLabel:

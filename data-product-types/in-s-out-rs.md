@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — event + state, no files.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Stream in → event feed + state API; no bulk out (archival handled off-product). A live platform over a stream: a queryable state and a re-exposed feed, but no files. The \"no files\" cut is the defining trait — archival is handled elsewhere (or not at all)."
 example: "All consumers are online and archival is a separate product's job."
 altLabel:

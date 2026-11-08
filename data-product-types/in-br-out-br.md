@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) — classic data api + file feed.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "The bread and butter: refresh from feeds and APIs, serve a clean API plus daily bundles (a weather/price API that also serves files). Files and an API in; API and files out: the refreshed hub of the reference world. The product is a canonical store refreshed from two inputs, serving both an online query and a bulk file."
 example: "Consumers are a mix of online pollers and ETL consumers; no live requirement."
 altLabel:

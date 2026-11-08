@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) — api feed → scheduled file.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Poll from upstream, publish a file. The classic fetch-and-drop integration (supplier portal API → settlement file; tariff API → rate-table file). Poll an upstream, publish a file: the classic \"fetch and drop\" integration. A fetch-and-drop bridge — its value is completeness and schedule, not computation."
 example: "The contract is file-based delivery; the source is API-based."
 altLabel:

@@ -63,15 +63,22 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
 ## Format rules (enforced by the audit)
 
 - Every concept doc has YAML frontmatter: `type`, `okf_version: '0.1'`,
-  `timestamp` (ISO 8601; bump it when editing), `description`. House style
-  (not audit-enforced, but every doc has them): `title`, `tags`, `related`
-  (a list of extensionless root paths).
+  `timestamp` (ISO 8601; bump it when editing), and the SKOS metadata below
+  (`definition`, `example`, `altLabel`). House style (not audit-enforced,
+  but every doc has them): `title`, `tags`, `related` (a list of
+  extensionless root paths). There is **no `description` key**: the OKF
+  spec only *recommends* it, and the SKOS `definition` already carries the
+  one-line summary — adding `description` would duplicate it.
 - **SKOS metadata** (audit-enforced; OKF explicitly allows producer-defined
   keys): every concept doc carries a small set of W3C
   [SKOS-core](https://www.w3.org/TR/skos-primer/) properties as flat YAML
   keys, using the SKOS local names verbatim:
   - `definition` ≙ `skos:definition` — the formal one-sentence definition of
-    the concept (for the cells: the "what it is" paragraph of the body)
+    the concept (for the cells: the "what it is" paragraph of the body).
+    This also serves the role of the OKF-recommended `description` (the
+    short summary used for search snippets and previews — the build script
+    reads it for the page `<meta name="description">` tag); never add a
+    separate `description` key
   - `example` ≙ `skos:example` — a concrete instance or use (scalar; a list
     only for multiple), grounded in the doc's own *When to use* text
   - `altLabel` ≙ `skos:altLabel` — a **non-empty list** of alternate surface

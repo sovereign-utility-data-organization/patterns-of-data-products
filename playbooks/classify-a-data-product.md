@@ -1,8 +1,7 @@
 ---
 type: Playbook
 okf_version: '0.1'
-timestamp: '2026-11-08T19:19:00Z'
-description: Classification procedure — take a real (or proposed) data product and place it on the 15×15 grid of data-product types (225 types).
+timestamp: '2026-11-08T19:52:00Z'
 definition: "The procedure for placing a real or proposed data product on the 15x15 grid: fix the boundaries (data, owner, consumers), read the input and output sides as one of the 15 side-states each, open the resulting cell, and record the instance with its contract semantics."
 example: "A product that polls a state-only register on a cadence and serves a change-detection feed: IN R, OUT S - cell 6.5, and the synthetic-stream contract questions (change semantics, latency, idempotency, backfill, ordering) apply"
 altLabel:

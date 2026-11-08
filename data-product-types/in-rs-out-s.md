@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — api-backed fan-out stream.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Changes (computed from event + API state) fanned out as one stream. An API-backed fan-out stream: events and an API in, one derived stream out. The product's whole surface is the change feed — it is a fusion engine whose output is a single ordered stream of what changed."
 example: "Downstream is stream-first; the stream *is* the product."
 altLabel:

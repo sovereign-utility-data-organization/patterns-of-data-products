@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + streaming (pub/sub feed) — poller with stream + files.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "API in, stream out (synthetic) + files out — a bridge from a polled world into a streaming world plus an archival file set. Poller with a synthetic feed and file publication, but no strong query surface: a bridge from a polled world into a streaming one, with an archive tail. The feed is the product's centre of gravity."
 example: "Downstream wants push and archives; source is poll-only."
 altLabel:

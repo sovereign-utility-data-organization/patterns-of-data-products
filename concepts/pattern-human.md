@@ -1,8 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T19:19:00Z'
-description: The human integration pattern (H) — data produced by people on the input side, and a human-facing surface (report/dashboard/review) on the output side. The fourth pattern, orthogonal to batch, request/response, and streaming.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "The human integration pattern (H): data movement mediated by a person - data produced by people (manual entry, review, curation) on the input side, and a human-facing surface (report, dashboard, review) on the output side; the fourth pattern, orthogonal to B, R, and S, layered on (or standing alone from) the machine patterns."
 example: "A shared approval ledger read back as a sign-off dashboard - H in, H out - cell 15.15, the pre-automation pattern"
 altLabel:

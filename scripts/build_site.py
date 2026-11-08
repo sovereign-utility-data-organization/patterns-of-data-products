@@ -88,7 +88,7 @@ def rewrite_links(text: str, source_dir: str) -> str:
 
 def split_frontmatter(text: str):
     """Return (fm: dict, body: str). Handles the flat scalar keys we care about
-    (title, description); list fields are ignored (not needed for rendering)."""
+    (title, definition); list fields are ignored (not needed for rendering)."""
     if not text.startswith("---\n"):
         return {}, text
     end = text.find("\n---", 4)
@@ -309,7 +309,10 @@ def render_page(rel: str, text: str) -> str:
     body = rewrite_links(body, source_dir)
     html_body = markdown.markdown(body, extensions=MD_EXTENSIONS)
     title = esc(pick_title(fm, body, rel))
-    description = esc(fm.get("description") or SITE_DESC)
+    # The SKOS `definition` is the one-line summary of each concept; `description`
+    # is kept as a legacy fallback only (OKF does not require it and this bundle
+    # no longer uses the key).
+    description = esc(fm.get("definition") or fm.get("description") or SITE_DESC)
     return TEMPLATE.format(
         base=base, title=title, description=description,
         site_title=esc(SITE_TITLE), source_url=SOURCE_URL, content=html_body,

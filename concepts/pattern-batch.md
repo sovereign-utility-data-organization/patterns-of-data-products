@@ -1,8 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T19:19:00Z'
-description: The batch integration pattern (B) — bulk or file data movement on a schedule, applied on a product's input side (ingest) or output side (serving).
+timestamp: '2026-11-08T19:52:00Z'
 definition: "The batch integration pattern (B): bulk, file-oriented data movement driven by a schedule or an explicit delivery event, applied on either side of a data product - periodic bulk loads on the input side, bulk artifacts served on the output side."
 example: "A nightly warehouse load from EOD market files on IN; a settlement file published to consumers on OUT"
 altLabel:

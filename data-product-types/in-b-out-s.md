@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) and serving via streaming (pub/sub feed) — batch → event feed.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Turn a daily bulk load into a stream of events (snapshots → deltas) — a *replay* product. The purest synthetic-stream cell over a batch source: files in, a change feed out, and nothing else. The product's entire value is the feed — and the feed is manufactured, not received."
 example: "Downstream is a pure event world and the source is a legacy batch world."
 altLabel:

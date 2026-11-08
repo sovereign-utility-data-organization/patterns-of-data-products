@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — hot & cold in → hot & cold out.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Pass-through streaming platform: events stay events; bulk in merges in or becomes bulk out (e.g., Kafka mirror + S3 archive service). Hot-and-cold in, hot-and-cold out: the pass-through streaming platform. Events plus batch in; a stream and files out — the product routes, mirrors, and archives rather than transforming semantics. A diagonal cell in pattern space."
 example: "Kafka mirror + S3 archive service"
 altLabel:

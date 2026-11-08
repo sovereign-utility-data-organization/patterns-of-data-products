@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) — poll + serve api + files.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "A refreshed service: polls upstream, exposes a cleaner API, and also emits periodic full-load files (supplier meter API → reading API + daily snapshot files). Poll a source, serve both a query API and periodic files: the refreshed-state cell of the polled world. The state store serves two surfaces — the freshest one (API) and the complete one (files)."
 example: "Consumers are a mix of online pollers + ETL consumers, and the upstream is API-only."
 altLabel:

@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via streaming (pub/sub feed) and serving via streaming (pub/sub feed) — event transformer / relay.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "A pure stream-to-stream product: filter, route, enrich, project (topic in → topics out). The value is the transformation, not the serving. The purest stateless cell in the space: a stream in, a stream out. Filter, route, enrich, project — the value is the transformation itself, and the product is cheap because it holds nothing."
 example: "Consumers need a *derived* topic and the product can be stateless by nature."
 altLabel:

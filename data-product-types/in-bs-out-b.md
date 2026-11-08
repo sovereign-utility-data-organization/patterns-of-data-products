@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) — stream → settlement files.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Real-time metered events + reference data in → daily settlement file out. The heart of many utility settlement engines. Real-time events plus batch reference in, a settlement file out: the settlement engine of the utility/energy world. The product's identity is a settlement window fed by a live meter stream and a batch tariff."
 example: "The market contract is file-based (day-ahead / imbalance settlement) but the data is inherently streaming."
 altLabel:

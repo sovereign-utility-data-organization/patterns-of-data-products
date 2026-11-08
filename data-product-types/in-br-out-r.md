@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via request/response (on-demand query) — upstream facade / proxy api.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Polled from upstream, served as one cleaner API. Value = schema/semantics + caching, not transformation volume (e.g., a tariff API over supplier web services + rate tables). Files and an API in, one clean API out: the normalization facade over a mixed reference source. A diagonal cell in the IN/OUT pattern space — the value is a single canonical, queryable surface over two reference inputs."
 example: "a tariff API over supplier web services + rate tables"
 altLabel:

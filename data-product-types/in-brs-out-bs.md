@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — hub with live feed + bulk export.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Consolidated source data exposed as a continuous stream and as bulk archives (e.g., an enterprise event spine with S3 archive). Everything in; stream and files out, no strong query surface: the omni-source event platform with an archive tail. The live feed is the hot surface, the files the cold one, and the three inputs (live, batch, API) feed both."
 example: "an enterprise event spine with S3 archive"
 altLabel:

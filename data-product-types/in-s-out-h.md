@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via streaming (pub/sub feed) and serving via human.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "A live event feed folded into the state people watch: the control room, the operations dashboard, the live status wall. The stream is the input; the human surface is the product. It is 'the wall that must be right right now'."
 example: "Operators need to see live state as it changes — metering, fleet, market, device — and the audience is people on a screen, not machines."
 altLabel:

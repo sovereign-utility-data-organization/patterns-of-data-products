@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) — live activity → t+1 report/file.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Consumes live events + APIs, publishes a file once a day (activity report, usage file, billing input). Live activity in (events plus a reference API), a T+1 report or file out: the settlement/report bridge over a live source. The product's identity is a reporting window with a live feed behind it."
 example: "The contract is a file but the data is inherently live."
 altLabel:

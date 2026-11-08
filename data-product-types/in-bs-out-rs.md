@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — event + state query, no files.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "Live events and on-demand state queries; no bulk serving. Live events plus batch reference in; query and feed out, no files. The online version of the historian with a live facet — a \"current state plus stream of changes\" over a metered world, deliberately without bulk."
 example: "Consumers are online and bulk export is a different product's job."
 altLabel:

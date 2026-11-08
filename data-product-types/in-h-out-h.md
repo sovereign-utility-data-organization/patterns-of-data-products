@@ -1,8 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T19:24:00Z'
-description: Data product ingesting via human and serving via human.
+timestamp: '2026-11-08T19:52:00Z'
 definition: "People enter the data (forms, editors, review) and people read the same data back (a report, a screen, a printout). This is the **pre-automation pattern**: the whole interface is person-to-person, no machine mediation on either side — analog in that sense, not in the sense of paper. The oldest data product there is: the ledger and the filing cabinet before automation, the Word document, the shared spreadsheet, and the wiki page today. Every other cell on this row — and most of the matrix — is a growth step out of it."
 example: "The audience is a small group of people who both maintain and read the data — a team tracker, a manual register, an approval log — with no machine consumer at all."
 altLabel:
