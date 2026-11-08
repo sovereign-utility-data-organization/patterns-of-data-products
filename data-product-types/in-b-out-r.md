@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via request/response (on-demand query) — the classic "load files, serve api".
+definition: "Files in → one clean API out (nightly price/tariff files → price/tariff API). The most common single-pattern data product in regulated/utility domains. The classic \"load files, serve API\" product: a durable state store with a query API as its only surface. Off-diagonal, and usually the first data product an organisation builds over counterparty files."
+example: "Upstream is file-based, consumers are online."
+altLabel:
+- "B → R"
+- "Cell 7.6"
+- "The classic \"load files, serve API\""
 title: 'Cell 7.6: The classic "load files, serve API"'
 tags:
 - data-product-type

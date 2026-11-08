@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) + human and serving via batch (bulk/file) + request/response (on-demand query).
+definition: "A product that takes files (batch), on-demand APIs, live streams, and human-produced data and serves bulk files and a query API. Human-entered data is one leg of the source, alongside files, upstream APIs, and live streams; the product carries that mix through to bulk files and a query API."
+example: "The data is partly human-curated, alongside files, upstream APIs, and live streams, and the audience needs it as bulk files and a query API — the product is the layer between a person's editing and the consumer."
+altLabel:
+- "BRSH → BR"
+- "Cell 8.2"
+- "omni-channel + human → query + file"
 title: 'Cell 8.2: omni-channel + human → query + file'
 tags:
 - data-product-type

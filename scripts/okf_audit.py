@@ -54,20 +54,33 @@ for m in all_md:
         except Exception as e:
             errors.append(f"{m}: frontmatter is not valid YAML: {e}")
             fm = {}
-        for req in ("type", "okf_version", "timestamp", "description"):
+        for req in ("type", "okf_version", "timestamp", "description", "definition"):
             if not str(fm.get(req, "")).strip():
                 errors.append(f"{m}: missing required frontmatter field '{req}'")
         if str(fm.get("okf_version", "")).strip() != "0.1":
             errors.append(f"{m}: okf_version must be \"0.1\", got {fm.get('okf_version')!r}")
+        # SKOS metadata (house convention, see AGENTS.md): skos:example may be
+        # a scalar or a list; skos:altLabel must be a non-empty list.
+        ex = fm.get("example")
+        if not (isinstance(ex, list) and ex and all(str(x).strip() for x in ex)
+                or isinstance(ex, str) and ex.strip()):
+            errors.append(f"{m}: missing or invalid SKOS 'example' frontmatter field")
+        al = fm.get("altLabel")
+        if not (isinstance(al, list) and al and all(str(x).strip() for x in al)):
+            errors.append(f"{m}: missing or invalid SKOS 'altLabel' frontmatter field (non-empty list)")
     else:
         fm = {}
         for line in fm_str.splitlines():
             km = re.match(r'^([a-zA-Z_]+):\s*(.*)$', line)
             if km and not line.startswith(" "):
                 fm[km.group(1)] = km.group(2)
-        for req in ("type", "okf_version", "timestamp", "description"):
+        for req in ("type", "okf_version", "timestamp", "description", "definition"):
             if not fm.get(req, "").strip():
                 errors.append(f"{m}: missing required frontmatter field '{req}'")
+        if not re.search(r"^example:\s*\S", fm_str, re.M):
+            errors.append(f"{m}: missing required SKOS 'example' frontmatter field")
+        if not re.search(r"^altLabel:\s*\n((?:-[^\n]*\n?)+)", fm_str, re.M):
+            errors.append(f"{m}: missing required SKOS 'altLabel' frontmatter field (non-empty list)")
     ts = fm.get("timestamp", "").strip().strip('"')
     if ts:
         ok = False
@@ -84,20 +97,36 @@ for m in all_md:
         if not ok:
             errors.append(f"{m}: timestamp {ts!r} is not ISO 8601")
 
-# 2. Cross-link checks: every (/...) link is bundle-ROOT-relative; resolve from cwd (= bundle root)
+# 2. Cross-link checks: every (/...) link is bundle-ROOT-relative; resolve from cwd (= bundle root).
+#    Includes both markdown links `](/…)` and the `related:` frontmatter list.
 link_re = re.compile(r'\]\((/[^)#\s]+)\)')
+related_targets = []   # (file, target)
 for m in all_md:
-    for link in link_re.findall(open(m).read()):
-        raw = link.lstrip("/").rstrip("/")
-        if raw.endswith((".svg", ".png", ".jpg", ".toml", ".yaml")):
-            if not os.path.exists(raw):
-                errors.append(f"{m}: broken asset link {link}")
-            continue
-        cand = raw if raw.endswith(".md") else raw + ".md"
+    text = open(m).read()
+    for link in link_re.findall(text):
+        related_targets.append((m, link))
+    if text.startswith("---\n"):
+        end = text.find("\n---", 4)
+        fm_str = text[4:end] if end != -1 else None
+        if fm_str and re.search(r"^related:\s*$", fm_str, re.M):
+            block = re.search(r"^related:\s*\n((?:-[^\n]*\n?)+)", fm_str, re.M)
+            if block:
+                for line in block.group(1).splitlines():
+                    pm = re.match(r"^-\s*(/\S+)", line)
+                    if pm:
+                        related_targets.append((m, pm.group(1)))
+
+for m, target in related_targets:
+    raw = target.lstrip("/").rstrip("/")
+    if raw.endswith((".svg", ".png", ".jpg", ".toml", ".yaml")):
+        if not os.path.exists(raw):
+            errors.append(f"{m}: broken asset link {target}")
+        continue
+    cand = raw if raw.endswith(".md") else raw + ".md"
+    if not os.path.exists(cand):
+        cand = raw + "/index.md"
         if not os.path.exists(cand):
-            cand = raw + "/index.md"
-            if not os.path.exists(cand):
-                errors.append(f"{m}: broken internal link {link}")
+            errors.append(f"{m}: broken internal link {target}")
 
 # 3. index entry format: bullets, headings, blank lines only (section listings)
 #    The ROOT index.md is the site home page (prose, figures, the full matrix),

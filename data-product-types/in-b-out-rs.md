@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via request/response (on-demand query) + streaming (pub/sub feed) — batch → live query + pseudo-events.
+definition: "Serve \"live\" over a nightly refresh: events (synthetic) + query API from batch inputs. A \"near-real-time\" facade over a batch source: a query API plus a synthetic change feed, both derived from the refresh. Both surfaces are as live as the load cycle allows."
+example: "Consumers are online and events-only; the source is batch."
+altLabel:
+- "B → RS"
+- "Cell 7.4"
+- "Batch → live query + pseudo-events"
 title: 'Cell 7.4: Batch → live query + pseudo-events'
 tags:
 - data-product-type

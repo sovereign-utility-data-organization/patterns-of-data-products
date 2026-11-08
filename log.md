@@ -2,6 +2,23 @@
 
 ## 2026-11-08
 
+Added **SKOS metadata** to the frontmatter of all 236 concept documents
+(every doc under [concepts/](/concepts/),
+[data-product-types/](/data-product-types/), and
+[playbooks/](/playbooks/), except the section indexes). Each doc now carries
+the W3C SKOS-core properties `definition`, `example`, and `altLabel` as
+flat YAML keys using the SKOS local names verbatim (the OKF spec explicitly
+allows producer-defined keys), plus `scopeNote` where the doc has real
+boundary content. The
+cell docs' values are grounded in their own bodies — `definition` is the
+"what it is" paragraph, `example` comes from the *When to use* text (or an
+explicit "e.g." there), and `altLabel` lists the pattern code, the cell
+number, and the working name. `title` serves as `skos:prefLabel` and
+`related` as `skos:related`; `broader`/`narrower` are deliberately unused
+(flat 15×15 matrix). The convention is documented in `AGENTS.md` and now
+part of the local gate: `scripts/okf_audit.py` requires
+`definition`/`example`/`altLabel` on every concept doc.
+
 Renamed the core-vocabulary section **`knowledge-concepts/` → `concepts/`**.
 Every reference was rewritten in one pass: the `related:` frontmatter lists
 and `## Related` bullets on all 236 concept docs, the section and root

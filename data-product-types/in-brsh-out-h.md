@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) + human and serving via human.
+definition: "Everything the org has — live feeds, APIs, files, *and* human-entered data — consolidated behind one human-facing surface. The BI platform that also eats manual adjustments: the widest IN in the space serving the surface people use every day."
+example: "When a dashboard/report must reflect live data, upstream APIs, bulk files, *and* human-curated adjustments, all in one view for people — a full BI/console product."
+altLabel:
+- "BRSH → H"
+- "Cell 8.15"
+- "Omni-source platform, human read"
 title: 'Cell 8.15: Omni-source platform, human read'
 tags:
 - data-product-type

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + streaming (pub/sub feed) — rt + eod from polled sources.
+definition: "Served as both a \"live\" feed and end-of-day files, but the live feed is re-poll-derived (e.g., polling market data into a stream, plus EOD files). Files and an API in; a change feed and files out, no strong query surface: the bridge from a reference world into a streaming estate, with an archive tail. The feed is the product's centre of gravity and it is synthetic."
+example: "polling market data into a stream, plus EOD files"
+altLabel:
+- "BR → BS"
+- "Cell 2.3"
+- "RT + EOD from polled sources"
 title: 'Cell 2.3: RT + EOD from polled sources'
 tags:
 - data-product-type

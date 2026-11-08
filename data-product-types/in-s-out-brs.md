@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — stream processor + full platform.
+definition: "Stream in → stream processor / stateful aggregation → all serving modes (Flink/Kafka + state store + sink world). The full streaming platform: events in, all three serving modes out. This is the stream-processing (CEP) paradigm at full width — a stateful transform layer between the log and every kind of consumer."
+example: "The product owns the aggregation layer between events and consumers."
+altLabel:
+- "S → BRS"
+- "Cell 5.1"
+- "Stream processor + full platform"
 title: 'Cell 5.1: Stream processor + full platform'
 tags:
 - data-product-type

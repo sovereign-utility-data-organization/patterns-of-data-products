@@ -1,8 +1,14 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T18:45:00Z'
+timestamp: '2026-11-08T19:19:00Z'
 description: "A data product (in the data-mesh sense) is a self-contained, domain-owned architectural quantum — the domain's data + what makes it usable (semantics, schema, quality, provenance) + the code + the infrastructure, served through one or more output ports (interfaces). Its identity is the data it offers, not the ports it exposes. Classified here by the integration patterns on its input side and output side (4 patterns, 15 states per side, 15 x 15 = 225 types)."
+definition: "A data product (in the data-mesh sense) is a self-contained, domain-owned architectural quantum: the domain's data plus everything that makes it usable (semantics, schema, quality, provenance), with the code and infrastructure that process and serve it, exposed to consumers through one or more output ports (interfaces); identity is the data it offers, not the ports it exposes."
+example: "A domain's analytics records served as a file drop, a query API, and an event stream at once: three output ports, one data product"
+altLabel:
+- "data-mesh data product"
+- "architectural quantum"
+scopeNote: "This concept defines the unit of this catalog and the interface model on which its *type* is classified (15 IN-states x 15 OUT-states = 225 cells); the interface decides the type, not the identity - a single product may expose many ports."
 title: Data product
 tags:
 - data-product

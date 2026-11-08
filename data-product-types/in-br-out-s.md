@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via streaming (pub/sub feed) — poll-to-stream bridge.
+definition: "A bridge product whose whole job is \"files/APIs → topics\". Files and an API in, a change feed out, no query and no files: the purest synthetic-feed bridge of the reference world. The product's whole surface is a manufactured change stream over two reference inputs."
+example: "A Kafka-first world must consume legacy file/API sources."
+altLabel:
+- "BR → S"
+- "Cell 2.5"
+- "Poll-to-stream bridge"
 title: 'Cell 2.5: Poll-to-stream bridge'
 tags:
 - data-product-type

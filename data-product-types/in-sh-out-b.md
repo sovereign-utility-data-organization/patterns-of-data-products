@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via streaming (pub/sub feed) + human and serving via batch (bulk/file).
+definition: "A product that takes live streams and human-produced data and serves bulk files. Human-entered data is one leg of the source, alongside live streams; the product carries that mix through to bulk files."
+example: "The data is partly human-curated, alongside live streams, and the audience needs it as bulk files — the product is the layer between a person's editing and the consumer."
+altLabel:
+- "SH → B"
+- "Cell 12.7"
+- "stream + human → batch-only"
 title: 'Cell 12.7: stream + human → batch-only'
 tags:
 - data-product-type

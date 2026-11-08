@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — event platform with full serving.
+definition: "Hot & cold ingest (e.g., Kafka + S3) served via streams, APIs, and bulk exports — the modern streaming platform (Kafka + Iceberg/Delta). The full streaming platform over a hot-and-cold source: meter/stream plus batch in; stream, API, and files out. The modern streaming platform (Kafka plus Iceberg/Delta) at maximum width."
+example: "Kafka + S3"
+altLabel:
+- "BS → BRS"
+- "Cell 3.1"
+- "Event platform with full serving"
 title: 'Cell 3.1: Event platform with full serving'
 tags:
 - data-product-type

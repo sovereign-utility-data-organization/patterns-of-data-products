@@ -11,9 +11,10 @@ site but treats the bundle as read-only source of truth and never rewrites it.
 
 - After **every** edit: `python3 scripts/okf_audit.py` — must finish with zero
   ERRORs (WARNs are index-style advisories).
-- The audit checks frontmatter fields and format, ISO-8601 `timestamp`, and
-  that every internal `/…` link resolves to an existing concept doc or section
-  index. It ignores the generated build outputs (`site-src/`, `site/`).
+- The audit checks frontmatter fields and format, ISO-8601 `timestamp`, the
+  presence of the SKOS metadata keys, and that every internal `/…` link
+  resolves to an existing concept doc or section index. It ignores the
+  generated build outputs (`site-src/`, `site/`).
 
 ## Publishing (GitHub Pages)
 
@@ -65,6 +66,24 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
   `timestamp` (ISO 8601; bump it when editing), `description`. House style
   (not audit-enforced, but every doc has them): `title`, `tags`, `related`
   (a list of extensionless root paths).
+- **SKOS metadata** (audit-enforced; OKF explicitly allows producer-defined
+  keys): every concept doc carries a small set of W3C
+  [SKOS-core](https://www.w3.org/TR/skos-primer/) properties as flat YAML
+  keys, using the SKOS local names verbatim:
+  - `definition` ≙ `skos:definition` — the formal one-sentence definition of
+    the concept (for the cells: the "what it is" paragraph of the body)
+  - `example` ≙ `skos:example` — a concrete instance or use (scalar; a list
+    only for multiple), grounded in the doc's own *When to use* text
+  - `altLabel` ≙ `skos:altLabel` — a **non-empty list** of alternate surface
+    forms (for the cells: the pattern code, e.g. `RS → R`, the cell number,
+    and the working name)
+  - `scopeNote` ≙ `skos:scopeNote` — optional; only where the doc carries
+    real scope/disambiguation content
+  `title` serves as `skos:prefLabel` and `related` as `skos:related`
+  (expressed as bundle links) — do **not** duplicate them under SKOS keys.
+  `broader`/`narrower` are deliberately unused: the scheme is a flat 15×15
+  matrix with no concept hierarchy; structure lives in `related:` links and
+  the bundle layout.
 - `index.md`, `log.md`, `README.md`, `AGENTS.md` must **not** have frontmatter.
 - All internal links are **bundle-root absolute, extensionless**:
   `/concepts/data-product`, or `/data-product-types/` (a directory

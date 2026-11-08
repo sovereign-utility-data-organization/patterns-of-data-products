@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) — unified query api over messy sources.
+definition: "The BFF / service façade: files + upstream APIs + event feeds behind one request/response contract. Everything in, one clean API out: the BFF / service facade over a mixed source. The product unifies a live feed, a batch leg, and an API reference behind one canonical request/response contract."
+example: "The product's value is *normalisation*: consumers want one schema and one endpoint (unified \"customer\" or \"order\" API over CRM/ERP/events)."
+altLabel:
+- "BRS → R"
+- "Cell 1.6"
+- "Unified query API over messy sources"
 title: 'Cell 1.6: Unified query API over messy sources'
 tags:
 - data-product-type

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via human and serving via streaming (pub/sub feed).
+definition: "A product that takes human-produced data and serves a live feed. Human-entered data is the source; the product turns what people put in into a live feed for downstream use."
+example: "Data originates with people (entry, review, curation) rather than a machine source, and the audience needs it as a live feed — the product is what stands between a person's editing and the consumer."
+altLabel:
+- "H → S"
+- "Cell 15.5"
+- "human-only → stream-only"
 title: 'Cell 15.5: human-only → stream-only'
 tags:
 - data-product-type

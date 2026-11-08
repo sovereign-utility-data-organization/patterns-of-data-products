@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) — event-sourced query service (cqrs).
+definition: "Ingest the stream, build the read model, serve the API — the canonical event-sourcing read side (e.g., an order-status API from order events + master data APIs). A \"stream → state\" product. The canonical event-sourced query service (CQRS): events and a context API in, one query API out. The product is the read model plus the API over it — the write side is upstream, and there is no feed or file out."
+example: "an order-status API from order events + master data APIs"
+altLabel:
+- "RS → R"
+- "Cell 4.6"
+- "Event-sourced query service (CQRS)"
 title: 'Cell 4.6: Event-sourced query service (CQRS)'
 tags:
 - data-product-type

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: 'Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — hub facade: stream + api in, api + file out.'
+definition: "Events + service APIs in; consumers get the query API and nightly exports (e.g., billing: events + tariff API → invoice API + D01 files). The workhorse hub of the online world: events and a reference API in; a query API and files out. One canonical state (the hub) with a live feed feeding it and two read surfaces on it."
+example: "billing: events + tariff API → invoice API + D01 files"
+altLabel:
+- "RS → BR"
+- "Cell 4.2"
+- "Hub facade: stream + API in, API + file out"
 title: 'Cell 4.2: Hub facade: stream + API in, API + file out'
 tags:
 - data-product-type

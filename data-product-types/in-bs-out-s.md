@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — stream join / stream enrichment.
+definition: "Enriches an event stream with bulk-loaded reference data and emits an enriched stream (e.g., meter events + tariff/reference → enriched market events). A stream join / enrichment: metered events plus batch reference (tariff, master) in, an enriched stream out. The product is the join — the value is an enriched, ready-to-consume event, not a state."
+example: "meter events + tariff/reference → enriched market events"
+altLabel:
+- "BS → S"
+- "Cell 3.5"
+- "Stream join / stream enrichment"
 title: 'Cell 3.5: Stream join / stream enrichment'
 tags:
 - data-product-type

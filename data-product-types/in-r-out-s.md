@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via streaming (pub/sub feed) — poller → stream bridge.
+definition: "The canonical \"bridge an API world into a Kafka world\" product. The canonical \"bridge an API world into a Kafka world\": poll, diff, emit. No query surface, no files — the whole product is the manufactured feed."
+example: "A stream-driven consumer architecture with only file/API sources."
+altLabel:
+- "R → S"
+- "Cell 6.5"
+- "Poller → stream bridge"
 title: 'Cell 6.5: Poller → stream bridge'
 tags:
 - data-product-type

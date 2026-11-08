@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) — stream → settlement/rollup file.
+definition: "Events in → periodic bulk out (meter-reading stream → daily interval file; clickstream → EOD usage files). Events in, files out: a rolling-window accumulator whose only surface is a periodic artifact. The settlement core of the streaming world — the product's identity is a window, not a store."
+example: "The contract is a file but the data is inherently streaming — very common in utility settlement."
+altLabel:
+- "S → B"
+- "Cell 5.7"
+- "Stream → settlement/rollup file"
 title: 'Cell 5.7: Stream → settlement/rollup file'
 tags:
 - data-product-type

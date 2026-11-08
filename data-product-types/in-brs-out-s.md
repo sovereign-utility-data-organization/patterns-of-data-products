@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) — all-in, single stream.
+definition: "\"One topic for the world\": all sources (files included, replayed as events) funneled into one pub/sub interface. Everything in, one stream out: the omni-source fan-out. The product unifies a live feed, a batch leg, and an API reference into a single published stream — a \"one topic for the world\" over the widest possible source mix."
+example: "Downstream is a pure stream topology (Kafka mesh, CEP fabric)."
+altLabel:
+- "BRS → S"
+- "Cell 1.5"
+- "All-in, single stream"
 title: 'Cell 1.5: All-in, single stream'
 tags:
 - data-product-type

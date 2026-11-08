@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — unified live view.
+definition: "A clean real-time façade: one stream + one query API over the combined inputs. A unified real-time view: events and a context API in; query and feed out; no files. The product serves the two live surfaces — the current state and the stream of changes — and nothing else."
+example: "All consumers are online and a single consistent contract is wanted (unified telemetry/asset platform)."
+altLabel:
+- "RS → RS"
+- "Cell 4.4"
+- "Unified live view"
 title: 'Cell 4.4: Unified live view'
 tags:
 - data-product-type

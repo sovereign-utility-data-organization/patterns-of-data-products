@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via human.
+definition: "A product that takes on-demand APIs and serves a human-facing surface (dashboard/report). Machine-side inputs ({R}) drive it — a report or dashboard is the product, not the pipe."
+example: "The data the audience wants is real, but the reader is a person, not a service: they need a report or dashboard over a single leg of upstream APIs, not raw events or a bulk drop."
+altLabel:
+- "R → H"
+- "Cell 6.15"
+- "request-response-only → human-only"
 title: 'Cell 6.15: request-response-only → human-only'
 tags:
 - data-product-type

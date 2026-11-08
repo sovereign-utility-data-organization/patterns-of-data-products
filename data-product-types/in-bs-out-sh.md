@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via streaming (pub/sub feed) + human.
+definition: "A product that takes files (batch) and live streams and serves a live feed and a human-facing surface (dashboard/report). Machine-side inputs ({B, S}) drive it — the multi-surface serves people, not just machines."
+example: "The data the audience wants is real, but the reader is a person, not a service: they need a report or dashboard over a single leg of bulk files and a live feed, not raw events or a bulk drop."
+altLabel:
+- "BS → SH"
+- "Cell 3.12"
+- "hot & cold → stream + human"
 title: 'Cell 3.12: hot & cold → stream + human'
 tags:
 - data-product-type

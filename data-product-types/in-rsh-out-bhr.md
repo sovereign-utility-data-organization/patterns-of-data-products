@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) + human and serving via batch (bulk/file) + request/response (on-demand query) + human.
+definition: "A product that takes on-demand APIs, live streams, and human-produced data and serves bulk files, a query API, and a human-facing surface (dashboard/report). People both produce and read the data: the human pattern is on both sides."
+example: "A small group of people both maintains and reads the data, with no machine consumer — a shared, human-scale record rather than an automated interface."
+altLabel:
+- "RSH → BHR"
+- "Cell 11.9"
+- "API/stream + human → file/API + human"
 title: 'Cell 11.9: API/stream + human → file/API + human'
 tags:
 - data-product-type

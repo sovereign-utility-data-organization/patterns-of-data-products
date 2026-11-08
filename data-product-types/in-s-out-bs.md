@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — hot & cold streaming platform.
+definition: "Events in → events out (transformed/joined) + files out (archival); a market event spine: enriched events + daily bundles. Events in, events plus files out: the event spine. The stream is the hot surface, the files the cold one, and the product's value is routing, enriching, and preserving — not transforming semantics."
+example: "Consumers include stream consumers (downstream processors, CEP) and file consumers (analytics, settlement)."
+altLabel:
+- "S → BS"
+- "Cell 5.3"
+- "Hot & cold streaming platform"
 title: 'Cell 5.3: Hot & cold streaming platform'
 tags:
 - data-product-type

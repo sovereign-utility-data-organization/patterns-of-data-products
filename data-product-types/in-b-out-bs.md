@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + streaming (pub/sub feed) — batch data, stream + files out.
+definition: "Nightly load + a stream out (CDC from the refreshed table — a pseudo-stream). Stream plus file out, batch in: a settlement-and-feed hybrid where the feed is a synthetic stream over the refresh. The \"hot\" surface (the feed) is actually a diff, and the \"cold\" surface (the file) is a full snapshot."
+example: "Consumers want to react to change but the upstream only publishes files."
+altLabel:
+- "B → BS"
+- "Cell 7.3"
+- "Batch data, stream + files out"
 title: 'Cell 7.3: Batch data, stream + files out'
 tags:
 - data-product-type

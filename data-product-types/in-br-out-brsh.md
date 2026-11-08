@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) + human.
+definition: "A product that takes files (batch) and on-demand APIs and serves bulk files, a query API, a live feed, and a human-facing surface (dashboard/report). Machine-side inputs ({B, R}) drive it — the multi-surface serves people, not just machines."
+example: "The data the audience wants is real, but the reader is a person, not a service: they need a report or dashboard over a single leg of bulk files and upstream APIs, not raw events or a bulk drop."
+altLabel:
+- "BR → BRSH"
+- "Cell 2.8"
+- "query + file → omni-channel + human"
 title: 'Cell 2.8: query + file → omni-channel + human'
 tags:
 - data-product-type

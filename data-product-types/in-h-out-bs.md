@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via human and serving via batch (bulk/file) + streaming (pub/sub feed).
+definition: "A product that takes human-produced data and serves bulk files and a live feed. Human-entered data is the source; the product turns what people put in into bulk files and a live feed for downstream use."
+example: "Data originates with people (entry, review, curation) rather than a machine source, and the audience needs it as bulk files and a live feed — the product is what stands between a person's editing and the consumer."
+altLabel:
+- "H → BS"
+- "Cell 15.3"
+- "human-only → hot & cold"
 title: 'Cell 15.3: human-only → hot & cold'
 tags:
 - data-product-type

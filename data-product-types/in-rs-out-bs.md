@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) + streaming (pub/sub feed) and serving via batch (bulk/file) + streaming (pub/sub feed) — telemetry platform.
+definition: "Events + device/service APIs in; live feeds + bulk archives out (e.g., vehicle/IoT telemetry: CAN-stream + OBD API → fleet stream + daily trip files). A telemetry platform: events plus a device/service API in; feed plus files out, no strong query surface. The live feed is the hot surface and the files the archive, with a polled reference enriching both."
+example: "vehicle/IoT telemetry: CAN-stream + OBD API → fleet stream + daily trip files"
+altLabel:
+- "RS → BS"
+- "Cell 4.3"
+- "Telemetry platform"
 title: 'Cell 4.3: Telemetry platform'
 tags:
 - data-product-type

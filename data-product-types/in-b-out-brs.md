@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — batch-loaded platform with all out.
+definition: "A nightly-loaded warehouse that also serves a (CDC or refresh-derived) stream + API + files. The full platform over a batch world: file in, everything out. The stream surface is the interesting part — it is a synthetic stream computed by detecting changes between refreshes, not a native feed."
+example: "Full consumer mix is needed, but the source world is batch-only."
+altLabel:
+- "B → BRS"
+- "Cell 7.1"
+- "Batch-loaded platform with all out"
 title: 'Cell 7.1: Batch-loaded platform with all out'
 tags:
 - data-product-type

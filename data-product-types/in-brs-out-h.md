@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via human.
+definition: "A product that takes files (batch), on-demand APIs, and live streams and serves a human-facing surface (dashboard/report). Machine-side inputs ({B, R, S}) drive it — a report or dashboard is the product, not the pipe."
+example: "The data the audience wants is real, but the reader is a person, not a service: they need a report or dashboard over live data, upstream APIs, and bulk files, not raw events or a bulk drop."
+altLabel:
+- "BRS → H"
+- "Cell 1.15"
+- "omni-channel → human-only"
 title: 'Cell 1.15: omni-channel → human-only'
 tags:
 - data-product-type

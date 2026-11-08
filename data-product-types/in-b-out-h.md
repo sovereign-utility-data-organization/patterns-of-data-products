@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via human.
+definition: "Nightly or scheduled bulk data becomes the thing people actually read: the morning report, the standing dashboard, the printed schedule. The product's job is to turn a flat, complete file world into a clear, current view for a human audience — the EOD report is the archetypal cell."
+example: "The data lands in bulk files, but the audience is people who want a readable report or dashboard rather than a raw file — the classic 'load at night, read in the morning' shape."
+altLabel:
+- "B → H"
+- "Cell 7.15"
+- "Batch data as a report / dashboard"
 title: 'Cell 7.15: Batch data as a report / dashboard'
 tags:
 - data-product-type

@@ -1,8 +1,15 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T15:00:00Z'
+timestamp: '2026-11-08T19:19:00Z'
 description: The verdict tag attached to each of the 225 data product types — common, plausible, or niche — and what each means.
+definition: "The verdict tag carried by each of the 225 data-product types - common, plausible, or niche: a coarse judgement of how likely the interface combination is to be a sensible, real-world product; it reflects the economics of the interface, not its technical feasibility."
+example: "Cell 7.5 (batch in, feed out) is *niche* - a real synthetic-stream bridge, not a default choice; cell 7.6 (batch in, query out) is *common* - the default first data product over counterparty files"
+altLabel:
+- "verdict tag"
+- "common / plausible / niche"
+- "type likelihood"
+scopeNote: "There is no impossible verdict: all 225 cells are technically possible; where a combination feels wrong, the awkwardness is an economic or latency concern captured per cell in 'Watch out', not a verdict."
 title: Verdict
 tags:
 - verdict

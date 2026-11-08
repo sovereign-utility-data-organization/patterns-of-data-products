@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) — the pure etl file product.
+definition: "Files in → files out. The original data product: transformation + publication, no serving stack beyond the file contract (any \"settlement input bundle\" product). Every publication is a self-contained artifact: the file *is* the product, and there is no state to keep between loads. A diagonal cell (IN = OUT): the value sits in normalisation, reconciliation and publication — a trustworthy file over messier sources."
+example: "The contract is a file and the load is scheduled; the cheapest possible product."
+altLabel:
+- "B → B"
+- "Cell 7.7"
+- "The pure ETL file product"
 title: 'Cell 7.7: The pure ETL file product'
 tags:
 - data-product-type

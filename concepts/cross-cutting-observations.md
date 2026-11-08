@@ -1,8 +1,13 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T19:19:00Z'
 description: 'Five structural observations about the 225-type space: synthetic-stream family, diagonal pass-throughs, batch-anchored utility core, state vs. stateless products, and the human layer.'
+definition: "Five structural observations that recur across the 15x15 space of data-product types: the synthetic-stream family, the diagonal pass-through, the batch-anchored settlement core, state as the cost driver, and the human layer as a cross-cutting axis."
+example: "Batch-in, query-out warehouses (cell 7.6) are disproportionately common in regulated energy and financial markets - batch is the settlement core"
+altLabel:
+- "structural properties of the type space"
+- "matrix observations"
 title: Cross-cutting observations
 tags:
 - taxonomy

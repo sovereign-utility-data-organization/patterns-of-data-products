@@ -1,8 +1,15 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T19:19:00Z'
 description: The role of human input (H in IN) in a data product. Three distinct facts that are easily conflated into one word — softness (a quality and cost property), the automate-where-possible default, and irreplaceability (human input as the value-driver) — and how H interacts with B, R, and S.
+definition: "The role of the human input (H in IN): three distinct, easily conflated facts - softness (a quality-and-cost property), the automate-where-possible default, and irreplaceability (the human act as the product's value-driver) - and how H interacts with B, R, and S."
+example: "A clinical-judgment product where the diagnosis is the value (irreplaceable) and the vitals, labs, and imaging enrich it - H+R, rated *plausible *and not low-value"
+altLabel:
+- "H-in semantics"
+- "human input"
+- "softness / automation / irreplaceability"
+scopeNote: "Softness says nothing about value: a plausible H-in cell is not a low-value cell. The verdict tier reflects the cost and scarcity of the channel, not the value of its data."
 title: The role of human input
 tags:
 - human

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) + human.
+definition: "A product that takes live streams and serves a query API, a live feed, and a human-facing surface (dashboard/report). Machine-side inputs ({S}) drive it — the multi-surface serves people, not just machines."
+example: "The data the audience wants is real, but the reader is a person, not a service: they need a report or dashboard over a single leg of a live feed, not raw events or a bulk drop."
+altLabel:
+- "S → RSH"
+- "Cell 5.11"
+- "stream-only → API/stream + human"
 title: 'Cell 5.11: stream-only → API/stream + human'
 tags:
 - data-product-type

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) and serving via request/response (on-demand query) — stream + reference → queryable historian.
+definition: "The historian pattern: events land in a time-series/state DB, reference data is periodically loaded, consumers query (e.g., SCADA historian + historian API). The historian pattern: live metered events plus batch reference in, a queryable historian out. The product is a time-series/state store built for \"what happened\" queries, with no feed or file surface."
+example: "SCADA historian + historian API"
+altLabel:
+- "BS → R"
+- "Cell 3.6"
+- "Stream + reference → queryable historian"
 title: 'Cell 3.6: Stream + reference → queryable historian'
 tags:
 - data-product-type

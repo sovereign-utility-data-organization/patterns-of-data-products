@@ -1,8 +1,15 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T14:00:00Z'
+timestamp: '2026-11-08T19:29:00Z'
 description: How architectural paradigms (serverless, event-driven, event sourcing, CQRS, microservices, stream processing, ETL/ELT, CDC, data mesh) relate to — but are distinct from — the data product interface taxonomy.
+definition: "How software architecture paradigms - serverless, event-driven, event sourcing, CQRS, microservices, stream processing, ETL/ELT, CDC, data mesh - relate to the data-product interface taxonomy: the paradigms describe how a product is built and operated, the taxonomy describes what its interface offers to consumers; the two live on orthogonal axes."
+example: "Cell 5.5 (stream in, stream out) implemented as a serverless streaming function or a Kafka Streams app: same interface, different architecture"
+altLabel:
+- "paradigm-cell mapping"
+- "interface vs. implementation"
+- "architecture-taxonomy correspondence"
+scopeNote: "The mapping is not 'this cell IS paradigm X' but 'this interface is commonly and naturally implemented AS paradigm X'; the product is the offering, and the architecture is the choice of how it is built."
 title: Architectural paradigms
 tags:
 - architecture

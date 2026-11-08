@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) and serving via request/response (on-demand query) + streaming (pub/sub feed) — unified real-time view.
+definition: "Consumers query current state *and* subscribe to changes; no bulk files served. Historical depth is served by query, not by file. Everything in; query and a live feed out, no files: the unified real-time platform. The product serves the two online surfaces — a queryable current state and the stream of changes — over a mixed source, with deep history handled by query rather than file."
+example: "an IoT/time-series platform with event + state APIs"
+altLabel:
+- "BRS → RS"
+- "Cell 1.4"
+- "Unified real-time view"
 title: 'Cell 1.4: Unified real-time view'
 tags:
 - data-product-type

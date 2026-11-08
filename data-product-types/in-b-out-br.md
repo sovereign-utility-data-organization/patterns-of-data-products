@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via batch (bulk/file) + request/response (on-demand query) — the classic data warehouse.
+definition: "Files in → API + files out. Standard ETL/ELT target that also serves a query API on top (EOD price files → price API + downstream files). This is the classic data warehouse: one durable state (the store) with two surfaces over it — a query API and file publication. Off-diagonal: the conversion is real, a batch world made queryable."
+example: "Consumers need both an analytical API and bulk delivery; upstream is batch."
+altLabel:
+- "B → BR"
+- "Cell 7.2"
+- "The classic data warehouse"
 title: 'Cell 7.2: The classic data warehouse'
 tags:
 - data-product-type

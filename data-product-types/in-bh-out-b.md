@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + human and serving via batch (bulk/file).
+definition: "A product that takes files (batch) and human-produced data and serves bulk files. Human-entered data is one leg of the source, alongside files; the product carries that mix through to bulk files."
+example: "The data is partly human-curated, alongside files, and the audience needs it as bulk files — the product is the layer between a person's editing and the consumer."
+altLabel:
+- "BH → B"
+- "Cell 14.7"
+- "file + human → batch-only"
 title: 'Cell 14.7: file + human → batch-only'
 tags:
 - data-product-type

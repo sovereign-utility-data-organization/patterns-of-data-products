@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) — refreshed model serving all three out.
+definition: "A polled/file-fed state store that publishes a *synthetic* change stream in addition to API + files. Files and an API in; API, files, and a change feed out: the full-surface reference hub. The feed is a synthetic change stream computed from the refresh, not a native input."
+example: "Consumers need events, but the source world only offers files/APIs — the product computes change detection."
+altLabel:
+- "BR → BRS"
+- "Cell 2.1"
+- "Refreshed model serving all three out"
 title: 'Cell 2.1: Refreshed model serving all three out'
 tags:
 - data-product-type

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via request/response (on-demand query) — api proxy / facade.
+definition: "The cleanest \"value = a better surface\" product: normalise schemas, add caching/semantics, hide auth quirks, serve one clean API (OData/ESDP façade over supplier REST). The cleanest \"value is the better surface\" product: one canonical API over a set of upstream APIs and reference files. A diagonal cell — IN = OUT — so the value is normalisation, semantics, auth, and freshness, not data conversion."
+example: "No transformation-heavy load; value is integration experience (canonical schema + auth + semantics)."
+altLabel:
+- "R → R"
+- "Cell 6.6"
+- "API proxy / facade"
 title: 'Cell 6.6: API proxy / facade'
 tags:
 - data-product-type

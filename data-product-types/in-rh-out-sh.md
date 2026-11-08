@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) + human and serving via streaming (pub/sub feed) + human.
+definition: "A product that takes on-demand APIs and human-produced data and serves a live feed and a human-facing surface (dashboard/report). People both produce and read the data: the human pattern is on both sides."
+example: "A small group of people both maintains and reads the data, with no machine consumer — a shared, human-scale record rather than an automated interface."
+altLabel:
+- "RH → SH"
+- "Cell 13.12"
+- "API + human → stream + human"
 title: 'Cell 13.12: API + human → stream + human'
 tags:
 - data-product-type

@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T16:00:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via batch (bulk/file) + human and serving via request/response (on-demand query) + streaming (pub/sub feed).
+definition: "A product that takes files (batch) and human-produced data and serves a query API and a live feed. Human-entered data is one leg of the source, alongside files; the product carries that mix through to a query API and a live feed."
+example: "The data is partly human-curated, alongside files, and the audience needs it as a query API and a live feed — the product is the layer between a person's editing and the consumer."
+altLabel:
+- "BH → RS"
+- "Cell 14.4"
+- "file + human → live + lookup"
 title: 'Cell 14.4: file + human → live + lookup'
 tags:
 - data-product-type

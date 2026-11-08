@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via batch (bulk/file) + request/response (on-demand query) — streaming etl into lake + api.
+definition: "Events → queryable store + data-lake files. The standard modern ingestion architecture (Kafka → S3 + API over a query engine / Iceberg). The standard modern ingestion architecture: a stream in, a queryable store plus lake files out. One source of truth (the store) with two read surfaces on it."
+example: "Consumers want analysis (API) + archival (files); no need to keep the stream out."
+altLabel:
+- "S → BR"
+- "Cell 5.2"
+- "Streaming ETL into lake + API"
 title: 'Cell 5.2: Streaming ETL into lake + API'
 tags:
 - data-product-type

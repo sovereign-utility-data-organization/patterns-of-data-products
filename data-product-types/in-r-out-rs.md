@@ -1,8 +1,14 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T18:30:00Z'
+timestamp: '2026-11-08T19:24:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via request/response (on-demand query) + streaming (pub/sub feed) — poll-derived live + query.
+definition: "API poll in, live feed + API out. \"Live\" over a polled world. A live facade over a polled world: a query API plus a synthetic feed, both derived from the refresh. \"Live\" here is bounded by the poll cadence — the feed is a diff, not a stream."
+example: "Consumers want push + query, the only source is pollable."
+altLabel:
+- "R → RS"
+- "Cell 6.4"
+- "Poll-derived live + query"
 title: 'Cell 6.4: Poll-derived live + query'
 tags:
 - data-product-type
