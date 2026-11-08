@@ -10,12 +10,12 @@ tags:
 - out-bh
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/pattern-human
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 1.14 — omni-channel → file + human
@@ -59,9 +59,9 @@ add **human curation on the input side** → cell [8.14](/data-product-types/in-
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [human](/knowledge-concepts/pattern-human)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [human](/concepts/pattern-human)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

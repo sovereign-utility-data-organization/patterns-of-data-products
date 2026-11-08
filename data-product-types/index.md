@@ -1,7 +1,7 @@
 # Data Product Types
 
-* [data-product](/knowledge-concepts/data-product) - Interface model, the 15 side-states, and the 15 × 15 quick map
-* [pattern-human](/knowledge-concepts/pattern-human) - The human pattern (H): the 4th, orthogonal integration layer
+* [data-product](/concepts/data-product) - Interface model, the 15 side-states, and the 15 × 15 quick map
+* [pattern-human](/concepts/pattern-human) - The human pattern (H): the 4th, orthogonal integration layer
 
 ## In = B + R + S
 

@@ -10,12 +10,12 @@ tags:
 - out-sh
 - common
 related:
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/synthetic-stream
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/pattern-human
+- /concepts/synthetic-stream
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 6.12 — request-response-only → stream + human
@@ -49,7 +49,7 @@ Dominated by the durable state store (grows with entity/state breadth) and the d
 
 ## Synthetic stream
 
-This cell serves **S** without taking **S** as input, so its stream is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down the five items (see [synthetic stream](/knowledge-concepts/synthetic-stream)):
+This cell serves **S** without taking **S** as input, so its stream is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down the five items (see [synthetic stream](/concepts/synthetic-stream)):
 
 1. **What counts as a "change"** — field-level, row version, or full snapshot?
 2. **Latency bound** — bounded by the refresh cadence, not source event time.
@@ -67,9 +67,9 @@ add **human curation on the input side** → cell [13.12](/data-product-types/in
 
 ## Related
 
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [human](/knowledge-concepts/pattern-human)
-* [synthetic stream](/knowledge-concepts/synthetic-stream) — the pseudo-stream hazard
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [human](/concepts/pattern-human)
+* [synthetic stream](/concepts/synthetic-stream) — the pseudo-stream hazard
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

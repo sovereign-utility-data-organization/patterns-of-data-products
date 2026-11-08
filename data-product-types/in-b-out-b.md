@@ -10,8 +10,8 @@ tags:
 - out-b
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/data-product
 ---
 
 # 7.7 — The pure ETL file product
@@ -55,7 +55,7 @@ Two natural growths: an online consumer appears, and the product adds a query su
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: ETL / ELT / data warehouse: the classic batch pipeline, files in, files out.
+* [batch](/concepts/pattern-batch)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: ETL / ELT / data warehouse: the classic batch pipeline, files in, files out.

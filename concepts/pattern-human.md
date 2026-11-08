@@ -11,18 +11,18 @@ tags:
 - report
 - dashboard
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/role-of-human-input
+- /concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/role-of-human-input
 ---
 # Human pattern (`H`)
 
 A distinct integration pattern: data movement **mediated by a person**, on either
-side of the product. Where [batch](/knowledge-concepts/pattern-batch),
-[request/response](/knowledge-concepts/pattern-request-response), and
-[streaming](/knowledge-concepts/pattern-streaming) are all *machine-mediated*
+side of the product. Where [batch](/concepts/pattern-batch),
+[request/response](/concepts/pattern-request-response), and
+[streaming](/concepts/pattern-streaming) are all *machine-mediated*
 (file, API, feed), `H` is the **human-mediated** mode — people are the source of
 the data in, or the readers of the data out.
 
@@ -51,7 +51,7 @@ a machine source can carry the same meaning*, and to reserve the human leg for
 what only a person can supply. Where the human act is itself the value — a
 judgement, a design intent, content, an accountable decision — human input is
 the **value-driver** of the product and the machine legs exist to *enrich*. See
-[the role of human input](/knowledge-concepts/role-of-human-input).
+[the role of human input](/concepts/role-of-human-input).
 
 ## On the output side (H in OUT)
 
@@ -109,4 +109,4 @@ machine patterns.
   (rows `9`, `10`, `11`), and the full `BRSH` (row `8`).
 - Full list: [data-product-types](/data-product-types/); structural
   properties of the now 225-type space:
-  [cross-cutting observations](/knowledge-concepts/cross-cutting-observations).
+  [cross-cutting observations](/concepts/cross-cutting-observations).

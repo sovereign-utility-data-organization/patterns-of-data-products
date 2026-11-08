@@ -9,11 +9,11 @@ tags:
 - anti-pattern
 - semantics
 related:
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/data-product
+- /concepts/pattern-streaming
+- /concepts/pattern-request-response
+- /concepts/pattern-batch
+- /concepts/pattern-human
+- /concepts/data-product
 ---
 # Synthetic stream
 

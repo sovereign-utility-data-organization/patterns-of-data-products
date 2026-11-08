@@ -10,10 +10,10 @@ tags:
 - out-s
 - niche
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/synthetic-stream
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-streaming
+- /concepts/synthetic-stream
+- /concepts/data-product
 ---
 
 # 7.5 — Batch → event feed
@@ -50,7 +50,7 @@ Consumers must treat each batch as a batch of synthetic events, not a continuous
 
 ## Synthetic stream
 
-This cell's stream **out** is not backed by a stream **in** — it is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down five things (see [synthetic stream](/knowledge-concepts/synthetic-stream)):
+This cell's stream **out** is not backed by a stream **in** — it is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down five things (see [synthetic stream](/concepts/synthetic-stream)):
 
 1. **What counts as a "change"** — field-level, row version, or full snapshot?
 2. **Latency bound** — bounded by the poll/refresh cadence, not the source's event time.
@@ -68,9 +68,9 @@ Growth is almost always the missing surfaces: add the query API (**cell 7.4** or
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: CDC (change data capture): a batch-refreshed store emits a synthetic change stream.
+* [batch](/concepts/pattern-batch)
+* [streaming](/concepts/pattern-streaming)
+* [synthetic-stream](/concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: CDC (change data capture): a batch-refreshed store emits a synthetic change stream.

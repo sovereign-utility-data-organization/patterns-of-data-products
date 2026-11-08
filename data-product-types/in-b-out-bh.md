@@ -10,10 +10,10 @@ tags:
 - out-bh
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-batch
+- /concepts/pattern-human
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 7.14 — batch-only → file + human
@@ -55,7 +55,7 @@ add **human curation on the input side** → cell [14.14](/data-product-types/in
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [human](/knowledge-concepts/pattern-human)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [human](/concepts/pattern-human)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

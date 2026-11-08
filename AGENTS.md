@@ -40,10 +40,10 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
 
 - `index.md` — the site **home page**: description of the interface model,
   the all-interface figure, the 15 side states, the full 225-cell matrix
-  (a verbatim copy of the quick map in `knowledge-concepts/data-product.md`
+  (a verbatim copy of the quick map in `concepts/data-product.md`
   — keep the two in sync), and the root listing; `log.md` — update log,
   **newest entry first**
-- `knowledge-concepts/` — core vocabulary (data product, the 4 patterns
+- `concepts/` — core vocabulary (data product, the 4 patterns
   batch/request-response/streaming/human, role of human input, synthetic stream,
   cross-cutting observations, verdict, architectural paradigms)
 - `data-product-types/` — 225 docs, one per interface cell (15 IN × 15 OUT),
@@ -67,7 +67,7 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
   (a list of extensionless root paths).
 - `index.md`, `log.md`, `README.md`, `AGENTS.md` must **not** have frontmatter.
 - All internal links are **bundle-root absolute, extensionless**:
-  `/knowledge-concepts/data-product`, or `/data-product-types/` (a directory
+  `/concepts/data-product`, or `/data-product-types/` (a directory
   link resolves to that section's `index.md`). Don't use relative links between
   sections.
 - **Section** `index.md` files contain only headings and bullet entries (a

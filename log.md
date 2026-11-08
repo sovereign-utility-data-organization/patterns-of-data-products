@@ -2,6 +2,17 @@
 
 ## 2026-11-08
 
+Renamed the core-vocabulary section **`knowledge-concepts/` → `concepts/`**.
+Every reference was rewritten in one pass: the `related:` frontmatter lists
+and `## Related` bullets on all 236 concept docs, the section and root
+indexes, the home page and `README.md`, the links in earlier log entries,
+`AGENTS.md`, and the build script's `PAGE_DIRS`. The section's display name
+follows the directory name (H1 and home-page bullet: "Knowledge Concepts" →
+"Concepts"). The bundle-root links under `/concepts/…` resolve in the OKF
+bundle and in the built static site.
+
+## 2026-11-08
+
 Re-based the **definition of a data product** on the data-mesh sources it
 claims to follow — Z. Dehghani, *Data Mesh Principles and Logical
 Architecture* ([martinfowler.com](https://martinfowler.com/articles/data-mesh-principles.html))
@@ -23,11 +34,11 @@ output ports** (interfaces) — "served as events, batch files, relational
 tables, graphs, etc., while maintaining the same semantic". Identity is the
 data a team offers; different shapes are different ports of the same
 product. Updated: the canonical definition in
-[data product](/knowledge-concepts/data-product) (new frontmatter
+[data product](/concepts/data-product) (new frontmatter
 description, "Identity vs. interface" section rewritten on the sources,
 "no contract" boundary case rephrased), the home page (`index.md`),
 `README.md`, the section-index bullet, "interface contract" →
-"domain-owned offering" in [architectural paradigms](/knowledge-concepts/architectural-paradigms),
+"domain-owned offering" in [architectural paradigms](/concepts/architectural-paradigms),
 and step 1 of the [classify playbook](/playbooks/classify-a-data-product)
 ("what distinguishes a data product from a raw table" is now team ownership
 plus usable semantics/quality, not *the contract*). The word *contract*
@@ -39,7 +50,7 @@ contract items"). Audit and build are clean.
 
 Fixed the definition of "data product" in the three pages that stated it:
 the home page (root `index.md`), `README.md`, and
-[data product](/knowledge-concepts/data-product) all claimed that how data
+[data product](/concepts/data-product) all claimed that how data
 is exposed is what makes products different — "a file drop, a query API, and
 an event stream of the same records are three different data products" —
 which was the exact opposite of the data-mesh idea of a data product and
@@ -53,7 +64,7 @@ served as a file, an API, and a stream are **one** data product through
 several interfaces (the flour, not the pack size); adding an interface moves
 its **type** (the catalog's cell), not its identity. What this catalog
 classifies is the product's **type**, not the product itself.
-`knowledge-concepts/data-product.md` gains an "Identity vs. interface"
+`concepts/data-product.md` gains an "Identity vs. interface"
 section that makes the distinction explicit and ties it to data mesh;
 `SITE_DESC` in `scripts/build_site.py` and the two stale "7×7 grid"
 references (playbook description and its index entry) were aligned with the
@@ -148,7 +159,7 @@ why the `plausible`/"not a default pipe" tiers **stay**; and
 *is* the value (a judgement, a design intent, content, an accountable
 decision), it is the product's **value-driver** and the machine legs exist to
 *enrich*. New concept doc
-[role of human input](/knowledge-concepts/role-of-human-input) carries the
+[role of human input](/concepts/role-of-human-input) carries the
 full argument (including the H×B/R/S interactions and what the verdict
 asymmetry means); `pattern-human`, cross-cutting observation #5, and the
 verdict page are aligned and linked. All 120 human-input cells now carry the
@@ -166,7 +177,7 @@ patterns B/R/S/H, the 15 side states, and why 15 × 15 = 225 types), the
 all-interface figure (`assets/all-possible-interaction-patern-data-product.svg`),
 the full 225-type matrix table (every cell links to its type page), and the
 section listing. The state table and the matrix on the home page are a
-verbatim copy of those in `knowledge-concepts/data-product.md` — keep the
+verbatim copy of those in `concepts/data-product.md` — keep the
 two in sync when the matrix changes. Because the root `index.md` is a home
 page rather than a section listing, `scripts/okf_audit.py` now exempts it
 from the bullet-only "index entry" rule (section indexes stay checked;
@@ -235,7 +246,7 @@ off a state-only source (event time = observation time). A human action
 delivered through the product's own surface — a submission, an approval, an
 entry — is itself a discrete, real event, and relaying such actions as a feed
 is a **trigger-based** stream, not a synthetic one, even though the IN side
-carries no `S`. [synthetic stream](/knowledge-concepts/synthetic-stream) is
+carries no `S`. [synthetic stream](/concepts/synthetic-stream) is
 redefined around that distinction, cross-cutting observation #1 softened to
 match, and the classify playbook's pseudo-stream note now asks "how are the
 events made?" before asserting synthesis. All **32 H-in → S-out cells**
@@ -312,12 +323,12 @@ pair with H on at least one side), each a full reference page: When to use,
 What's inside, State & cost, Watch out, Typical next step (cross-referenced by
 cell number), and a verdict. The original 49 cells keep their historical
 numbering (1–7); the 8 human states are 8–15 (BRSH, BHR, BHS, RSH, SH, RH, BH,
-H). Added a [human pattern](/knowledge-concepts/pattern-human) concept doc and
-re-based the model: [data-product](/knowledge-concepts/data-product) now lists
+H). Added a [human pattern](/concepts/pattern-human) concept doc and
+re-based the model: [data-product](/concepts/data-product) now lists
 4 patterns and the 15 × 15 quick map, [cross-cutting
-observations](/knowledge-concepts/cross-cutting-observations) gains a fifth
+observations](/concepts/cross-cutting-observations) gains a fifth
 observation (the human layer), and the [synthetic-stream
-family](/knowledge-concepts/synthetic-stream) is re-counted at **56 cells**
+family](/concepts/synthetic-stream) is re-counted at **56 cells**
 (S in OUT, not IN). The `data-product-types/` index now lists all 225 cells.
 The human-pattern interface figure lives at
 `/assets/all-possible-interaction-patern-data-product.svg`; the 49-cell
@@ -334,8 +345,8 @@ and where its cost lives), and a **Typical next step** (the integration pattern
 most likely added next and the cell that results). The 12 synthetic-stream cells
 (S in OUT, not IN) additionally carry a **Synthetic stream** section fixing the
 five contract items. All new content is grounded in the catalog's own rules and
-references the [cross-cutting observations](/knowledge-concepts/cross-cutting-observations),
-[synthetic stream](/knowledge-concepts/synthetic-stream), and [verdict](/knowledge-concepts/verdict)
+references the [cross-cutting observations](/concepts/cross-cutting-observations),
+[synthetic stream](/concepts/synthetic-stream), and [verdict](/concepts/verdict)
 concepts; every existing description, verdict,
 diagram, and Related entry is preserved verbatim. Frontmatter timestamps were
 bumped; the OKF conformance audit still passes clean.
@@ -343,7 +354,7 @@ bumped; the OKF conformance audit still passes clean.
 ## 2026-11-06
 
 Restructured the working documents into an OKF v0.1 conformant knowledge
-catalog: added `knowledge-concepts/` (6 concept docs: data product, three
+catalog: added `concepts/` (6 concept docs: data product, three
 integration patterns, synthetic stream, cross-cutting observations),
 `data-product-types/` (49 concept docs, one per interface combination, plus
 matrix index), and `playbooks/` (classify-a-data-product procedure). Moved the

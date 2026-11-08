@@ -8,10 +8,10 @@ tags:
 - taxonomy
 - structure
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/synthetic-stream
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/role-of-human-input
+- /concepts/data-product
+- /concepts/synthetic-stream
+- /concepts/pattern-human
+- /concepts/role-of-human-input
 ---
 # Cross-cutting observations
 
@@ -40,7 +40,7 @@ the verdict depends on what the IN side is:
   is synthetic and the `H` is just the human reader on top of it.
 
 Where synthetic, always document what "change" means, the poll/refresh lag,
-idempotency, and backfill. See [synthetic stream](/knowledge-concepts/synthetic-stream).
+idempotency, and backfill. See [synthetic stream](/concepts/synthetic-stream).
 
 ## 2. Diagonal = pass-through
 
@@ -76,7 +76,7 @@ data-product type, independent of how many patterns it exposes.
 
 ## 5. The human layer is a cross-cutting axis
 
-The [human pattern](/knowledge-concepts/pattern-human) (`H`) is orthogonal to
+The [human pattern](/concepts/pattern-human) (`H`) is orthogonal to
 the machine patterns, so it cuts **across** this space rather than adding a
 corner:
 
@@ -92,7 +92,7 @@ corner:
   it is irreplaceable** — and where the human act *is* the value (a judgement,
   a design intent, content, an accountable decision), it is the **most valuable
   input** the product has, and the machine legs exist to *enrich* it. See
-  [the role of human input](/knowledge-concepts/role-of-human-input).
+  [the role of human input](/concepts/role-of-human-input).
 - The diagonal `H`→`H` cell, [15.15](/data-product-types/in-h-out-h), is the
   **pre-automation pattern** — a shared record between people, no machine
   mediation on either side (not paper): the ledger and the filing cabinet

@@ -10,12 +10,12 @@ tags:
 - value
 - semantics
 related:
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/verdict
-- /knowledge-concepts/synthetic-stream
+- /concepts/pattern-human
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/verdict
+- /concepts/synthetic-stream
 ---
 # The role of human input
 
@@ -107,7 +107,7 @@ machine-led one.
   act — it is the *distribution of the irreplaceable judgement*.
 - **H + S (stream)** — human-authored events **are** the stream (the post feed,
   the live ticket stream, the approval stream). Under the
-  [synthetic stream](/knowledge-concepts/synthetic-stream) distinction, a human
+  [synthetic stream](/concepts/synthetic-stream) distinction, a human
   act is itself a real event, so human-input streaming is a **first-class**
   product shape — not a pseudo-stream hazard.
 - **H alone** — a judgement, a design, a conversation, a ledger: value-dense,
@@ -131,5 +131,5 @@ and should be read that way:
   is a cheap, common surface; `H`-in is a costly, reserved channel — and where
   the input is the point, it is the most valuable input there is.
 
-See [verdict](/knowledge-concepts/verdict) for what the tags mean and
-[pattern human](/knowledge-concepts/pattern-human) for the `H` pattern itself.
+See [verdict](/concepts/verdict) for what the tags mean and
+[pattern human](/concepts/pattern-human) for the `H` pattern itself.

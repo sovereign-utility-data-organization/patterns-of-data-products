@@ -10,11 +10,11 @@ tags:
 - out-rs
 - niche
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/synthetic-stream
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/synthetic-stream
+- /concepts/data-product
 ---
 
 # 7.4 — Batch → live query + pseudo-events
@@ -51,7 +51,7 @@ Store plus feed log plus diff baseline. The query store and the feed duplicate p
 
 ## Synthetic stream
 
-This cell's stream **out** is not backed by a stream **in** — it is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down five things (see [synthetic stream](/knowledge-concepts/synthetic-stream)):
+This cell's stream **out** is not backed by a stream **in** — it is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down five things (see [synthetic stream](/concepts/synthetic-stream)):
 
 1. **What counts as a "change"** — field-level, row version, or full snapshot?
 2. **Latency bound** — bounded by the poll/refresh cadence, not the source's event time.
@@ -69,10 +69,10 @@ Adding the file surface yields **cell 7.1** (the full batch platform); dropping 
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [synthetic-stream](/knowledge-concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: CDC (change data capture): a batch-refreshed store emits a synthetic stream + query API.
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [synthetic-stream](/concepts/synthetic-stream) — this cell's stream out is not backed by a stream in
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: CDC (change data capture): a batch-refreshed store emits a synthetic stream + query API.

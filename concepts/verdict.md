@@ -8,9 +8,9 @@ tags:
 - verdict
 - taxonomy
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/cross-cutting-observations
-- /knowledge-concepts/role-of-human-input
+- /concepts/data-product
+- /concepts/cross-cutting-observations
+- /concepts/role-of-human-input
 ---
 
 # Verdict
@@ -46,7 +46,7 @@ possible).
   a stream input is a *synthetic-stream suspect*: pseudo when the source
   exposes state only (events are manufactured), but a real
   **trigger-based** feed when a human action delivered through the product's
-  own surface is the event — see [synthetic stream](/knowledge-concepts/synthetic-stream). The verdict is independent of that distinction.
+  own surface is the event — see [synthetic stream](/concepts/synthetic-stream). The verdict is independent of that distinction.
 
 ## Where the verdicts are stored
 
@@ -71,7 +71,7 @@ two real groups:
    [2.5 poll→stream](/data-product-types/in-br-out-s),
    [6.5 poller→stream](/data-product-types/in-r-out-s),
    [7.5 batch→feed](/data-product-types/in-b-out-s). See
-   [synthetic stream](/knowledge-concepts/synthetic-stream).
+   [synthetic stream](/concepts/synthetic-stream).
 2. **Deliberately narrow, fileless surfaces** (four cells) — a stream in and
    out, but the served surface is collapsed to a feed and (usually) drops the
    file leg. The narrowness is a **scope decision** — a stream-only product by
@@ -87,7 +87,7 @@ There is **no** "fully synthetic consolidation" family: the wide
 ([1.1](/data-product-types/in-brs-out-brs),
 [1.8](/data-product-types/in-brs-out-brsh),
 [8.8](/data-product-types/in-brsh-out-brsh)) are all rated **common**, not
-niche. The [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
+niche. The [cross-cutting observations](/concepts/cross-cutting-observations)
 page explains the synthetic-stream family structurally.
 
 ## A separate axis: human input vs. human output
@@ -101,4 +101,4 @@ That reservation reflects the **cost and scarcity** of the channel, not the size
 of its value: where the human act is the irreplaceable value, it is the **most
 valuable input** the product has, and the machine legs exist to *enrich*. A
 *plausible* human-input cell is therefore not a *low-value* cell. See
-[the role of human input](/knowledge-concepts/role-of-human-input).
+[the role of human input](/concepts/role-of-human-input).

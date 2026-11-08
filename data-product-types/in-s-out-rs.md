@@ -10,9 +10,9 @@ tags:
 - out-rs
 - niche
 related:
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 5.4 — Event + state, no files
@@ -57,7 +57,7 @@ The natural addition is the file surface: bulk/settlement or reconciliation cons
 
 ## Related
 
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

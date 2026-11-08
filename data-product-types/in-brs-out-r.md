@@ -10,10 +10,10 @@ tags:
 - out-r
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 1.6 — Unified query API over messy sources
@@ -56,9 +56,9 @@ Growth is adding the other surfaces as consumers appear: bulk/file consumers —
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Backend-for-Frontend / API gateway: many inputs normalised into one clean request/response API.
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: Backend-for-Frontend / API gateway: many inputs normalised into one clean request/response API.

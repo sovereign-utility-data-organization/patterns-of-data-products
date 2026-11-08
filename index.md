@@ -23,7 +23,7 @@ interfaces, not by the data they carry. Each side of a product — the
 ports it serves to consumers) — is described by the integration patterns it
 uses, and a **type** is the pair (IN-state × OUT-state): a space of
 **225 data product types**, each with its own concept doc — what it is,
-when to use it, and a [verdict](/knowledge-concepts/verdict) (common /
+when to use it, and a [verdict](/concepts/verdict) (common /
 plausible / niche).
 
 ## The interface model
@@ -84,12 +84,12 @@ Rows = IN-states (how the product ingests), columns = OUT-states (how it serves)
 
 
 The model in full — side states, cell numbering, and the reasoning behind
-the types — is described in [Data product](/knowledge-concepts/data-product).
+the types — is described in [Data product](/concepts/data-product).
 To place a real data product into one of the cells, follow the
 [classify-a-data-product](/playbooks/classify-a-data-product) playbook.
 
 ## Sections
 
-* [Knowledge Concepts](/knowledge-concepts/) - Core vocabulary: the data product, the four integration patterns, the interface model, the verdict tag, and structural observations about the 225-type space
+* [Concepts](/concepts/) - Core vocabulary: the data product, the four integration patterns, the interface model, the verdict tag, and structural observations about the 225-type space
 * [Data Product Types](/data-product-types/) - All 225 data product types (IN × OUT), each described: what it is, when to use it, verdict
 * [Playbooks](/playbooks/) - Procedures for using the catalog, starting with how to classify a real data product

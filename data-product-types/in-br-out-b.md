@@ -10,9 +10,9 @@ tags:
 - out-b
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/data-product
 ---
 
 # 2.7 — The classic ETL
@@ -55,7 +55,7 @@ Natural growths: a query consumer appears and a read model/API over the merged s
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

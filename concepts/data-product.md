@@ -10,12 +10,12 @@ tags:
 - interface
 - taxonomy
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/synthetic-stream
-- /knowledge-concepts/cross-cutting-observations
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/pattern-human
+- /concepts/synthetic-stream
+- /concepts/cross-cutting-observations
 ---
 # Data product
 
@@ -95,10 +95,10 @@ An interface is described by two factors:
 
 1. **Integration pattern** — the mode of data movement, independent of the
    concrete protocol:
-   - [batch](/knowledge-concepts/pattern-batch) — bulk/file delivery on a schedule
-   - [request/response](/knowledge-concepts/pattern-request-response) — synchronous on-demand query
-   - [streaming](/knowledge-concepts/pattern-streaming) — continuous pub/sub push
-   - [human](/knowledge-concepts/pattern-human) — data produced by people in, or a
+   - [batch](/concepts/pattern-batch) — bulk/file delivery on a schedule
+   - [request/response](/concepts/pattern-request-response) — synchronous on-demand query
+   - [streaming](/concepts/pattern-streaming) — continuous pub/sub push
+   - [human](/concepts/pattern-human) — data produced by people in, or a
      human-facing surface (report/dashboard/review) out
 2. **Side** — the pattern applies to the product's **input** side (how it
    ingests) or its **output** side (how it serves).
@@ -165,9 +165,9 @@ and no one standing behind it.
 - **Figure of the four patterns (all interfaces):** `/assets/all-possible-interaction-patern-data-product.svg`
 - **Figure of the 49 machine-only cells:** `/assets/all-possible-data-product-patterns.svg`
 - **One description per type** (what it is, when to use it, verdict): `/data-product-types/`
-- **Structural properties of the whole space:** [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
-- **The verdict tag** on each type (common / plausible / niche): [verdict](/knowledge-concepts/verdict)
-- **The human pattern (H):** [human](/knowledge-concepts/pattern-human) — the 4th, orthogonal integration layer
-- **How this relates to architecture paradigms** (serverless, event-driven, CQRS, …): [architectural paradigms](/knowledge-concepts/architectural-paradigms)
-- **The synthetic-stream hazard** (stream out, no stream in — a red flag; synthetic when events are manufactured off a state-only source, not when a human action is the event): [synthetic stream](/knowledge-concepts/synthetic-stream)
+- **Structural properties of the whole space:** [cross-cutting observations](/concepts/cross-cutting-observations)
+- **The verdict tag** on each type (common / plausible / niche): [verdict](/concepts/verdict)
+- **The human pattern (H):** [human](/concepts/pattern-human) — the 4th, orthogonal integration layer
+- **How this relates to architecture paradigms** (serverless, event-driven, CQRS, …): [architectural paradigms](/concepts/architectural-paradigms)
+- **The synthetic-stream hazard** (stream out, no stream in — a red flag; synthetic when events are manufactured off a state-only source, not when a human action is the event): [synthetic stream](/concepts/synthetic-stream)
 - **How to classify a real product** into this space: [classify-a-data-product](/playbooks/classify-a-data-product)

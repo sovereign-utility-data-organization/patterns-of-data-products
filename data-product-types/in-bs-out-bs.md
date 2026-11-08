@@ -10,9 +10,9 @@ tags:
 - out-bs
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 3.3 — Hot & cold in → hot & cold out
@@ -55,8 +55,8 @@ Growth appears when state is needed: a settlement or "current state" consumer ap
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event-driven architecture (EDA): stream + batch in, stream + batch out — a pass-through platform.
+* [batch](/concepts/pattern-batch)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: Event-driven architecture (EDA): stream + batch in, stream + batch out — a pass-through platform.

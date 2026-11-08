@@ -10,8 +10,8 @@ tags:
 - out-s
 - common
 related:
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 5.5 — Event transformer / relay
@@ -55,7 +55,7 @@ Growth is the moment state is needed: a join or a "current state" consumer appea
 
 ## Related
 
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Serverless / Functions-as-a-Service and event-driven (EDA): a stateless stream-to-stream transform.
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: Serverless / Functions-as-a-Service and event-driven (EDA): a stateless stream-to-stream transform.

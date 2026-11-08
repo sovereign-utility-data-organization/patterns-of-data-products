@@ -9,11 +9,11 @@ tags:
 - streaming
 - pubsub
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/synthetic-stream
+- /concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-human
+- /concepts/synthetic-stream
 ---
 # Streaming pattern (`S`)
 
@@ -47,7 +47,7 @@ state-only source — unless the events are **delivered actions** (a human
 acting through the product's own surface), in which case the feed is
 **trigger-based**, i.e. a real event stream. Synthetic cells need explicit
 change-detection and replay semantics — see
-[synthetic stream](/knowledge-concepts/synthetic-stream).
+[synthetic stream](/concepts/synthetic-stream).
 
 ## Where it appears
 

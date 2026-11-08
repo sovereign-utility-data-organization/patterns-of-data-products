@@ -10,9 +10,9 @@ tags:
 - out-bs
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 5.3 — Hot & cold streaming platform
@@ -55,8 +55,8 @@ Natural growths: a query consumer appears and a read model is added — **cell 5
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event-driven architecture (EDA) and event sourcing: stream in, persisted as log, served as feed + archive.
+* [batch](/concepts/pattern-batch)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: Event-driven architecture (EDA) and event sourcing: stream in, persisted as log, served as feed + archive.

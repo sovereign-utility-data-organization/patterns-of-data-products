@@ -8,10 +8,10 @@ tags:
 - integration-pattern
 - batch
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
+- /concepts/data-product
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/pattern-human
 ---
 # Batch pattern (`B`)
 
@@ -42,4 +42,4 @@ durable and complete.
 - Pure batch cells: `7.*` (ingest) and `*.7` (serve) — see [data-product-types](/data-product-types/)
 - Mixed cells: `BR` (query + file), `BS` (hot & cold), `BRS` (omni-channel)
 - The settlement core of the utility sector is batch-anchored on one or both
-  sides — see [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
+  sides — see [cross-cutting observations](/concepts/cross-cutting-observations)

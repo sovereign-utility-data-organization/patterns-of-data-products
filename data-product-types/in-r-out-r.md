@@ -10,8 +10,8 @@ tags:
 - out-r
 - common
 related:
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/data-product
+- /concepts/pattern-request-response
+- /concepts/data-product
 ---
 
 # 6.6 — API proxy / facade
@@ -55,7 +55,7 @@ Growth is adding surfaces: file/ETL consumers appear and publication is added (*
 
 ## Related
 
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: API gateway / microservices facade: a thin normalising proxy over upstream APIs.
+* [request/response](/concepts/pattern-request-response)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: API gateway / microservices facade: a thin normalising proxy over upstream APIs.

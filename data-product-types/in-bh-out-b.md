@@ -10,10 +10,10 @@ tags:
 - out-b
 - plausible
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-batch
+- /concepts/pattern-human
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 14.7 — file + human → batch-only
@@ -42,12 +42,12 @@ Dominated by the durable state store (grows with entity/state breadth), the reta
 ## Watch out
 
 - **Softness is a cost, not a value judgement.** Human-entered data is the softest input — irregular, subjective, error-prone, expensive to re-issue — so it needs **validation, provenance, and a correction path**, and trust leans on the audit trail, not the schedule. It is also the most expensive channel: where a machine source *can* carry the same meaning, prefer it, and keep the human leg for what only a person can supply.
-- **Human input can be the value-driver.** Where the human act *is* the value — a judgement, a design intent, creative or social content, an accountable decision — and cannot be automated, human input is the **most valuable input** the product has, and the other legs exist to *enrich* it (see [the role of human input](/knowledge-concepts/role-of-human-input)).
+- **Human input can be the value-driver.** Where the human act *is* the value — a judgement, a design intent, creative or social content, an accountable decision — and cannot be automated, human input is the **most valuable input** the product has, and the other legs exist to *enrich* it (see [the role of human input](/concepts/role-of-human-input)).
 - A published file is a **completeness claim**: a manifest-first publish and a supersession rule belong in the contract.
 
 ## Typical next step
 
-add a **human-facing surface** → cell [14.14](/data-product-types/in-bh-out-bh), add a **query API** → cell [14.2](/data-product-types/in-bh-out-br), and add a **feed** → cell [14.3](/data-product-types/in-bh-out-bs) (synthetic only if the human change is observed state rather than delivered actions — see [synthetic stream](/knowledge-concepts/synthetic-stream)); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
+add a **human-facing surface** → cell [14.14](/data-product-types/in-bh-out-bh), add a **query API** → cell [14.2](/data-product-types/in-bh-out-br), and add a **feed** → cell [14.3](/data-product-types/in-bh-out-bs) (synthetic only if the human change is observed state rather than delivered actions — see [synthetic stream](/concepts/synthetic-stream)); or the source world gains a leg this product does not yet take, and it migrates to a richer IN-state on the same row.
 
 ## Verdict
 
@@ -55,7 +55,7 @@ add a **human-facing surface** → cell [14.14](/data-product-types/in-bh-out-bh
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [human](/knowledge-concepts/pattern-human)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [human](/concepts/pattern-human)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

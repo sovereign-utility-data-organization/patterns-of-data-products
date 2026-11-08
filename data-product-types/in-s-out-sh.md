@@ -10,10 +10,10 @@ tags:
 - out-sh
 - common
 related:
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-streaming
+- /concepts/pattern-human
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 5.12 — stream-only → stream + human
@@ -54,7 +54,7 @@ add **human curation on the input side** → cell [12.12](/data-product-types/in
 
 ## Related
 
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [human](/knowledge-concepts/pattern-human)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [streaming](/concepts/pattern-streaming)
+* [human](/concepts/pattern-human)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

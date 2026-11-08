@@ -10,10 +10,10 @@ tags:
 - out-h
 - common
 related:
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-request-response
+- /concepts/pattern-human
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 6.15 — request-response-only → human-only
@@ -54,7 +54,7 @@ add **human curation on the input side** → cell [13.15](/data-product-types/in
 
 ## Related
 
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [human](/knowledge-concepts/pattern-human)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [request/response](/concepts/pattern-request-response)
+* [human](/concepts/pattern-human)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

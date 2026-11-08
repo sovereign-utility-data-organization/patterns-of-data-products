@@ -10,9 +10,9 @@ tags:
 - out-br
 - plausible
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/data-product
 ---
 
 # 6.2 — Poll + serve API + files
@@ -55,7 +55,7 @@ The natural growth is a change-reactive consumer: add a synthetic change feed ov
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

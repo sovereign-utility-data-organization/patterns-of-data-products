@@ -10,9 +10,9 @@ tags:
 - out-br
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/data-product
 ---
 
 # 7.2 — The classic data warehouse
@@ -55,8 +55,8 @@ The standard growth is liveness: when a consumer needs to react to changes, the 
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: ETL / ELT / data warehouse: the classic warehouse — batch in, query + file out.
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: ETL / ELT / data warehouse: the classic warehouse — batch in, query + file out.

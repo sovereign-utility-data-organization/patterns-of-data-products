@@ -4,7 +4,7 @@
 Why this shape
 --------------
 OKF v0.1 internal links are bundle-root-absolute and extension-less
-(``](/knowledge-concepts/data-product)`), which an OKF *renderer* resolves but a plain
+(``](/concepts/data-product)`), which an OKF *renderer* resolves but a plain
 static host (GitHub Pages, a GitHub repo view) does not: a browser resolves ``/foo``
 against the site root (dropping the repo sub-path on a project page) and there is no
 file named ``foo`` (it is ``foo.md``). So those links 404.
@@ -37,7 +37,7 @@ OUT = os.path.join(ROOT, "site")          # finished static site (gitignored)
 
 ASSET_DIR = "assets"                       # copied verbatim
 ROOT_PAGES = ["index.md", "log.md", "README.md"]
-PAGE_DIRS = ["knowledge-concepts", "data-product-types", "playbooks"]
+PAGE_DIRS = ["concepts", "data-product-types", "playbooks"]
 ASSET_EXT = (".svg", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".toml", ".yaml", ".yml")
 
 SITE_TITLE = "Data Product Classification by Interface"

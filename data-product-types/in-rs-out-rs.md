@@ -10,9 +10,9 @@ tags:
 - out-rs
 - common
 related:
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 4.4 — Unified live view
@@ -55,7 +55,7 @@ The natural addition is the file surface: bulk/settlement or audit consumers app
 
 ## Related
 
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

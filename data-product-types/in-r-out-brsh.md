@@ -10,13 +10,13 @@ tags:
 - out-brsh
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/synthetic-stream
-- /knowledge-concepts/data-product
-- /knowledge-concepts/verdict
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/pattern-human
+- /concepts/synthetic-stream
+- /concepts/data-product
+- /concepts/verdict
 ---
 
 # 6.8 — request-response-only → omni-channel + human
@@ -50,7 +50,7 @@ Dominated by the durable state store (grows with entity/state breadth), the diff
 
 ## Synthetic stream
 
-This cell serves **S** without taking **S** as input, so its stream is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down the five items (see [synthetic stream](/knowledge-concepts/synthetic-stream)):
+This cell serves **S** without taking **S** as input, so its stream is a **synthetic stream**: change-detection computed on top of a non-streaming source. The contract must pin down the five items (see [synthetic stream](/concepts/synthetic-stream)):
 
 1. **What counts as a "change"** — field-level, row version, or full snapshot?
 2. **Latency bound** — bounded by the refresh cadence, not source event time.
@@ -68,10 +68,10 @@ add **human curation on the input side** → cell [13.8](/data-product-types/in-
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [human](/knowledge-concepts/pattern-human)
-* [synthetic stream](/knowledge-concepts/synthetic-stream) — the pseudo-stream hazard
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [human](/concepts/pattern-human)
+* [synthetic stream](/concepts/synthetic-stream) — the pseudo-stream hazard
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

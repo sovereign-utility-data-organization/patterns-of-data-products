@@ -10,10 +10,10 @@ tags:
 - out-brs
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 5.1 — Stream processor + full platform
@@ -56,9 +56,9 @@ At this corner, pattern growth is exhausted; the growth is horizontal — more d
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Stream processing (CEP, e.g. Flink/ksqlDB): a stream turned into a full serving platform.
+* [batch](/concepts/pattern-batch)
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: Stream processing (CEP, e.g. Flink/ksqlDB): a stream turned into a full serving platform.

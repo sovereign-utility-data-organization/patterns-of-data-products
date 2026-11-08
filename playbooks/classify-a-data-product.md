@@ -9,8 +9,8 @@ tags:
 - classification
 - data-product
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/synthetic-stream
+- /concepts/data-product
+- /concepts/synthetic-stream
 - /data-product-types
 ---
 # Playbook: classify a data product
@@ -36,7 +36,7 @@ Ask *how the product takes in data*:
 - Data produced by people (entry, review, curation)? → **H**
 
 Write the IN-set as one of the 15 side states (all of them on the
-[data product](/knowledge-concepts/data-product) page).
+[data product](/concepts/data-product) page).
 
 > If nothing fits — the product has no ingest — it's not a data product by
 > the interface model; it's a pure source (record that and stop).
@@ -54,7 +54,7 @@ Write the OUT-set the same way.
 
 > Watch for the **synthetic-stream red flag**: if `S` lands in OUT and not in
 > IN, ask how the events get made. With a state-only machine source the
-> product is *manufacturing* events off polls/files — see [synthetic stream](/knowledge-concepts/synthetic-stream),
+> product is *manufacturing* events off polls/files — see [synthetic stream](/concepts/synthetic-stream),
 > and be ready to answer the five contract questions (change semantics,
 > latency, idempotency, backfill, ordering). With a human source acting
 > through the product's own surface, each action is a real event

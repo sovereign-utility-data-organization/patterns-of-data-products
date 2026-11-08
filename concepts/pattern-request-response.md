@@ -9,11 +9,11 @@ tags:
 - request-response
 - api
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/pattern-human
-- /knowledge-concepts/synthetic-stream
+- /concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-streaming
+- /concepts/pattern-human
+- /concepts/synthetic-stream
 ---
 # Request/response pattern (`R`)
 
@@ -44,4 +44,4 @@ unlike pure streaming cells — and is the natural shape for anything
 - Pure cells: `6.*` (polling ingest) and `*.6` (query-only serving)
 - Mixed: `BR` (query + file), `RS` (live + lookup), `BRS` (omni-channel)
 - Note: a cell that *serves* `S` without taking `S` as input is not
-  affected by this pattern directly — see [synthetic stream](/knowledge-concepts/synthetic-stream)
+  affected by this pattern directly — see [synthetic stream](/concepts/synthetic-stream)

@@ -52,7 +52,7 @@ bundle: a directory of markdown concept docs with YAML frontmatter,
 |---|---|
 | `index.md` | Home page (entry point): the interface model, the all-interface figure, the 15 side states, the 225-type matrix, and the section listing |
 | `log.md` | Update log |
-| `knowledge-concepts/` | Core vocabulary: data product, the 4 integration patterns, interface model, human pattern, synthetic stream, cross-cutting observations |
+| `concepts/` | Core vocabulary: data product, the 4 integration patterns, interface model, human pattern, synthetic stream, cross-cutting observations |
 | `data-product-types/` | The 225 data product types (IN × OUT) — one concept doc each, plus the matrix index |
 | `playbooks/` | How to use the catalog (classify a real data product) |
 | `assets/` | The human-pattern interface figure and the 49-cell (3-pattern) grid figure, plus per-cell diagrams |
@@ -68,7 +68,7 @@ bundle: a directory of markdown concept docs with YAML frontmatter,
 
 This is a working repo: push branches, open issues for open questions, and keep
 the classification guidance (the [classify playbook](/playbooks/classify-a-data-product)
-and the [knowledge concepts](/knowledge-concepts/)) consistent with the cells.
+and the [knowledge concepts](/concepts/)) consistent with the cells.
 
 ## License
 

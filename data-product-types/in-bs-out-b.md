@@ -10,9 +10,9 @@ tags:
 - out-b
 - common
 related:
-- /knowledge-concepts/pattern-batch
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-batch
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 3.7 — Stream → settlement files
@@ -55,7 +55,7 @@ Natural growths: a query consumer appears and a read model/API over the settleme
 
 ## Related
 
-* [batch](/knowledge-concepts/pattern-batch)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
+* [batch](/concepts/pattern-batch)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means

@@ -10,9 +10,9 @@ tags:
 - out-r
 - common
 related:
-- /knowledge-concepts/pattern-request-response
-- /knowledge-concepts/pattern-streaming
-- /knowledge-concepts/data-product
+- /concepts/pattern-request-response
+- /concepts/pattern-streaming
+- /concepts/data-product
 ---
 
 # 5.6 — Event-sourced read model
@@ -55,8 +55,8 @@ Growth is adding surfaces: a feed consumer appears and the (derived) stream is r
 
 ## Related
 
-* [request/response](/knowledge-concepts/pattern-request-response)
-* [streaming](/knowledge-concepts/pattern-streaming)
-* [data-product](/knowledge-concepts/data-product) — the overall model
-* [verdict](/knowledge-concepts/verdict) — what the common / plausible / niche tag means
-* [architectural paradigms](/knowledge-concepts/architectural-paradigms) — this cell maps to: Event sourcing and CQRS read model (also stream processing): fold the event log into a queryable state store.
+* [request/response](/concepts/pattern-request-response)
+* [streaming](/concepts/pattern-streaming)
+* [data-product](/concepts/data-product) — the overall model
+* [verdict](/concepts/verdict) — what the common / plausible / niche tag means
+* [architectural paradigms](/concepts/architectural-paradigms) — this cell maps to: Event sourcing and CQRS read model (also stream processing): fold the event log into a queryable state store.

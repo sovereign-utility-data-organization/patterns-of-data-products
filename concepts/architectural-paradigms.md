@@ -11,14 +11,14 @@ tags:
 - cqrs
 - data-mesh
 related:
-- /knowledge-concepts/data-product
-- /knowledge-concepts/cross-cutting-observations
+- /concepts/data-product
+- /concepts/cross-cutting-observations
 ---
 
 # Architectural paradigms
 
 This page relates **software architecture paradigms** to the
-[data-product interface taxonomy](/knowledge-concepts/data-product). It exists
+[data-product interface taxonomy](/concepts/data-product). It exists
 so that people who think in serverless / event-driven / microservices terms
 can recognise what a data product *is* — without conflating the two.
 
@@ -69,7 +69,7 @@ The natural fit is the **stateless** cells — especially
 project). Serverless is a poor fit for cells that need durable state (any cell
 with `R` in OUT requires a state store the function does not own) or full
 snapshots (any cell with `B` in OUT must persist a complete artifact). This is
-the [state vs. stateless](/knowledge-concepts/cross-cutting-observations)
+the [state vs. stateless](/concepts/cross-cutting-observations)
 distinction restated in runtime terms.
 
 ### Event-driven architecture (EDA)
@@ -126,7 +126,7 @@ is the same.
 ### CDC (Change Data Capture)
 Read a source database's transaction log and emit the changes as events. CDC
 turns a batch/stateful source into a **synthetic stream** — see
-[synthetic stream](/knowledge-concepts/synthetic-stream):
+[synthetic stream](/concepts/synthetic-stream):
 [7.5](/data-product-types/in-b-out-s),
 [7.3](/data-product-types/in-b-out-bs),
 [7.4](/data-product-types/in-b-out-rs). The taxonomy flags these as
