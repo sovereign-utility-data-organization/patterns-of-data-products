@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-07T09:00:00Z'
+timestamp: '2026-11-08T09:30:00Z'
 description: The human integration pattern (H) — data produced by people on the input side, and a human-facing surface (report/dashboard/review) on the output side. The fourth pattern, orthogonal to batch, request/response, and streaming.
 title: Human integration pattern
 tags:
@@ -15,6 +15,7 @@ related:
 - /knowledge-concepts/pattern-batch
 - /knowledge-concepts/pattern-request-response
 - /knowledge-concepts/pattern-streaming
+- /knowledge-concepts/role-of-human-input
 ---
 # Human pattern (`H`)
 
@@ -44,6 +45,13 @@ contract:
 
 A product that takes `H` in is what stands between a person's editing and the
 consumer; its trustworthiness lives in that mediation, not in the schedule.
+That mediation is a **cost** to manage (human input is the softest and the most
+expensive channel), not a demotion of value: the default is to *automate where
+a machine source can carry the same meaning*, and to reserve the human leg for
+what only a person can supply. Where the human act is itself the value — a
+judgement, a design intent, content, an accountable decision — human input is
+the **value-driver** of the product and the machine legs exist to *enrich*. See
+[the role of human input](/knowledge-concepts/role-of-human-input).
 
 ## On the output side (H in OUT)
 

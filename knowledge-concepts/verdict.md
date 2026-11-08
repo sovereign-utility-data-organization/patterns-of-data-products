@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-07T09:00:00Z'
+timestamp: '2026-11-08T09:30:00Z'
 description: The verdict tag attached to each of the 49 data product types — common, plausible, or niche — and what each means.
 title: Verdict
 tags:
@@ -10,6 +10,7 @@ tags:
 related:
 - /knowledge-concepts/data-product
 - /knowledge-concepts/cross-cutting-observations
+- /knowledge-concepts/role-of-human-input
 ---
 
 # Verdict
@@ -69,3 +70,16 @@ two families:
 
 The [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
 page explains these clusters structurally.
+
+## A separate axis: human input vs. human output
+
+The `H`-in / `H`-out split is **economic, not about value**. A human-facing
+*surface* (`H` in OUT) is cheap to build and is where people actually read, so
+those cells lean *common*. Human *entry* (`H` in IN) is the softest and most
+expensive channel, so cells where it is the source are **reserved** (lean
+*plausible*, "not a default pipe" — the default being *automate where possible*).
+That reservation reflects the **cost and scarcity** of the channel, not the size
+of its value: where the human act is the irreplaceable value, it is the **most
+valuable input** the product has, and the machine legs exist to *enrich*. A
+*plausible* human-input cell is therefore not a *low-value* cell. See
+[the role of human input](/knowledge-concepts/role-of-human-input).

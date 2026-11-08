@@ -1,5 +1,30 @@
 # Update log
 
+## 2026-11-08
+
+Gave human input the role the catalogue kept reserving for it but never naming.
+Human-input cells described `H` almost exclusively through its cost side —
+"the softest input" appeared in all 120 human-input watch-outs, and "a
+curation product, not a default pipe" in most verdicts — which read as
+*undervalued*. The fix separates three facts the catalogue had conflated into
+one adjective: **softness** is a quality-and-cost property (irregular,
+subjective, error-prone, expensive to re-issue — kept as the
+validation/provenance/correction caveat); **automate-where-possible** is the
+default, which is exactly why `H`-in is the costlier, *reserved* channel and
+why the `plausible`/"not a default pipe" tiers **stay**; and
+**irreplaceability** is what makes human input central — where the human act
+*is* the value (a judgement, a design intent, content, an accountable
+decision), it is the product's **value-driver** and the machine legs exist to
+*enrich*. New concept doc
+[role of human input](/knowledge-concepts/role-of-human-input) carries the
+full argument (including the H×B/R/S interactions and what the verdict
+asymmetry means); `pattern-human`, cross-cutting observation #5, and the
+verdict page are aligned and linked. All 120 human-input cells now carry the
+reframed watch-out (softness-as-cost + value-driver reading, linked to the new
+doc); the 118 generic verdict rationales are reframed as *cost and scarcity,
+not value* — the tiers themselves are unchanged (15.15 and the
+consolidated-BI cell keep their own).
+
 ## 2026-11-07
 
 Gave the catalog a proper home page. The root `index.md` was a bare

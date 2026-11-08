@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-07T09:00:00Z'
+timestamp: '2026-11-08T09:30:00Z'
 description: 'Five structural observations about the 225-type space: synthetic-stream family, diagonal pass-throughs, batch-anchored utility core, state vs. stateless products, and the human layer.'
 title: Cross-cutting observations
 tags:
@@ -11,6 +11,7 @@ related:
 - /knowledge-concepts/data-product
 - /knowledge-concepts/synthetic-stream
 - /knowledge-concepts/pattern-human
+- /knowledge-concepts/role-of-human-input
 ---
 # Cross-cutting observations
 
@@ -86,7 +87,12 @@ corner:
 - **`H` in IN** (rows `12`–`15`) makes the product what stands between a
   person's editing and the consumer — a **curation** product. More
   *plausible* than common: real, but project-shaped, and it always carries the
-  audit-trail and correction cost.
+  audit-trail and correction cost. That understates it, though: human input is
+  the softest *and* the most expensive channel, so it is **reserved for where
+  it is irreplaceable** — and where the human act *is* the value (a judgement,
+  a design intent, content, an accountable decision), it is the **most valuable
+  input** the product has, and the machine legs exist to *enrich* it. See
+  [the role of human input](/knowledge-concepts/role-of-human-input).
 - The diagonal `H`→`H` cell, [15.15](/data-product-types/in-h-out-h), is the
   **pre-automation pattern** — a shared record between people, no machine
   mediation on either side (not paper): the ledger and the filing cabinet
@@ -94,6 +100,7 @@ corner:
   today. Every other cell on that row is a growth step out of it.
 
 The verdicts tilt accordingly: human-facing **output** leans *common*,
-human-facing **input** leans *plausible*, and the many-pattern
+human-facing **input** leans *plausible* — not because the input is less
+valuable, but because it is the more expensive channel — and the many-pattern
 `BH`/`RH`/`SH`/`BRH`/`BRSH` shapes lean wherever the demand is real in the
 domain.
