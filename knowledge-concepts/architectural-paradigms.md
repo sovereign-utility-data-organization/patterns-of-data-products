@@ -28,7 +28,7 @@ The two concepts live on **different axes**:
 
 | | What it describes | What this taxonomy classifies |
 |---|---|---|
-| **Data product** | The **interface contract**: what data, what guarantee, and which integration patterns on the **input** and **output** sides. | ✅ |
+| **Data product** | The **domain-owned offering**: what data (and at what quality), and on which integration patterns its **input** and **output** sides are served. | ✅ |
 | **Architecture paradigm** | The **runtime/implementation**: how the product is built and operated (stateless functions, event logs, service mesh, batch pipelines). | ❌ — orthogonal |
 
 Consequences of this separation:
@@ -39,10 +39,10 @@ Consequences of this separation:
 - **Same architecture, many interfaces.** A single serverless function can
   serve `S → B`, `S → R`, or `S → S` depending on what it emits — the
   paradigm does not determine the cell.
-- **The data product is the contract, not the code.** When you classify a
-  product, you classify its interface. The architecture is a
-  *recommendation* about how to implement that interface, not part of the
-  classification.
+- **The data product is the offering, not the code.** When you classify a
+  product, you classify what it offers and on which interfaces. The
+  architecture is a *recommendation* about how to implement that interface,
+  not part of the classification.
 
 So the table below is **not** "this cell *is* paradigm X". It is "this cell's
 behaviour is *commonly and naturally implemented as* paradigm X, and naming
@@ -147,4 +147,4 @@ and how it is governed*, this taxonomy says *what interface it exposes*.
 When you read a cell and wonder "isn't this just a serverless function / a
 CQRS read model / a data warehouse?" — check the mapping table above. The
 answer is almost always "this interface is *commonly implemented as* that
-paradigm, but the product is the contract, and the architecture is a choice."
+paradigm, but the product is the *offering*, and the architecture is a choice."

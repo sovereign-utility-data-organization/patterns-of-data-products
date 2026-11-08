@@ -1,6 +1,6 @@
 # Knowledge Concepts
 
-* [data-product](/knowledge-concepts/data-product) - What a data product is (in the data-mesh sense): data + contract + interface(s); identity is data + contract, the interfaces are its channels; the interface model (4 patterns × 2 sides → 15 side states → 15×15 = 225 types)
+* [data-product](/knowledge-concepts/data-product) - What a data product is (in the data-mesh sense): a self-contained, domain-owned unit — data + usable semantics/quality/provenance + code + infrastructure — served through one or more output ports (interfaces); identity is the data, not the ports; the interface model (4 patterns × 2 sides → 15 side states → 15×15 = 225 types)
 * [pattern-batch](/knowledge-concepts/pattern-batch) - Batch (B): bulk/file on a schedule, on input or output side
 * [pattern-request-response](/knowledge-concepts/pattern-request-response) - Request/response (R): synchronous on-demand query; polling upstream or serving APIs
 * [pattern-streaming](/knowledge-concepts/pattern-streaming) - Streaming (S): continuous pub/sub push; event consumption or feed serving

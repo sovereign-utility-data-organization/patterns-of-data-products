@@ -2,6 +2,41 @@
 
 ## 2026-11-08
 
+Re-based the **definition of a data product** on the data-mesh sources it
+claims to follow — Z. Dehghani, *Data Mesh Principles and Logical
+Architecture* ([martinfowler.com](https://martinfowler.com/articles/data-mesh-principles.html))
+and *Data Mesh Architecture*
+([datamesh-architecture.com](https://www.datamesh-architecture.com/)) — and
+**removed the "contract" element from the definition of a product**. The
+catalog had defined a product as "data + contract + interface(s)", but the
+sources treat a contract as precisely the *interface* specification
+("While a data contract represents the interface specification, the actual
+implementation that provides the data is the output port of a data product"),
+so it does not belong in the product's identity. The definition now follows
+the sources: a data product is the fundamental unit of data architecture —
+an **architectural quantum** — holding a domain's data plus what makes it
+usable (semantics, schema, quality metrics, provenance, documentation), the
+code that processes and serves it, and the infrastructure to run it; it is
+**owned by the domain team closest to the data**, which is accountable for
+quality, availability, and cost; and it is served through **one or more
+output ports** (interfaces) — "served as events, batch files, relational
+tables, graphs, etc., while maintaining the same semantic". Identity is the
+data a team offers; different shapes are different ports of the same
+product. Updated: the canonical definition in
+[data product](/knowledge-concepts/data-product) (new frontmatter
+description, "Identity vs. interface" section rewritten on the sources,
+"no contract" boundary case rephrased), the home page (`index.md`),
+`README.md`, the section-index bullet, "interface contract" →
+"domain-owned offering" in [architectural paradigms](/knowledge-concepts/architectural-paradigms),
+and step 1 of the [classify playbook](/playbooks/classify-a-data-product)
+("what distinguishes a data product from a raw table" is now team ownership
+plus usable semantics/quality, not *the contract*). The word *contract*
+survives only where it legitimately belongs — as the interface-level
+specification in cell and pattern docs (e.g. the synthetic stream's "five
+contract items"). Audit and build are clean.
+
+## 2026-11-08
+
 Fixed the definition of "data product" in the three pages that stated it:
 the home page (root `index.md`), `README.md`, and
 [data product](/knowledge-concepts/data-product) all claimed that how data

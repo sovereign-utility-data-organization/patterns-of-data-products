@@ -1,26 +1,30 @@
 # Data Product Interface Patterns
 
-A **data product** is a self-contained offering of data to external
-consumers: the **data** itself, a **contract** (schema, semantics, update
-cycle, as-of and availability guarantees, access conditions), and one or
-more **interfaces** through which consumers actually obtain the data. The
-term is used in the sense of **data mesh**: a data product is the
-fundamental, domain-owned unit of data architecture, and consumers depend
-on its offering and its contract — not on a raw extract from someone else's
+A **data product** is the fundamental unit of data architecture, in the
+sense of [data mesh](https://martinfowler.com/articles/data-mesh-principles.html):
+a self-contained, independently deployable unit (an *architectural quantum*)
+that holds a domain's data together with everything that makes it usable —
+its semantics, schema, quality metrics, and provenance — plus the code and
+infrastructure that transform it and serve it. It is **owned by the domain
+team closest to that data**, accountable for quality, availability, and
+cost; consumers use it the way they use any product — discoverable,
+understandable, trustworthy — not as a raw extract from someone else's
 store.
 
-The product's *identity* is what it offers, not how it is exposed. A single
-product may carry one or several interfaces: the same records served as a
-file drop, as a query API, and as an event stream are **one data product**
-available through its interfaces, not three different products.
+The product's *identity* is the data it offers, not how it is exposed. The
+same records served as a file drop, a query API, and an event stream are
+**one data product** with three output ports (interfaces) — the same flour
+in different bag sizes: the flour, not the bag — not three different
+products.
 
 This catalog therefore classifies the **types** of data products by their
 interfaces, not by the data they carry. Each side of a product — the
-**input side** (how it ingests) and the **output side** (how it serves) —
-is described by the integration patterns it uses, and a **type** is the
-pair (IN-state × OUT-state): a space of **225 data product types**, each
-with its own concept doc — what it is, when to use it, and a
-[verdict](/knowledge-concepts/verdict) (common / plausible / niche).
+**input side** (the sources it ingests from) and the **output side** (the
+ports it serves to consumers) — is described by the integration patterns it
+uses, and a **type** is the pair (IN-state × OUT-state): a space of
+**225 data product types**, each with its own concept doc — what it is,
+when to use it, and a [verdict](/knowledge-concepts/verdict) (common /
+plausible / niche).
 
 ## The interface model
 

@@ -1,8 +1,8 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T18:20:00Z'
-description: A data product (in the data-mesh sense) is data + contract + interface(s); its identity is the data it offers and the contract it serves under, the interfaces are its channels. Classified here by the integration patterns on its input side and output side (4 patterns, 15 states per side, 15 x 15 = 225 types).
+timestamp: '2026-11-08T18:45:00Z'
+description: "A data product (in the data-mesh sense) is a self-contained, domain-owned architectural quantum — the domain's data + what makes it usable (semantics, schema, quality, provenance) + the code + the infrastructure, served through one or more output ports (interfaces). Its identity is the data it offers, not the ports it exposes. Classified here by the integration patterns on its input side and output side (4 patterns, 15 states per side, 15 x 15 = 225 types)."
 title: Data product
 tags:
 - data-product
@@ -19,47 +19,75 @@ related:
 ---
 # Data product
 
-A **data product** is a self-contained offering of data to external consumers.
-It comprises:
+A **data product** is the fundamental unit of data architecture, in the sense
+of [data mesh](https://martinfowler.com/articles/data-mesh-principles.html):
+an **architectural quantum** — a self-contained unit that can be deployed
+and operated *independently* and contains all of the structural elements
+required for its function. It is a *logical* unit, not a technology: the
+analytical data of a domain **together with everything that is needed to
+make that data usable** for other teams.
 
-1. the **data** itself,
-2. a **contract** — schema, semantics, update cycle, as-of and availability
-   guarantees, access conditions — and
-3. one or more **interfaces** through which consumers actually obtain the data.
+[Dehghani's account](https://martinfowler.com/articles/data-mesh-principles.html)
+says a data product encapsulates three structural components:
 
-The term *data product* is used in the sense of **data mesh**: the data
-product is the fundamental, domain-owned unit of data architecture (see
-[architectural paradigms](/knowledge-concepts/architectural-paradigms)).
-Consumers depend on a product's *offering* and its *contract* — not on a raw
-extract from someone else's store. The value is in what the product offers,
-not in the underlying store.
+1. **Data and metadata** — the underlying analytical and historical data,
+   together with what makes it *usable*: semantic and syntactic schema,
+   quality metrics, provenance and lineage, and documentation.
+2. **Code** — the pipelines that consume and transform upstream data, the
+   services that make the data available, and the enforcement of access and
+   compliance policies.
+3. **Infrastructure** — the storage, compute, and access the product needs
+   to be built, deployed, and run.
+
+A product is owned by the **domain team closest to the data**. That team is
+accountable for the product's **quality, availability, and cost** across its
+entire lifecycle, and consumers use the product the way they use any product
+— they **discover** it, **understand** it, and **trust** it — not the way
+they use a raw extract from someone else's store. On its **input side** the
+product connects to sources — operational systems or other data products —
+and transforms what it receives; on its **output side** it serves the
+result through one or more **output ports** (its interfaces, or in this
+catalog: patterns on the IN and OUT sides).
+
+> Sources: Z. Dehghani, *Data Mesh Principles and Logical Architecture*,
+> [martinfowler.com](https://martinfowler.com/articles/data-mesh-principles.html)
+> (data product = "architectural quantum"; data "served as events, batch
+> files, relational tables, graphs, etc., while maintaining the same
+> semantic"); and *Data Mesh Architecture*
+> ([datamesh-architecture.com](https://www.datamesh-architecture.com/)): a
+> data product is "a logical unit that contains all components to process
+> and store domain data ... and makes them available to other teams via
+> output ports", owned by the domain team, which "needs to continuously
+> monitor and ensure data quality, availability, and costs".
 
 ### Identity vs. interface
 
-A product's **identity** is what it offers and the contract it serves under.
-The **interface** is how the data is exposed. These are different axes, and
-conflating them inverts the idea of a product:
+A product's **identity** is the data it offers. The way that data is *made
+available* — its output ports — is not part of its identity. These are
+different axes, and conflating them inverts the idea of a product:
 
-- A single product may carry **several interfaces at once**. The same
-  records served as a file drop, as a query API, and as an event stream are
-  **one data product** available through its interfaces — not three different
-  products. Think of it as flour in different package sizes: the product is
-  the flour (the data and its meaning under contract), not the pack format.
-- Adding an interface **changes the type, not the product**: it moves the
-  product to a different cell in this catalog (e.g. `B`-out → `BR`-out) but
-  leaves a single product intact, now with one more way to consume it.
-- What *does* make two products genuinely different is a difference in the
-  **data offered** or the **contract** (scope, semantics, guarantees) — not
-  the channel.
+- **Same product, different shapes.** As Dehghani puts it, data "can be
+  served as events, batch files, relational tables, graphs, etc., *while
+  maintaining the same semantic*". Those shapes are the product's output
+  ports, and a product may expose **one or many** of them. The same records
+  served as a file drop, a query API, and an event stream are **one data
+  product** with three ports — not three different products. It is the same
+  flour in different bag sizes (500 g and 1 kg): what matters is the flour,
+  not the bag.
+- **Adding a port changes the *type*, not the *product*.** When a product
+  gains a new way of serving (e.g. a query API added to a file drop), the
+  product stays the same while its type moves to a different cell of this
+  catalog (`7.2` → `7.1` for a batch-loaded product).
+- **What splits a product** is a difference in *what the owning team stands
+  behind* — the scope or meaning of the data, or the quality the team is
+  accountable for — or a different owning team. Not the channel.
 
 This catalog therefore classifies the **type** of a data product — the shape
 of its input and output sides — not the product's identity. Type and product
 are not one and the same: a single product occupies exactly **one** cell,
-whose patterns enumerate the interfaces it currently offers. If it gains a
-new interface (a query API added to a file drop), its type moves (e.g.
-`7.2` → `7.1` for a batch-loaded product) — but it remains the *same*
-product. A *different* product is one with different offered data or
-different contract, not one over a different channel.
+whose patterns enumerate the ports it currently exposes. A *different*
+product is one with different data or a different owning team — not one over
+a different port.
 
 ## The interface model
 
@@ -128,8 +156,9 @@ Full 15 × 15. The left 7×7 block is the machine-only space (unchanged); the
 | **BH**  | [14.1](/data-product-types/in-bh-out-brs) | [14.2](/data-product-types/in-bh-out-br) | [14.3](/data-product-types/in-bh-out-bs) | [14.4](/data-product-types/in-bh-out-rs) | [14.5](/data-product-types/in-bh-out-s) | [14.6](/data-product-types/in-bh-out-r) | [14.7](/data-product-types/in-bh-out-b) | [14.8](/data-product-types/in-bh-out-brsh) | [14.9](/data-product-types/in-bh-out-bhr) | [14.10](/data-product-types/in-bh-out-bhs) | [14.11](/data-product-types/in-bh-out-rsh) | [14.12](/data-product-types/in-bh-out-sh) | [14.13](/data-product-types/in-bh-out-rh) | [14.14](/data-product-types/in-bh-out-bh) | [14.15](/data-product-types/in-bh-out-h) |
 | **H**   | [15.1](/data-product-types/in-h-out-brs) | [15.2](/data-product-types/in-h-out-br) | [15.3](/data-product-types/in-h-out-bs) | [15.4](/data-product-types/in-h-out-rs) | [15.5](/data-product-types/in-h-out-s) | [15.6](/data-product-types/in-h-out-r) | [15.7](/data-product-types/in-h-out-b) | [15.8](/data-product-types/in-h-out-brsh) | [15.9](/data-product-types/in-h-out-bhr) | [15.10](/data-product-types/in-h-out-bhs) | [15.11](/data-product-types/in-h-out-rsh) | [15.12](/data-product-types/in-h-out-sh) | [15.13](/data-product-types/in-h-out-rh) | [15.14](/data-product-types/in-h-out-bh) | [15.15](/data-product-types/in-h-out-h) |
 
-A state on *no* patterns is not a data product: a pure file drop with no
-contract, or a pure sink with nothing to serve, has no consumable interface.
+A state on *no* patterns is not a data product: a raw drop into someone
+else's bucket, or a pure sink with nothing to serve, has no usable interface
+and no one standing behind it.
 
 ## Navigating the space
 

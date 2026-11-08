@@ -1,7 +1,7 @@
 ---
 type: Playbook
 okf_version: '0.1'
-timestamp: '2026-11-08T18:20:00Z'
+timestamp: '2026-11-08T18:45:00Z'
 description: Classification procedure — take a real (or proposed) data product and place it on the 15×15 grid of data-product types (225 types).
 title: Classify a data product
 tags:
@@ -21,8 +21,10 @@ Take a real or proposed data product and put it where it belongs in the
 ## 1. Fix boundaries
 
 - **What data** is the product offering? (scope)
-- **Who are the consumers** and on **what contract**? (the *contract*
-  distinguishes a data product from a raw table).
+- **Which team owns it**, and **who are the consumers**? What does the
+  owning team stand behind — semantics, quality, availability, timeliness?
+  (That *product thinking* — usable semantics, owned quality, documented
+  provenance — is what separates a data product from a raw table.)
 
 ## 2. Read the **input** side
 
