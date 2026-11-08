@@ -2,6 +2,29 @@
 
 ## 2026-11-08
 
+Fixed two framework gaps found on review. (1) `verdict.md`'s "Reading the
+distribution" claimed the `niche` verdicts cluster in a "fully synthetic
+consolidation" family that does **not** exist in the data — the wide
+omni-channel cells [1.1](/data-product-types/in-brs-out-brs),
+[1.8](/data-product-types/in-brs-out-brsh), and
+[8.8](/data-product-types/in-brsh-out-brsh) are all rated *common*. In fact all
+thirteen niche cells serve a stream (an `S` on the output side): nine are
+synthetic-stream bridges (stream out over a state-only machine source), and four
+([1.5](/data-product-types/in-brs-out-s),
+[3.4](/data-product-types/in-bs-out-rs),
+[4.5](/data-product-types/in-rs-out-s),
+[5.4](/data-product-types/in-s-out-rs)) are deliberately narrow / fileless
+surfaces kept out of *common* by a scope decision, not an economic hazard. The
+section now states that. (2) `pattern-human.md`'s H-out section no longer
+demotes the human pattern to a "consumption audience": `H`-out is now defined
+affirmatively as a **presentation-and-consolidation** transform (not a 1:1
+projection), with the note that human-shaped output — a report — is often itself
+the *input* to a downstream machine. Timestamps bumped. The H-in **value-driver**
+premise (the `role-of-human-input` framing) is already stated first-class in the
+framework pages; making it the per-cell verdict's premise is a separate change.
+
+## 2026-11-08
+
 Corrected three factual errors found on review. `verdict.md` and
 `architectural-paradigms.md` still described the pre-expansion **49**-cell
 space; both now say **225** (the 49 original machine-only cells and the 49-cell

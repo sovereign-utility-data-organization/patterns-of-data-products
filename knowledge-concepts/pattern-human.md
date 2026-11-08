@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T15:00:00Z'
 description: The human integration pattern (H) — data produced by people on the input side, and a human-facing surface (report/dashboard/review) on the output side. The fourth pattern, orthogonal to batch, request/response, and streaming.
 title: Human integration pattern
 tags:
@@ -62,10 +62,26 @@ it. The served view inherits whatever is in the state behind it, and a person
 notices a stale or wrong value faster than an API client does, so the surface's
 correctness is bound to the backend's as-of.
 
-`H`-out is not a new serving *protocol*; it is a consumption *audience*. It
-usually rides on the machine patterns below it — a dashboard reads through a
-query API over a state store — but the product's reason for existing is that
-**people are the consumers**, not machines.
+`H`-out is a **genuine shape**, not a thin wrapper and not a new *protocol*. It
+is a **presentation and consolidation** step — aggregation, selection,
+narrative, layout, approval framing — that re-casts the machine data into a
+form a person can actually act on. That is not a 1:1 projection of the file,
+API, or feed: a dashboard consolidates many tables behind one view, a report
+compresses a stream into a story, and an approval view turns a record into a
+*decision*. The transform does real work and is a real integration boundary. It
+usually sits on the machine patterns below it (a dashboard over a query API on
+a state store); the human surface *adds* presentation — it does not merely
+relabel the machine output.
+
+The transform also runs **the other way** in the field, which is exactly why
+`H`-out is a first-class interface axis and not a footnote about who is
+reading. **Human-shaped output is often the input to the next system**
+precisely because the raw stream would be the wrong artifact — a downstream
+consumer may be handed the *report* (the consolidated, human-shaped summary)
+rather than the complete data. The form and the meaning are changed, not just
+the encoding. So the human pattern on the output side is a distinct,
+shape-changing layer of the interface, on equal footing with the three
+machine patterns.
 
 ## Distinction from the machine patterns
 

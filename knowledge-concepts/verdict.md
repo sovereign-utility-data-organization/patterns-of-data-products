@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T14:00:00Z'
+timestamp: '2026-11-08T15:00:00Z'
 description: The verdict tag attached to each of the 225 data product types — common, plausible, or niche — and what each means.
 title: Verdict
 tags:
@@ -61,17 +61,34 @@ possible).
 
 ## Reading the distribution
 
-Most cells are **common** or **plausible**; the **niche** verdicts cluster in
-two families:
+Most cells are **common** or **plausible**. Every **niche** cell serves a
+stream — all thirteen have an `S` feed on the output side — and they fall into
+two real groups:
 
-1. **Synthetic-stream bridges** — stream output from a non-stream input
-   (e.g. poller→stream, batch→stream). See
+1. **Synthetic-stream bridges** (nine cells) — a stream **out** with no stream
+   in, over a state-bearing machine source (`B` / `BR` / `R`). The feed is
+   manufactured on top of a non-streaming source (change detection). E.g.
+   [2.5 poll→stream](/data-product-types/in-br-out-s),
+   [6.5 poller→stream](/data-product-types/in-r-out-s),
+   [7.5 batch→feed](/data-product-types/in-b-out-s). See
    [synthetic stream](/knowledge-concepts/synthetic-stream).
-2. **Fully synthetic consolidation** — the "everything in, everything out"
-   shapes where the product carries all three patterns on both sides.
+2. **Deliberately narrow, fileless surfaces** (four cells) — a stream in and
+   out, but the served surface is collapsed to a feed and (usually) drops the
+   file leg. The narrowness is a **scope decision** — a stream-only product by
+   design — not an economic hazard, and it is what keeps these out of
+   *common*. E.g.
+   [1.5 omni-source → single stream](/data-product-types/in-brs-out-s),
+   [3.4 event + query, no files](/data-product-types/in-bs-out-rs),
+   [4.5 API-backed fan-out stream](/data-product-types/in-rs-out-s),
+   [5.4 event → state + feed, fileless](/data-product-types/in-s-out-rs).
 
-The [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
-page explains these clusters structurally.
+There is **no** "fully synthetic consolidation" family: the wide
+"everything in, everything out" shapes
+([1.1](/data-product-types/in-brs-out-brs),
+[1.8](/data-product-types/in-brs-out-brsh),
+[8.8](/data-product-types/in-brsh-out-brsh)) are all rated **common**, not
+niche. The [cross-cutting observations](/knowledge-concepts/cross-cutting-observations)
+page explains the synthetic-stream family structurally.
 
 ## A separate axis: human input vs. human output
 
