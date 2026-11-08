@@ -25,9 +25,10 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
   site to `site/`: rewrites each OKF internal link to a path a static host
   resolves (relative, `.html`/section `index.html`/asset), renders every page to
   HTML, copies root static files (`LICENSE`) to the site root, wraps each page in
-  a shared layout with a global search bar, and emits a dependency-free JSON
-  search index. Self-validates that every link + search URL resolves; exits
-  non-zero if any do not.
+  a shared layout (collapsible sidebar page tree derived from each section's
+  `index.md` + a global search bar), and emits a dependency-free JSON search
+  index. Self-validates that every link + search URL resolves; exits non-zero
+  if any do not.
 - `.github/workflows/pages.yml` — GitHub Actions on a plain `ubuntu-latest`
   runner: checkout, `setup-python`, `pip install markdown`, run the script
   (→ `site/`), upload the artifact, deploy to GitHub Pages. Triggers on push to
@@ -42,27 +43,28 @@ no framework, no native extensions — just Python (stdlib + `python-markdown`):
   (a verbatim copy of the quick map in `knowledge-concepts/data-product.md`
   — keep the two in sync), and the root listing; `log.md` — update log,
   **newest entry first**
-- `knowledge-concepts/` — core vocabulary (data product, B/R/S/H patterns,
-  synthetic stream, cross-cutting observations, verdict)
+- `knowledge-concepts/` — core vocabulary (data product, the 4 patterns
+  batch/request-response/streaming/human, role of human input, synthetic stream,
+  cross-cutting observations, verdict, architectural paradigms)
 - `data-product-types/` — 225 docs, one per interface cell (15 IN × 15 OUT),
   named `in-{IN}-out-{OUT}.md`, plus the matrix index
 - `playbooks/` — how-to docs
 - `assets/` — the 4-pattern interface figure
   (`all-possible-interaction-patern-data-product.svg`), the 49-cell (3-pattern)
-  grid SVG, and per-cell SVGs under `assets/cells/`: the 49 original cells as
-  `NNN.svg`, the 176 H-cells as `in-{IN}-out-{OUT}.svg`
+  grid (`all-possible-data-product-patterns.svg`), and per-cell SVGs under
+  `assets/cells/`: the 49 original cells as `NNN.svg`, the 176 H-cells as
+  `in-{IN}-out-{OUT}.svg`
 - `AGENTS.md` and `README.md` are meta files exempted from the OKF rules in
   `scripts/okf_audit.py`; the **root** `index.md` (the site home page) is
   likewise exempted from the bullet-only "index entry" check but still from
   the no-frontmatter rule. Keep those exemptions in sync if the audit changes.
 
-Stale references: `README.md` still points at `docs/*` paths; that content was
-absorbed into the bundle and removed (see `log.md`).
-
 ## Format rules (enforced by the audit)
 
 - Every concept doc has YAML frontmatter: `type`, `okf_version: '0.1'`,
-  `timestamp` (ISO 8601; bump it when editing), `description`.
+  `timestamp` (ISO 8601; bump it when editing), `description`. House style
+  (not audit-enforced, but every doc has them): `title`, `tags`, `related`
+  (a list of extensionless root paths).
 - `index.md`, `log.md`, `README.md`, `AGENTS.md` must **not** have frontmatter.
 - All internal links are **bundle-root absolute, extensionless**:
   `/knowledge-concepts/data-product`, or `/data-product-types/` (a directory
