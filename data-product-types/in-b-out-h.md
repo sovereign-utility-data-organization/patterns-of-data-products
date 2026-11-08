@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via batch (bulk/file) and serving via human.
 title: 'Cell 7.15: Batch data as a report / dashboard'
 tags:
@@ -50,7 +50,7 @@ add **human curation on the input side** → cell [14.15](/data-product-types/in
 
 ## Verdict
 
-**common** — turning settled bulk data into a report or dashboard is one of the most frequent data products in the world; the pattern is cheap (a state store plus a presentation layer) and the demand is universal.
+**common** — A product that ingests bulk files and serves a human-facing surface (a report, dashboard, or shared record the same people maintain). It is the right shape where the reader is a person rather than a service, and the human-shaped view is itself what the next consumer — or the next machine in the loop — needs to act on.
 
 ## Related
 

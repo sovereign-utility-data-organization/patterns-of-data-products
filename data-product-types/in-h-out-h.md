@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via human and serving via human.
 title: 'Cell 15.15: shared record, human in, human out'
 tags:
@@ -50,7 +50,7 @@ The growth steps are the moment it stops being pre-automation: add a **query API
 
 ## Verdict
 
-**plausible** — the pre-automation record (a person-to-person shared record) is a completely sensible product; it stays out of the "common" tier only because in most organisations it is the *starting* artifact rather than the product — the shared spreadsheet everything else grows out of — and once a consumer appears, a query or a file usually joins.
+**plausible** — A product that ingests human-authored data and serves a human-facing surface (a report, dashboard, or shared record the same people maintain). It is a natural fit where the human act *is* the value — a judgement, a decision, a curated record — so the softest, costliest channel is then the *cost of having that value*; where the act *could* be automated the cheaper machine path wins.
 
 ## Related
 

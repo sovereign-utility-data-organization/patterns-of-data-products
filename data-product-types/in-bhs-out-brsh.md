@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via batch (bulk/file) + streaming (pub/sub feed) + human and serving via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) + human.
 title: 'Cell 10.8: file/stream + human → omni-channel + human'
 tags:
@@ -56,7 +56,7 @@ The pattern space is exhausted here; growth is horizontal — more domains, tena
 
 ## Verdict
 
-**common** — people are the source and people read the data back; where the human contribution *is* the irreplaceable value (content, judgement, curation), this is the natural product and its demand is real wherever this audience exists. It is a costlier build — human input is the softest and most expensive channel — which is exactly why it is built only where a person's contribution is the point.
+**common** — A product that ingests human input layered on top of bulk files and live feeds and serves bulk files, query APIs, and live feeds plus a human-facing surface (a dashboard, report, or review). It is a natural fit where the human act *is* the value — a judgement, a decision, a curated record — so the softest, costliest channel is then the *cost of having that value*; where the act *could* be automated the cheaper machine path wins.
 
 ## Related
 

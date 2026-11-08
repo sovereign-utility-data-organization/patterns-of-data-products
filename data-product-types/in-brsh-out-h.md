@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via batch (bulk/file) + request/response (on-demand query) + streaming (pub/sub feed) + human and serving via human.
 title: 'Cell 8.15: Omni-source platform, human read'
 tags:
@@ -54,7 +54,7 @@ add a **query API** → cell [8.13](/data-product-types/in-brsh-out-rh), add a *
 
 ## Verdict
 
-**common** — 'one view for people over everything' is the defining product of any consolidated-data estate (BI/CDP); expensive to build, but the demand is universal.
+**common** — A product that ingests human input layered on top of bulk files, query APIs, and live feeds and serves a human-facing surface (a report, dashboard, or shared record the same people maintain). It is a natural fit where the human act *is* the value — a judgement, a decision, a curated record — so the softest, costliest channel is then the *cost of having that value*; where the act *could* be automated the cheaper machine path wins.
 
 ## Related
 

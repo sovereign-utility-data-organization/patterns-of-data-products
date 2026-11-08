@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via request/response (on-demand query) + human and serving via human.
 title: 'Cell 13.15: API + human → human-only'
 tags:
@@ -51,7 +51,7 @@ add a **query API** → cell [13.13](/data-product-types/in-rh-out-rh), add a **
 
 ## Verdict
 
-**plausible** — people are the source and people read the data back; it makes sense where the human contribution *is* the irreplaceable value (content, judgement, curation), and less where a cheaper automated source would do the job. Human input is the softest and most expensive channel, so it is **reserved** — which is why this one is project-shaped.
+**plausible** — A product that ingests human input layered on top of query APIs and serves a human-facing surface (a report, dashboard, or shared record the same people maintain). It is a natural fit where the human act *is* the value — a judgement, a decision, a curated record — so the softest, costliest channel is then the *cost of having that value*; where the act *could* be automated the cheaper machine path wins.
 
 ## Related
 

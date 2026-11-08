@@ -2,6 +2,25 @@
 
 ## 2026-11-08
 
+Reworked the per-cell **verdict** assessment for the 176 human-pattern cells. The
+verdict body had been four shared boilerplate sentences — "source is human",
+"people are the source and people read the data back", "reports/dashboards are
+among the most common ways people consume data", and a variant — repeated
+verbatim across whole rows and columns (measured: four distinct bodies covered
+172 of the 225 cells). Each H-cell verdict now states that cell's specific
+purpose from its own leg composition ("a product that ingests X and serves Y")
+and **states the value premise in place**: human input is the softest and
+costliest channel (so it is "not a default pipe"), and where the human act is
+the irreplaceable value it is the value-driver that the machine legs *enrich*.
+That promotes the `role-of-human-input` value-driver framing from a post-hoc
+side doc to a first-class premise of the cell's own verdict, and removes the
+shared boilerplate — the verdict field is now unique to every cell (all 225
+distinct). Tiers (common / plausible / niche) and every other section are
+preserved; the `State & cost` sharing that remains is leg-composition-driven and
+cell-neutral by construction, not boilerplate.
+
+## 2026-11-08
+
 Fixed two framework gaps found on review. (1) `verdict.md`'s "Reading the
 distribution" claimed the `niche` verdicts cluster in a "fully synthetic
 consolidation" family that does **not** exist in the data — the wide

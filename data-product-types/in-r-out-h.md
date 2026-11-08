@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via request/response (on-demand query) and serving via human.
 title: 'Cell 6.15: request-response-only → human-only'
 tags:
@@ -50,7 +50,7 @@ add **human curation on the input side** → cell [13.15](/data-product-types/in
 
 ## Verdict
 
-**common** — human-facing output (reports/dashboards) is among the most common ways people actually consume data, and its demand is real where this audience exists.
+**common** — A product that ingests query APIs and serves a human-facing surface (a report, dashboard, or shared record the same people maintain). It is the right shape where the reader is a person rather than a service, and the human-shaped view is itself what the next consumer — or the next machine in the loop — needs to act on.
 
 ## Related
 

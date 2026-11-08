@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via request/response (on-demand query) + human and serving via request/response (on-demand query).
 title: 'Cell 13.6: API + human → request-response-only'
 tags:
@@ -50,7 +50,7 @@ add a **human-facing surface** → cell [13.13](/data-product-types/in-rh-out-rh
 
 ## Verdict
 
-**plausible** — a product whose *source* is human is a conscious, project-shaped choice, not a default pipe: human input is the most expensive channel, so where it could be meaningfully automated it would usually be. But where the human act *is* the irreplaceable value, it becomes the natural product, and its demand is real wherever this audience exists.
+**plausible** — A product that ingests human input layered on top of query APIs and serves query APIs. It is a deliberate, project-shaped choice — not a default pipe — because human input is the softest and costliest channel, so where the value *could* be automated the machine path is preferred; where the human act *is* the irreplaceable value it is the most valuable input the product has and the machine legs exist to *enrich* it.
 
 ## Related
 

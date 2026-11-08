@@ -1,7 +1,7 @@
 ---
 type: Data Product Type
 okf_version: '0.1'
-timestamp: '2026-11-06T21:15:00Z'
+timestamp: '2026-11-08T16:00:00Z'
 description: Data product ingesting via streaming (pub/sub feed) and serving via human.
 title: 'Cell 5.15: Live feed as a control-room dashboard'
 tags:
@@ -50,7 +50,7 @@ add **human curation on the input side** → cell [12.15](/data-product-types/in
 
 ## Verdict
 
-**common** — live monitoring dashboards over event streams are one of the most common human-facing products; the cost is a real-time fold, and the value (operators seeing now) is exactly what people pay for.
+**common** — A product that ingests live feeds and serves a human-facing surface (a report, dashboard, or shared record the same people maintain). It is the right shape where the reader is a person rather than a service, and the human-shaped view is itself what the next consumer — or the next machine in the loop — needs to act on.
 
 ## Related
 
