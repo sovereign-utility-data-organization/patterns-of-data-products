@@ -2,6 +2,20 @@
 
 ## 2026-11-08
 
+Corrected three factual errors found on review. `verdict.md` and
+`architectural-paradigms.md` still described the pre-expansion **49**-cell
+space; both now say **225** (the 49 original machine-only cells and the 49-cell
+grid figure are unchanged, still named where they genuinely are the subject).
+`verdict.md` also claimed the verdict is stored in a `verdict` frontmatter
+field; in practice it is a **tag** in `tags:` plus a `## Verdict` body section
+— "Where the verdicts are stored" now matches that and no longer asserts a
+nonexistent field. `README.md`'s Contributing line pointed at the long-removed
+`docs/classification.md`; it now points at the
+[classify playbook](/playbooks/classify-a-data-product) and the knowledge
+concepts.
+
+## 2026-11-08
+
 Gave human input the role the catalogue kept reserving for it but never naming.
 Human-input cells described `H` almost exclusively through its cost side —
 "the softest input" appeared in all 120 human-input watch-outs, and "a

@@ -57,8 +57,9 @@ bundle: a directory of markdown concept docs with YAML frontmatter,
 
 ## Contributing
 
-This is a working repo: push branches, open issues for open questions, keep the
-`docs/classification.md` checklists up to date.
+This is a working repo: push branches, open issues for open questions, and keep
+the classification guidance (the [classify playbook](/playbooks/classify-a-data-product)
+and the [knowledge concepts](/knowledge-concepts/)) consistent with the cells.
 
 ## License
 

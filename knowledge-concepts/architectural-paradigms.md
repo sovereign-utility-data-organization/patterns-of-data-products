@@ -1,7 +1,7 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-06T12:50:00Z'
+timestamp: '2026-11-08T14:00:00Z'
 description: How architectural paradigms (serverless, event-driven, event sourcing, CQRS, microservices, stream processing, ETL/ELT, CDC, data mesh) relate to — but are distinct from — the data product interface taxonomy.
 title: Architectural paradigms
 tags:
@@ -139,7 +139,7 @@ beside it. Data mesh treats the **data product** as the fundamental unit of
 data architecture — domain-owned, self-describing, served over a platform.
 This taxonomy is complementary: it classifies the **interface** of those
 products regardless of how they are built. A data-mesh organisation still has
-products that fall into one of the 49 cells; the paradigm says *who owns it
+products that fall into one of the 225 cells; the paradigm says *who owns it
 and how it is governed*, this taxonomy says *what interface it exposes*.
 
 ## Using this page

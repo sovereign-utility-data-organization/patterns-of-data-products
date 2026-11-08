@@ -1,8 +1,8 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-08T09:30:00Z'
-description: The verdict tag attached to each of the 49 data product types — common, plausible, or niche — and what each means.
+timestamp: '2026-11-08T14:00:00Z'
+description: The verdict tag attached to each of the 225 data product types — common, plausible, or niche — and what each means.
 title: Verdict
 tags:
 - verdict
@@ -15,11 +15,12 @@ related:
 
 # Verdict
 
-Each of the 49 [data product types](/data-product-types/) carries a **verdict**
-tag in its frontmatter and its body. The verdict is a coarse judgement about
-how *likely* that combination is to be a sensible, real-world product — it
-reflects the *economics* of the interface, not whether the combination is
-technically possible (every one of the 49 is technically possible).
+Each of the 225 [data product types](/data-product-types/) carries a **verdict**
+— a tag in its frontmatter and a section in its body. The verdict is a coarse
+judgement about how *likely* that combination is to be a sensible, real-world
+product — it reflects the *economics* of the interface, not whether the
+combination is technically possible (every one of the 225 is technically
+possible).
 
 ## The three verdicts
 
@@ -30,7 +31,7 @@ technically possible (every one of the 49 is technically possible).
 | **niche** | A real but unusual shape — usually a bridge between two worlds (e.g. a file/API source feeding a streaming consumer). It works, but it is not a default choice. |
 
 > There is **no "awkward" / impossible** verdict. Any input side can in
-> principle be re-served on any output side, so none of the 49 cells is
+> principle be re-served on any output side, so none of the 225 cells is
 > nonsensical. Where a combination *feels* wrong, the awkwardness is almost
 > always an economic or latency concern — that is captured per-cell in the
 > "Watch out" section, not as a verdict.
@@ -49,10 +50,11 @@ technically possible (every one of the 49 is technically possible).
 
 ## Where the verdicts are stored
 
-- Frontmatter: the `verdict` field on each
-  [data product type](/data-product-types/) doc (values: `common`,
-  `plausible`, `niche`).
-- Body: the **Verdict** line in each type's heading.
+- Frontmatter: as a **tag** in the `tags:` list on each
+  [data product type](/data-product-types/) doc (`common`, `plausible`, or
+  `niche`). There is no `verdict` frontmatter field — the tag is the value.
+- Body: the **Verdict** line in each type's heading, plus a `## Verdict`
+  section carrying the rationale.
 - Aggregate view: the per-type index under
   [data-product-types](/data-product-types/) lists each type with its
   description (the verdict is also visible on the cell page).
