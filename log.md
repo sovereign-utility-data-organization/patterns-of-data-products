@@ -2,6 +2,22 @@
 
 ## 2026-11-08
 
+Added the missing interface labels to the 49 hand-authored original cell
+diagrams (`assets/cells/NNN.svg`, the 3-pattern B/R/S matrix, cells 1.1–7.7).
+Those tiles had been cropped out of the master
+`assets/all-possible-data-product-patterns.svg` canvas without their
+`Streaming`/`Request/Response`/`Batch` captions, so their interface icons were
+unlabeled while the equivalent generated `in-*` cells kept theirs — an
+inconsistency. Each missing caption was copied verbatim from the master canvas
+(the already-labeled source of truth) into the coordinates that already sit
+within each cell's own `viewBox`, so every icon now carries the same label the
+generated diagrams use. The icon art, the `NNN` numbering, and the
+master/generated figures were left untouched — 168 captions added across the 49
+files. With this, every interface icon across all 225 cell diagrams and both
+top-level figures has its label, and the audit is clean.
+
+## 2026-11-08
+
 Reworked the per-cell **verdict** assessment for the 176 human-pattern cells. The
 verdict body had been four shared boilerplate sentences — "source is human",
 "people are the source and people read the data back", "reports/dashboards are
