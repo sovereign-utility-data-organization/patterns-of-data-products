@@ -1,8 +1,8 @@
 ---
 type: Playbook
 okf_version: '0.1'
-timestamp: '2026-11-07T09:00:00Z'
-description: Classification procedure — take a real (or proposed) data product and place it on the 7x7 grid of data-product types.
+timestamp: '2026-11-08T18:20:00Z'
+description: Classification procedure — take a real (or proposed) data product and place it on the 15×15 grid of data-product types (225 types).
 title: Classify a data product
 tags:
 - playbook
@@ -31,9 +31,10 @@ Ask *how the product takes in data*:
 - Bulk / file / EOD snapshot? → **B**
 - Polls an upstream, on demand or on a schedule? → **R**
 - Subscribes to events / streams? → **S**
+- Data produced by people (entry, review, curation)? → **H**
 
-Write the IN-set as one of the 7 side states:
-`BRS` / `BR` / `BS` / `RS` / `S` / `R` / `B`.
+Write the IN-set as one of the 15 side states (all of them on the
+[data product](/knowledge-concepts/data-product) page).
 
 > If nothing fits — the product has no ingest — it's not a data product by
 > the interface model; it's a pure source (record that and stop).
@@ -45,6 +46,7 @@ Ask *what interfaces the product exposes to consumers*:
 - File / bulk delivery? → **B**
 - Queryable API / endpoint? → **R**
 - Feed / subscription / event stream? → **S**
+- A human-facing surface (report, dashboard, review)? → **H**
 
 Write the OUT-set the same way.
 

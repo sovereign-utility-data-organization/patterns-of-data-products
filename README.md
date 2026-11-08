@@ -4,11 +4,16 @@ A working project to classify **data products** based on the **interface** they
 expose to consumers.
 
 A data product is treated as a self-contained unit — the data, its
-metadata/contract, and the interface through which it is consumed — rather than
-as a raw dataset. The interface is the primary axis of differentiation: two
-data products on the same underlying data can be fundamentally different
-products depending on how they are exposed (e.g. file download vs. query API
-vs. event stream).
+metadata/contract, and the interface(s) through which it is consumed — rather
+than as a raw dataset. The term is used in the sense of **data mesh**: a data
+product is a domain-owned, self-describing unit of data architecture that
+consumers can depend on. A product's identity is the data it offers and the
+contract it serves under — not how the data is exposed: the same records
+served as a file download, a query API, or an event stream are one data
+product through several interfaces, not different products. The interface is
+the axis on which this catalog distinguishes **types** of data products (the
+IN × OUT pattern combination) — it is what the 225 types differ by, not what
+makes a product a product.
 
 ## This repo is an OKF catalog
 

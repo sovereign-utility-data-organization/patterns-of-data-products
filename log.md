@@ -2,6 +2,31 @@
 
 ## 2026-11-08
 
+Fixed the definition of "data product" in the three pages that stated it:
+the home page (root `index.md`), `README.md`, and
+[data product](/knowledge-concepts/data-product) all claimed that how data
+is exposed is what makes products different — "a file drop, a query API, and
+an event stream of the same records are three different data products" —
+which was the exact opposite of the data-mesh idea of a data product and
+contradicted the rest of the catalog (its multi-interface side states, e.g.
+omni-channel `BRS`-out = one product, three legs). The definition now states
+what a data product is *in the sense of data mesh* (a self-contained,
+domain-owned offering of data + contract + one or more interfaces), that a
+product's **identity** is the data it offers and the contract it serves
+under, and that the interface is only how it is exposed: the same records
+served as a file, an API, and a stream are **one** data product through
+several interfaces (the flour, not the pack size); adding an interface moves
+its **type** (the catalog's cell), not its identity. What this catalog
+classifies is the product's **type**, not the product itself.
+`knowledge-concepts/data-product.md` gains an "Identity vs. interface"
+section that makes the distinction explicit and ties it to data mesh;
+`SITE_DESC` in `scripts/build_site.py` and the two stale "7×7 grid"
+references (playbook description and its index entry) were aligned with the
+15×15/225-type space — the playbook's B/R/S bullet lists now carry the
+`H` human pattern too. Audit and build are clean.
+
+## 2026-11-08
+
 Added the missing interface labels to the 49 hand-authored original cell
 diagrams (`assets/cells/NNN.svg`, the 3-pattern B/R/S matrix, cells 1.1–7.7).
 Those tiles had been cropped out of the master

@@ -4,17 +4,23 @@ A **data product** is a self-contained offering of data to external
 consumers: the **data** itself, a **contract** (schema, semantics, update
 cycle, as-of and availability guarantees, access conditions), and one or
 more **interfaces** through which consumers actually obtain the data. The
-value is in the *product*, not in the underlying store: a file drop, a query
-API, and an event stream of the same records are three different data
-products.
+term is used in the sense of **data mesh**: a data product is the
+fundamental, domain-owned unit of data architecture, and consumers depend
+on its offering and its contract — not on a raw extract from someone else's
+store.
 
-This catalog classifies data products by their interfaces, not by the data
-they carry. Each side of a product — the **input side** (how it ingests)
-and the **output side** (how it serves) — is described by the integration
-patterns it uses, and a **type** is the pair (IN-state × OUT-state): a space
-of **225 data product types**, each with its own concept doc — what it is,
-when to use it, and a [verdict](/knowledge-concepts/verdict) (common /
-plausible / niche).
+The product's *identity* is what it offers, not how it is exposed. A single
+product may carry one or several interfaces: the same records served as a
+file drop, as a query API, and as an event stream are **one data product**
+available through its interfaces, not three different products.
+
+This catalog therefore classifies the **types** of data products by their
+interfaces, not by the data they carry. Each side of a product — the
+**input side** (how it ingests) and the **output side** (how it serves) —
+is described by the integration patterns it uses, and a **type** is the
+pair (IN-state × OUT-state): a space of **225 data product types**, each
+with its own concept doc — what it is, when to use it, and a
+[verdict](/knowledge-concepts/verdict) (common / plausible / niche).
 
 ## The interface model
 

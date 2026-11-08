@@ -41,8 +41,9 @@ PAGE_DIRS = ["knowledge-concepts", "data-product-types", "playbooks"]
 ASSET_EXT = (".svg", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".toml", ".yaml", ".yml")
 
 SITE_TITLE = "Data Product Classification by Interface"
-SITE_DESC = ("An Open Knowledge Format (OKF v0.1) catalog classifying data products by "
-             "the interface they expose to consumers.")
+SITE_DESC = ("An Open Knowledge Format (OKF v0.1) catalog classifying data product "
+             "types by their interface (IN and OUT integration patterns) — the "
+             "interface is the shape of a product's type, not its identity.")
 SOURCE_URL = "https://github.com/sovereign-utility-data-organization/patterns-of-data-products"
 
 try:

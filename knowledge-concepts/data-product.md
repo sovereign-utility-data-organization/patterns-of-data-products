@@ -1,11 +1,12 @@
 ---
 type: Knowledge Concept
 okf_version: '0.1'
-timestamp: '2026-11-07T09:00:00Z'
-description: A data product is data + contract + interface; classified here by the integration patterns on its input side and output side (4 patterns, 15 states per side, 15 x 15 = 225 types).
+timestamp: '2026-11-08T18:20:00Z'
+description: A data product (in the data-mesh sense) is data + contract + interface(s); its identity is the data it offers and the contract it serves under, the interfaces are its channels. Classified here by the integration patterns on its input side and output side (4 patterns, 15 states per side, 15 x 15 = 225 types).
 title: Data product
 tags:
 - data-product
+- data-mesh
 - interface
 - taxonomy
 related:
@@ -26,8 +27,39 @@ It comprises:
    guarantees, access conditions — and
 3. one or more **interfaces** through which consumers actually obtain the data.
 
-The value is in the *product*, not in the underlying store: two products on
-the same data can be fundamentally different depending on how it is exposed.
+The term *data product* is used in the sense of **data mesh**: the data
+product is the fundamental, domain-owned unit of data architecture (see
+[architectural paradigms](/knowledge-concepts/architectural-paradigms)).
+Consumers depend on a product's *offering* and its *contract* — not on a raw
+extract from someone else's store. The value is in what the product offers,
+not in the underlying store.
+
+### Identity vs. interface
+
+A product's **identity** is what it offers and the contract it serves under.
+The **interface** is how the data is exposed. These are different axes, and
+conflating them inverts the idea of a product:
+
+- A single product may carry **several interfaces at once**. The same
+  records served as a file drop, as a query API, and as an event stream are
+  **one data product** available through its interfaces — not three different
+  products. Think of it as flour in different package sizes: the product is
+  the flour (the data and its meaning under contract), not the pack format.
+- Adding an interface **changes the type, not the product**: it moves the
+  product to a different cell in this catalog (e.g. `B`-out → `BR`-out) but
+  leaves a single product intact, now with one more way to consume it.
+- What *does* make two products genuinely different is a difference in the
+  **data offered** or the **contract** (scope, semantics, guarantees) — not
+  the channel.
+
+This catalog therefore classifies the **type** of a data product — the shape
+of its input and output sides — not the product's identity. Type and product
+are not one and the same: a single product occupies exactly **one** cell,
+whose patterns enumerate the interfaces it currently offers. If it gains a
+new interface (a query API added to a file drop), its type moves (e.g.
+`7.2` → `7.1` for a batch-loaded product) — but it remains the *same*
+product. A *different* product is one with different offered data or
+different contract, not one over a different channel.
 
 ## The interface model
 
