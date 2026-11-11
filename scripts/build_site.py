@@ -45,6 +45,7 @@ SITE_DESC = ("An Open Knowledge Format (OKF v0.1) catalog classifying data produ
              "types by their interface (IN and OUT integration patterns) — the "
              "interface is the shape of a product's type, not its identity.")
 SOURCE_URL = "https://github.com/sovereign-utility-data-organization/patterns-of-data-products"
+LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
 try:
     import markdown  # provided by `pip install markdown`
@@ -287,6 +288,8 @@ TEMPLATE = """<!doctype html>
 </div>
 <footer class="site-footer">
   <span class="muted">OKF v0.1 knowledge catalog</span>
+  <span class="muted">Licensed under
+    <a href="{license_url}" target="_blank" rel="license noopener">CC BY-SA 4.0</a></span>
   <a href="{base}README.html">README</a>
   <a href="{source_url}" target="_blank" rel="noopener">Source on GitHub</a>
 </footer>
@@ -315,7 +318,8 @@ def render_page(rel: str, text: str) -> str:
     description = esc(fm.get("definition") or fm.get("description") or SITE_DESC)
     return TEMPLATE.format(
         base=base, title=title, description=description,
-        site_title=esc(SITE_TITLE), source_url=SOURCE_URL, content=html_body,
+        site_title=esc(SITE_TITLE), source_url=SOURCE_URL, license_url=LICENSE_URL,
+        content=html_body,
         sidebar=render_sidebar(rel),
     )
 

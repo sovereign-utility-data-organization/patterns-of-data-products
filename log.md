@@ -1,5 +1,13 @@
 # Update log
 
+## 2026-11-11
+
+**Added the license to the footer of the published site.** The shared layout
+in `scripts/build_site.py` now shows "Licensed under CC BY-SA 4.0" (a link to
+https://creativecommons.org/licenses/by-sa/4.0/ with `rel="license"`) on
+every rendered page, alongside the existing catalog note, README, and source
+links. The build self-validation and the audit both stay clean.
+
 ## 2026-11-08
 
 **Consolidated the frontmatter `description` and SKOS `definition`.** The
